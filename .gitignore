@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 logs
 project/project
 project/target
@@ -36,3 +37,6 @@ target
 # Play
 logs
 RUNNING_PID
+=======
+/.project
+>>>>>>> branch 'master' of https://github.com/poireauxvinaigrette/poireauxvinaigrette.git
