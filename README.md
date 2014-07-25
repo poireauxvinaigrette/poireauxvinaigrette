@@ -1,5 +1,6 @@
 # PlayStartApp
 
+c'est de la balle
 This is a sample application using Play Framework (See tags https://github.com/yesnault/PlayStartApp/tags for download)
 
 ## Features
