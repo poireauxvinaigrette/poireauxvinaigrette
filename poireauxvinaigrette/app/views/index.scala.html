@@ -1,0 +1,30 @@
+@(restos: List[Resto]) @main("PoireauxVinaigrette") {
+<div class="starter-template">
+	<div class="well">
+		<p>beep.</p>
+	</div>
+	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Distance</th>
+					<th>RaisonSociale</th>
+					<th>Catégorie</th>
+					<th>Mobile</th>
+				</tr>
+			</thead>
+			<tbody>
+			@for(resto <- restos) {
+				<tr>
+					<td>@resto.distance</td>
+					<td>@resto.raisonSociale</td>
+					<td>@resto.categorie</td>
+					<td>@resto.telephone</td>
+				</tr>
+			}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+}

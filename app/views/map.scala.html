@@ -1,0 +1,85 @@
+@(title: String)
+
+<!DOCTYPE html>
+<head>
+<title>@title</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+<link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+<!--         <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script> -->
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
+
+<style>
+</style>
+</head>
+<body>
+
+	<div>
+		<p id="demo">...</p>
+	</div>
+
+	<div id='map'></div>
+
+
+	<script>
+		var lat, lon = "";
+		var geoloc, map;
+		var x = document.getElementById("demo");
+		function showError(error) {
+			switch (error.code) {
+			case error.PERMISSION_DENIED:
+				x.innerHTML = "User denied the request for Geolocation."
+				break;
+			case error.POSITION_UNAVAILABLE:
+				x.innerHTML = "Location information is unavailable."
+				break;
+			case error.TIMEOUT:
+				x.innerHTML = "The request to get user location timed out."
+				break;
+			case error.UNKNOWN_ERROR:
+				x.innerHTML = "An unknown error occurred."
+				break;
+			}
+		}
+		function showPosition(position) {
+			lat = position.coords.latitude;
+			lon = position.coords.longitude;
+			lat = "44.837944";
+			lon = "-0.5748138";
+			map.setView([ lat, lon ], 16);
+			x.innerHTML = lat + "/" + lon;
+
+			addMarkers();
+		}
+
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition,showError);
+		} else {
+			x.innerHTML = "Geolocation is not supported by this browser.";
+		}
+
+		var map = L.mapbox.map('map', 'poireauxvinaigrette.j3ama3bj');
+		var featureLayer = L.mapbox.featureLayer().addTo(map);
+		var fixedMarker;
+
+		function addMarkers() {
+
+			//Start with a fixed marker.
+			fixedMarker = L.marker(new L.LatLng(lat, lon), {
+				icon : L.mapbox.marker.icon({
+					'marker-color' : 'ff8888'
+				})
+			}).bindPopup('Your position').addTo(map);
+
+			var fc = fixedMarker.getLatLng();
+			distance = (fc.distanceTo(map.getBounds().getNorthWest()));
+			dist = (distance * 0.66).toFixed(0);
+			featureLayer.loadURL(
+					'/restos/' + dist + '/' + lat + '/' + lon
+							+ '?format=geojson').addTo(map);
+		}
+	</script>
+
+</body>
+</html>
