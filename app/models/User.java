@@ -1,15 +1,15 @@
 package models;
 
-import models.utils.AppException;
-import models.utils.Hash;
-import play.data.format.Formats;
-import play.data.validation.Constraints;
-import play.db.ebean.Model;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.Date;
+
+import models.utils.AppException;
+import play.data.format.Formats;
+import play.data.validation.Constraints;
+import play.db.ebean.Model;
 
 /**
  * User: yesnault
@@ -90,15 +90,15 @@ public class User extends Model {
         User user = find.where().eq("email", email).findUnique();
         if (user != null) {
             // get the hash password from the salt + clear password
-            if (Hash.checkPassword(clearPassword, user.passwordHash)) {
-                return user;
-            }
-        }
+//            if (Hash.checkPassword(clearPassword, user.passwordHash)) {
+//                return user;
+//            }
+       }
         return null;
     }
 
     public void changePassword(String password) throws AppException {
-        this.passwordHash = Hash.createPassword(password);
+   //     this.passwordHash = Hash.createPassword(password);
         this.save();
     }
 

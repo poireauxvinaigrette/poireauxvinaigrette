@@ -1,21 +1,19 @@
 package controllers;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.avaje.ebean.Ebean;
-import com.avaje.ebean.SqlRow;
 
 import models.GeoRestos;
 import models.Resto;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.index;
-import views.html.map;
+
+import com.avaje.ebean.Ebean;
+import com.avaje.ebean.SqlRow;
+
+import views.html.restos.map;
+import views.html.restos.indexpv;
 
 public class Oumanger extends Controller {
 
@@ -61,7 +59,7 @@ public class Oumanger extends Controller {
 		GeoRestos georestos = GeoRestos.parse(restos);
 
 		if (format == null) {
-			return ok(index.render(restos));
+			return ok(indexpv.render(restos));
 		} else if (format.equals("geojson")) {
 			return ok(Json.toJson(georestos));
 		} else {
