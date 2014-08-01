@@ -1,0 +1,28 @@
+# Users
+
+restaurants:
+
+    - !!models.Resto
+        mobile: 0699213270
+        raison_sociale: poireaux
+        latitude: 45.33
+        longitude: 0.00
+        
+    - !!models.Resto
+        mobile: 0799213270
+        raison_sociale: vinaigrette
+        latitude: 45.33
+        longitude: 0.00
+ 
+    - !!models.Resto
+        mobile: 0599213270
+        raison_sociale: chez dédé
+        latitude: 45.33
+        longitude: 0.00
+
+    - !!models.Resto
+        mobile: 0499213270
+        raison_sociale: Cantine
+        latitude: 45.33
+        longitude: 0.00
+        
