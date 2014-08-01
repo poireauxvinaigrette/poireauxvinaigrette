@@ -1,23 +1,23 @@
 package models;
 
-import models.utils.Mail;
-import play.Configuration;
-import play.Logger;
-import play.data.format.Formats;
-import play.data.validation.Constraints;
-import play.db.ebean.Model;
-import play.i18n.Messages;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.UUID;
 
 import javax.annotation.Nullable;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.UUID;
+
+import play.Configuration;
+import play.Logger;
+import play.data.format.Formats;
+import play.data.validation.Constraints;
+import play.db.ebean.Model;
+import play.i18n.Messages;
 
 /**
  * @author wsargent
@@ -161,8 +161,8 @@ public class Token extends Model {
         }
 
         Logger.debug("sendMailResetLink: url = " + url);
-        Mail.Envelop envelop = new Mail.Envelop(subject, message, toMail);
-        Mail.sendMail(envelop);
+//        Mail.Envelop envelop = new Mail.Envelop(subject, message, toMail);
+//        Mail.sendMail(envelop);
     }
 
 }

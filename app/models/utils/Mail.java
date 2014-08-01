@@ -1,7 +1,7 @@
 package models.utils;
 
-import com.typesafe.plugin.MailerAPI;
-import com.typesafe.plugin.MailerPlugin;
+//import com.typesafe.plugin.MailerAPI;
+//import com.typesafe.plugin.MailerPlugin;
 import play.Configuration;
 import play.Logger;
 import play.libs.Akka;
@@ -74,26 +74,26 @@ public class Mail {
         }
 
         public void run() {
-            MailerAPI email = play.Play.application().plugin(MailerPlugin.class).email();
+   //         MailerAPI email = play.Play.application().plugin(MailerPlugin.class).email();
+//
+//            final Configuration root = Configuration.root();
+//            final String mailFrom = root.getString("mail.from");
+//            email.setFrom(mailFrom);
+//            email.setSubject(envelop.subject);
+//            for (String toEmail : envelop.toEmails) {
+//                email.setRecipient(toEmail);
+//                Logger.debug("Mail.sendMail: Mail will be sent to " + toEmail);
+//            }
+//
+//            final String mailSign = root.getString("mail.sign");
+//            email.send(envelop.message + "\n\n " + mailSign,
+//                    envelop.message + "<br><br>--<br>" + mailSign);
 
-            final Configuration root = Configuration.root();
-            final String mailFrom = root.getString("mail.from");
-            email.setFrom(mailFrom);
-            email.setSubject(envelop.subject);
-            for (String toEmail : envelop.toEmails) {
-                email.setRecipient(toEmail);
-                Logger.debug("Mail.sendMail: Mail will be sent to " + toEmail);
-            }
-
-            final String mailSign = root.getString("mail.sign");
-            email.send(envelop.message + "\n\n " + mailSign,
-                    envelop.message + "<br><br>--<br>" + mailSign);
-
-            Logger.debug("Mail sent - SMTP:" + root.getString("smtp.host")
-                    + ":" + root.getString("smtp.port")
-                    + " SSL:" + root.getString("smtp.ssl")
-                    + " user:" + root.getString("smtp.user")
-                    + " password:" + root.getString("smtp.password"));
+//            Logger.debug("Mail sent - SMTP:" + root.getString("smtp.host")
+//                    + ":" + root.getString("smtp.port")
+//                    + " SSL:" + root.getString("smtp.ssl")
+//                    + " user:" + root.getString("smtp.user")
+//                    + " password:" + root.getString("smtp.password"));
         }
     }
 }
