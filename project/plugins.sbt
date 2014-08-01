@@ -8,10 +8,6 @@ resolvers += "Maven repository" at "http://mvnrepository.com/artifact/org.postgr
 
 resolvers += "Maven repository 2" at "http://repo1.maven.org/maven2/"
 
-resolvers += (
-    "Local Maven Repository" at "file://C:/REPO_M2"
-)
-
 // The Play plugin
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.3.2")
 
