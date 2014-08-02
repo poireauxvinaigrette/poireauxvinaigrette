@@ -34,7 +34,7 @@ create table token (
   constraint pk_token primary key (token))
 ;
 
-create table user (
+create table users (
   id                        bigint not null,
   email                     varchar(255),
   fullname                  varchar(255),
