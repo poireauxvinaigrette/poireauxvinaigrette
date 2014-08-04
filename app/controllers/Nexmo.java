@@ -10,7 +10,7 @@ public class Nexmo extends Controller {
      *
      * @return login page or dashboard
      */
-    public static Result index() throws TwiMLException{
+    public static Result index() {
 	return ok("Got request " + request() + "!");
     }
 
