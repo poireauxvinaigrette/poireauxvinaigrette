@@ -7,6 +7,7 @@ GET   /resto                        controllers.Oumanger.map()
 GET   /restos/:dist/:lat/:lon       controllers.Oumanger.list(dist:Integer,lat:Double,lon:Double, format:String ?= null)
 
 GET     /twilio                     controllers.Twilio.index()
+GET     /nexmo                     controllers.Nexmo.index()
 
 
 # Routes
