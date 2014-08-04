@@ -16,6 +16,7 @@ public class Sms extends Model {
 	@Required
 	public String msisdn;
 	@Required
+	@Column(name="dest")
 	public String to;
 	public String text;
 	public String type;
