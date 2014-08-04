@@ -1,8 +1,12 @@
 package models;
 
+import java.util.List;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 
 import play.data.validation.Constraints.Required;
@@ -18,6 +22,7 @@ public class Resto extends Model {
 	@Required
 	public String raisonSociale;
 	@Required
+	@Column(unique=true)
 	public String mobile;
 	public String mail;
 	@Required
@@ -27,7 +32,6 @@ public class Resto extends Model {
 	
 	public String type;
 	public String categorie;
-	public String specialite;
 	
 	public String adresse;
 	public String codePostale;
@@ -38,12 +42,12 @@ public class Resto extends Model {
 	public String classement;
 	public String marque;
 	public String tourisme;
-	
-	
+		
 	@Transient
 	public Integer distance;
-	
-	
+	@Transient
+	public String menudujour;
+
 	public static Finder<Long, Resto> find = new Finder<Long, Resto>(Long.class, Resto.class);
 
 }

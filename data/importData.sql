@@ -23,7 +23,7 @@ CREATE TABLE resto_tmp
   adresse_1 character varying(255),
   adresse_2 character varying(255)
 );
-COPY resto_tmp(id,raison_sociale,mobile,mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,internet,classement,marque,tourisme,adresse_1,adresse_2)
+\COPY resto_tmp(id,raison_sociale,mobile,mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,internet,classement,marque,tourisme,adresse_1,adresse_2)
 FROM 'C:\perso\data\resto_33.csv' WITH  CSV DELIMITER ';'  HEADER ENCODING 'LATIN1';
 INSERT INTO resto SELECT id,raison_sociale,mobile, 
 mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,internet,classement,marque,tourisme FROM resto_tmp;

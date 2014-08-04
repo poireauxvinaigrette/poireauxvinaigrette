@@ -7,21 +7,24 @@
 		<table class="table">
 			<thead>
 				<tr>
-					<th>Distance</th>
-					<th>RaisonSociale</th>
-					<th>Catégorie</th>
-					<th>Mobile</th>
+					<th class="resto-col-1">Distance</th>
+					<th>Menu Du Jour</th>
+					<th class="resto-col-2">Resto</th>
 				</tr>
 			</thead>
 			<tbody>
-			@for(resto <- restos) {
+				@for(resto <- restos) {
 				<tr>
-					<td>@resto.distance</td>
+					<td class="resto-col-1">@resto.distance</td>
+					<td>@resto.menudujour</td> 
+					@if(resto.internet && !resto.internet.isEmpty) {
+					<td><a target="_blank" href="http://@resto.internet">@resto.raisonSociale</a></td>
+					} else {
 					<td>@resto.raisonSociale</td>
-					<td>@resto.categorie</td>
-					<td>@resto.telephone</td>
+					}
+					
 				</tr>
-			}
+				}
 			</tbody>
 		</table>
 	</div>

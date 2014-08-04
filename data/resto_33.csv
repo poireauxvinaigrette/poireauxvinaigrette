@@ -455,7 +455,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 454;C'yusha Restaurant;;;44.838287;-0.568372;Restaurant;Cuisine traditionnelleRestauration à  thème;12  rue Ausone;33000;BORDEAUX;+33 5 56 69 89 70;www.cyusha.com;;;;12; rue Ausone
 455;La Terre;;;44.836304;-0.5714789;Restaurant;Restauration à  thème;18  rue Saint James;33000;BORDEAUX;+33 5 56 30 32 55;;;;;18; rue Saint James
 456;Au Bonheur du Palais;;;44.832623;-0.5771899;Restaurant;Restauration à  thème;72-74  rue Paul-Louis Lande;33000;BORDEAUX;+33 5 56 94 38 63;www.abdp.free.fr;;;;72-74; rue Paul-Louis Lande
-457;Café Japonais;;;44.838974;-0.5731599;Restaurant;Restauration à  thème;22  rue Saint-Siméon;33000;BORDEAUX;+33 5 56 48 68 68;www.cafejaponais.free.fr;;;;22; rue Saint-Siméon
+457;Café Japonais;33699213270;;44.838974;-0.5731599;Restaurant;Restauration à  thème;22  rue Saint-Siméon;33000;BORDEAUX;+33 5 56 48 68 68;www.cafejaponais.free.fr;;;;22; rue Saint-Siméon
 458;Fuxia;;;44.843796;-0.5737186;Restaurant;Restauration à  thème;40 allées d'Orléans ;33000;BORDEAUX;+33 5 56 52 81 23;www.fuxia.fr;;;Handicap mentalHandicap moteurHandicap visuel;40 allées d'Orléans;
 459;Raffaele Ristorante;;;44.839207;-0.5719826;Restaurant;Restauration à  thème;30  rue du Pas Saint Georges;33000;BORDEAUX;+33 5 57 85 90 13;;;;;30; rue du Pas Saint Georges
 460;Koh I Noor;;;44.840923;-0.5707436;Restaurant;Restauration à  thème;3 rue Puits Descujols ;33820;BORDEAUX;+33 5 56 51 17 55;;;;;3 rue Puits Descujols;
@@ -775,7 +775,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 774;Restaurant Chez Pitras;;;44.400494;-0.3535697;Restaurant;Cuisine traditionnelle;11 rue de l'Egalité ;;PRECHAC;+33 5 56 65 20 70;;;;;11 rue de l'Egalité;
 775;Restaurant La Bastide;;;44.392;-0.4212733;Restaurant;Restauration à  thème;1 Moureson ;33180;PRECHAC;+33 5 56 65 21 17;http://labastide.info;;;;1 Moureson;
 776;Le Lorelei;;;45.0898;-0.5194365;Restaurant;Cuisine traditionnelle;1  rue Fassier;;PUGNAC;+33 5 57 68 89 50;;;;;1; rue Fassier
-777;La Popote de l'Antiquaire;;;45.082687;-0.4958224;Restaurant;Cuisine traditionnelleRestauration à  thème;5 rue des Anciens Combattants ;;PUGNAC;+33622907461;;;;;5 rue des Anciens Combattants;
+777;La Popote de l'Antiquaire;;;45.082687;-0.4958224;Restaurant;Cuisine traditionnelleRestauration à  thème;5 rue des Anciens Combattants ;;PUGNAC;33622907461;;;;;5 rue des Anciens Combattants;
 778;La Trattoria Lesca'l;;;45.074326;-0.4959082;Restaurant;Restauration à  thème;Parc de Bellevue ;;PUGNAC;+33 5 57 42 31 52;;;;;Parc de Bellevue;
 779;Hostellerie du Château de Roques;;;44.946747;-0.070231;Hôtel restaurant;Cuisine traditionnelle;Roques ;33730;PUISSEGUIN;+33 5 57 74 55 69;www.chateau-de-roques.com;2 cheminées2 cocottes;Qualité Tourisme;;Roques;
 780;La Poudette;;;44.80774;-0.031247;Restaurant;Cuisine traditionnelle;Bernadigot ;33141;PUJOLS;+33 5 57 40 71 52;www.la-poudette.com;;;;Bernadigot;

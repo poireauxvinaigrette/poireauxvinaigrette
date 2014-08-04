@@ -3,8 +3,11 @@ package controllers;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.StringUtils;
+
 import models.GeoRestos;
 import models.Resto;
+import models.Sms;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -18,7 +21,7 @@ import views.html.restos.indexpv;
 public class Oumanger extends Controller {
 
 	public static Result map() {
-		return ok(map.render("Your new application is ready."));
+		return ok(map.render("PoireauxVinaigrette"));
 	}
 
 	public static Result list(Integer dist, Double lat, Double lon, String format) {
@@ -32,8 +35,9 @@ public class Oumanger extends Controller {
 		String sql = "select "
 				+ distance
 				+ " as distance, r.id , r.raison_sociale, r.raison_sociale, r.categorie, r.telephone, r.mobile, r.adresse"
-				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet"
-				+ " from resto r where " + distance + "*6367445*pi()/180<" + dist + " order by " + distance;
+				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet" + " from resto r where "
+				+ distance + "*6367445*pi()/180<" + dist + " order by " + distance + " limit 200";
+		// + " from resto r left join sms s on r.mobile = s.resto "
 
 		List<SqlRow> items = Ebean.createSqlQuery(sql).findList();
 		for (SqlRow sqlRow : items) {
@@ -52,15 +56,19 @@ public class Oumanger extends Controller {
 
 			Double tmp = sqlRow.getDouble("distance") * 6367445 * Math.PI / 180;
 			resto.distance = tmp.intValue();
-
+			if (StringUtils.isNotEmpty(resto.mobile)) {
+				List<Sms> findList = Sms.find.where().eq("resto.mobile", resto.mobile).orderBy("creationDate desc").findList();
+				resto.menudujour  = (findList.size() > 0 ? findList.get(0).text : null);
+			}
 			restos.add(resto);
 		}
 
-		GeoRestos georestos = GeoRestos.parse(restos);
+		
 
 		if (format == null) {
 			return ok(indexpv.render(restos));
 		} else if (format.equals("geojson")) {
+			GeoRestos georestos = GeoRestos.parse(restos);
 			return ok(Json.toJson(georestos));
 		} else {
 			return notFound();

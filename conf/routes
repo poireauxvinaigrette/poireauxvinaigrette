@@ -8,7 +8,7 @@ GET   /restos/:dist/:lat/:lon       controllers.Oumanger.list(dist:Integer,lat:D
 
 GET     /twilio                     controllers.Twilio.index()
 GET     /nexmo                      controllers.Nexmo.index()
-GET     /nexmoS                 controllers.Nexmo.logSms(msisdn: String, to: String, messageId: String, text: String, type: String, messagetimestamp: String ?= null)
+GET     /nexmoS                 controllers.Nexmo.logSms(msisdn: String, to: String, messageId: String, text: String, type: String)
 
 
 # Routes

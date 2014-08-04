@@ -12,7 +12,6 @@ create table resto (
   longitude                 float,
   type                      varchar(255),
   categorie                 varchar(255),
-  specialite                varchar(255),
   adresse                   varchar(255),
   code_postale              varchar(255),
   commune                   varchar(255),
@@ -21,12 +20,24 @@ create table resto (
   classement                varchar(255),
   marque                    varchar(255),
   tourisme                  varchar(255),
+  constraint uq_resto_mobile unique (mobile),
   constraint pk_resto primary key (id))
+;
+
+create table sms (
+  message_id                varchar(255) not null,
+  creation_date             timestamp,
+  destinataire              varchar(255),
+  text                      varchar(255),
+  type                      varchar(255),
+  timestamp                 timestamp,
+  resto                     varchar(255),
+  constraint pk_sms primary key (message_id))
 ;
 
 create table token (
   token                     varchar(255) not null,
-  users_id                   bigint,
+  user_id                   bigint,
   type                      varchar(8),
   date_creation             timestamp,
   email                     varchar(255),
@@ -49,10 +60,14 @@ create table users (
 
 create sequence resto_seq;
 
+create sequence sms_seq;
+
 create sequence token_seq;
 
 create sequence users_seq;
 
+alter table sms add constraint fk_sms_resto_1 foreign key (resto) references resto (mobile);
+create index ix_sms_resto_1 on sms (resto);
 
 
 
@@ -60,11 +75,15 @@ create sequence users_seq;
 
 drop table if exists resto cascade;
 
+drop table if exists sms cascade;
+
 drop table if exists token cascade;
 
 drop table if exists users cascade;
 
 drop sequence if exists resto_seq;
+
+drop sequence if exists sms_seq;
 
 drop sequence if exists token_seq;
 
