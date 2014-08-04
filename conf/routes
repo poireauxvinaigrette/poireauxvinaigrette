@@ -6,6 +6,9 @@
 GET   /resto                        controllers.Oumanger.map()
 GET   /restos/:dist/:lat/:lon       controllers.Oumanger.list(dist:Integer,lat:Double,lon:Double, format:String ?= null)
 
+GET     /twilio                     controllers.Twilio.index()
+
+
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
