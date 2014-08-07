@@ -30,7 +30,7 @@ create table sms (
   destinataire              varchar(255),
   text                      varchar(255),
   type                      varchar(255),
-  timestamp                 timestamp,
+  reception_date            timestamp,
   resto                     varchar(255),
   constraint pk_sms primary key (message_id))
 ;

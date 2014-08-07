@@ -30,3 +30,5 @@ mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,in
 DROP TABLE resto_tmp;
 END;
 --COPY resto TO 'C:\perso\data\resto_33_out.csv' WITH  CSV DELIMITER ';'  HEADER;
+
+-- select (POINT(44.8388128378145,-0.5730056762695312)<->POINT(latitude, longitude)) as distance, r.id , r.raison_sociale, r.raison_sociale, r.categorie, r.telephone, r.mobile, r.adresse, r.code_postale,r.commune, r.latitude, r.longitude, r.internet from resto r where (POINT(44.8388128378145,-0.5730056762695312)<->POINT(latitude, longitude))*6367445*pi()/180<245 order by (POINT(44.8388128378145,-0.5730056762695312)<->POINT(latitude, longitude)) limit 200

@@ -1,17 +1,14 @@
 package controllers;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.PersistenceException;
 
-import org.postgresql.util.PSQLException;
-
-import play.mvc.Controller;
-import play.mvc.Result;
 import models.Resto;
 import models.Sms;
+import play.mvc.Controller;
+import play.mvc.Result;
 
 import com.avaje.ebean.Ebean;
 
@@ -36,7 +33,7 @@ public class Nexmo extends Controller {
 			sms.creationDate = new Date();
 
 			String messagetimestamp = request().getQueryString("message-timestamp");
-			sms.timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse(messagetimestamp);
+			sms.receptionDate = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse(messagetimestamp);
 
 			Ebean.save(sms);
 

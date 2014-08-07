@@ -1,9 +1,14 @@
 package controllers;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateFormatUtils;
+import org.apache.commons.lang.time.DateUtils;
+import org.joda.time.DateTime;
 
 import models.GeoRestos;
 import models.Resto;
@@ -26,12 +31,8 @@ public class Oumanger extends Controller {
 
 	public static Result list(Integer dist, Double lat, Double lon, String format) {
 		String distance = "(POINT(" + lat + "," + lon + ")<->POINT(latitude, longitude))";
-		// List<Resto> restos = Resto.find.select("distance,id,raisonSociale")
-		// .where(distance + "*6367445*pi()/180<" +
-		// dist).orderBy(distance).findList();
-
+		Date today = new Date();
 		List<Resto> restos = new ArrayList<Resto>();
-
 		String sql = "select "
 				+ distance
 				+ " as distance, r.id , r.raison_sociale, r.raison_sociale, r.categorie, r.telephone, r.mobile, r.adresse"
@@ -57,8 +58,13 @@ public class Oumanger extends Controller {
 			Double tmp = sqlRow.getDouble("distance") * 6367445 * Math.PI / 180;
 			resto.distance = tmp.intValue();
 			if (StringUtils.isNotEmpty(resto.mobile)) {
-				List<Sms> findList = Sms.find.where().eq("resto.mobile", resto.mobile).orderBy("creationDate desc").findList();
-				resto.menudujour  = (findList.size() > 0 ? findList.get(0).text : null);
+				
+				List<Sms> findList = Sms.find.where().eq("resto.mobile", resto.mobile)
+						.orderBy("creationDate desc").findList();
+				
+				List<Sms> filteredSms = findList.stream().filter(u -> DateUtils.isSameDay(u.receptionDate, today)).collect(Collectors.toList());
+				
+				resto.menudujour  = (filteredSms.size() > 0 ? filteredSms.get(0).text : null);
 			}
 			restos.add(resto);
 		}
