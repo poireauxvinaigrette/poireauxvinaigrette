@@ -61,8 +61,13 @@ public class Oumanger extends Controller {
 				
 				List<Sms> findList = Sms.find.where().eq("resto.mobile", resto.mobile)
 						.orderBy("creationDate desc").findList();
-				
-				List<Sms> filteredSms = findList.stream().filter(u -> DateUtils.isSameDay(u.receptionDate, today)).collect(Collectors.toList());
+				List<Sms> filteredSms = new ArrayList<Sms>();
+				for (Sms sms : findList) {
+					if ( DateUtils.isSameDay(sms.receptionDate, today)) {
+						filteredSms.add(sms);
+					}
+				}
+//				List<Sms> filteredSms = findList.stream().filter(u -> DateUtils.isSameDay(u.receptionDate, today)).collect(Collectors.toList());
 				
 				resto.menudujour  = (filteredSms.size() > 0 ? filteredSms.get(0).text : null);
 			}
