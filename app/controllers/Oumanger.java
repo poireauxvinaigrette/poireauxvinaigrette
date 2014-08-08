@@ -3,25 +3,22 @@ package controllers;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
-
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.time.DateFormatUtils;
-import org.apache.commons.lang.time.DateUtils;
-import org.joda.time.DateTime;
 
 import models.GeoRestos;
 import models.Resto;
 import models.Sms;
+
+import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.time.DateUtils;
+
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+import views.html.restos.indexpv;
+import views.html.restos.map;
 
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.SqlRow;
-
-import views.html.restos.map;
-import views.html.restos.indexpv;
 
 public class Oumanger extends Controller {
 
