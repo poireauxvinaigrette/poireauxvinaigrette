@@ -42,32 +42,45 @@ public class GeoRestos {
 				GeoResto geoResto = georestos.new GeoResto();
 				geoResto.properties = new HashMap<String, String>();
 
-//				Field[] champs = Resto.class.getFields();
-//				for (Field field : champs) {
-//					String name = field.getName();
-//					if (field.get(resto) != null)
-//						geoResto.properties.put(name, field.get(resto).toString());
-//				}
-//				
-				String title;
+				// Field[] champs = Resto.class.getFields();
+				// for (Field field : champs) {
+				// String name = field.getName();
+				// if (field.get(resto) != null)
+				// geoResto.properties.put(name, field.get(resto).toString());
+				// }
+				//
+				String rs;
 				if (resto.internet != null) {
-					title = "<a target='_blank' class='popup' href='http://" + resto.internet + "'>"
-							+ resto.raisonSociale + "</a>";
+					rs = "<a target='_blank' class='popup' href='http://" + resto.internet + "'>" + resto.raisonSociale
+							+ "</a>";
 				} else {
-					title = resto.raisonSociale;
+					rs = resto.raisonSociale;
 				}
-				geoResto.properties.put("title", title);
+				geoResto.properties.put("title", StringUtils.defaultString(resto.menudujour));
 
-				String adresse = StringUtils.defaultString(resto.adresse) + "<br/>" +  StringUtils.defaultString(resto.codePostale) + " " +  StringUtils.defaultString(resto.commune) + "<br/>"
-						+ StringUtils.defaultString(resto.telephone);
-				geoResto.properties.put("description",  StringUtils.defaultString(resto.menudujour) + "<br/>" + adresse);
+				String adresse = "";
+				if (!StringUtils.isEmpty(resto.adresse))
+					adresse = resto.adresse;
+				if (!StringUtils.isEmpty(resto.codePostale))
+					adresse += "<br/>" + resto.codePostale;
+				if (!StringUtils.isEmpty(resto.commune))
+					adresse += " " + resto.commune;
+				if (!StringUtils.isEmpty(resto.telephone))
+					adresse += "<br/>" + resto.telephone;
 
+				geoResto.properties.put("description", "à " + resto.distance + "m : " + rs + "<br/>" + adresse);
+				
 				if (resto.menudujour != null) {
-					geoResto.properties.put("marker-symbol", "star");
+					geoResto.properties.put("marker-symbol", "restaurant");
 					geoResto.properties.put("marker-color", "#f44");
+					geoResto.properties.put("marker-allow-overlap", "false");
+					geoResto.properties.put("marker-size", "large");
+
 				} else {
-					geoResto.properties.put("marker-color", "#cff");
+					geoResto.properties.put("marker-symbol", "bar");
+					geoResto.properties.put("marker-color", "#fff");
 					geoResto.properties.put("marker-size", "small");
+					geoResto.properties.put("marker-allow-overlap", "true");
 				}
 				geoResto.geometry = geoResto.new GeoPoint(resto.latitude, resto.longitude);
 				georestos.features.add(geoResto);
@@ -78,7 +91,6 @@ public class GeoRestos {
 		}
 		return georestos;
 	}
-
 }
 
 /*

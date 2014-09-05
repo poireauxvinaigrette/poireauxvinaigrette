@@ -1,6 +1,7 @@
 package controllers;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -11,6 +12,7 @@ import models.Sms;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.time.DateUtils;
 
+import play.Logger;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -60,17 +62,21 @@ public class Oumanger extends Controller {
 						.orderBy("creationDate desc").findList();
 				List<Sms> filteredSms = new ArrayList<Sms>();
 				for (Sms sms : findList) {
+					Logger.debug(today + "check sms :"+ sms.messageId + " " + sms.receptionDate);
 					if ( DateUtils.isSameDay(sms.receptionDate, today)) {
+						Logger.debug("add sms :"+ sms.messageId + " " + sms.text);
 						filteredSms.add(sms);
 					}
 				}
-//				List<Sms> filteredSms = findList.stream().filter(u -> DateUtils.isSameDay(u.receptionDate, today)).collect(Collectors.toList());
+// java8	List<Sms> filteredSms = findList.stream().filter(u -> DateUtils.isSameDay(u.receptionDate, today)).collect(Collectors.toList());
 				
 				resto.menudujour  = (filteredSms.size() > 0 ? filteredSms.get(0).text : null);
 			}
 			restos.add(resto);
 		}
 
+		Collections.sort(restos);
+		//Collections.reverse(restos);
 		
 
 		if (format == null) {
@@ -78,6 +84,8 @@ public class Oumanger extends Controller {
 		} else if (format.equals("geojson")) {
 			GeoRestos georestos = GeoRestos.parse(restos);
 			return ok(Json.toJson(georestos));
+		} else if (format.equals("json")) {
+			return ok(Json.toJson(restos));
 		} else {
 			return notFound();
 		}

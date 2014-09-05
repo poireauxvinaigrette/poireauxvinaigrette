@@ -1,0 +1,493 @@
+id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;description;adresse;code_postale;commune;telephone;internet;fin
+31045;Chez Zoreille;;;43.5980208;1.4299942;restaurant;Réunionais;;5 Place Jean Diébold;31300;Toulouse;5;www;end
+31001;Le Chai Saint-Sauveur;;;43.5975482;1.4579757;restaurant;;; ;;;;;end
+31002;Les Folles Saisons;;;43.5784981;1.3910333;restaurant;;; ;;;;;end
+31003;La Flambée;;;43.6089866;1.379883;restaurant;;; ;;;;;end
+31004;Le Moulin de Toulouse;;;43.609284;1.3879098;restaurant;;; ;;;;;end
+31005;Les Brochettes;;;43.5950102;1.4218162;restaurant;;; ;;;;;end
+31006;Pizza Zio;;;43.5961883;1.4213992;restaurant;italian;; Avenue de Lombez;;Toulouse;;;end
+31007;Le Bristol;;;43.6114157;1.4520933;restaurant;;Hôtel - Café - Brasserie; ;;;;;end
+31008;La Clef des Champs;;;43.5824513;1.4639088;restaurant;;; ;;;;;end
+31009;La Belle Équipe;;;43.5978289;1.4432082;restaurant;;; ;;;;;end
+31010;L'Assiette Japon;;;43.600864;1.4407123;restaurant;japanese;; ;;;33561215091;http://www.assiette-japon.com/;end
+31011;La Cave au Cassoulet;;;43.6020508;1.4410597;restaurant;regional;; ;;;;;end
+31012;O Sushi Bar;;;43.6028477;1.441671;restaurant;japanese;; ;;;;;end
+31013;La Gouaille;;;43.5984095;1.4438498;restaurant;;; ;;;;;end
+31014;Baan Siam;;;43.5984055;1.4447266;restaurant;thai;; ;;;;;end
+31015;Émile;;;43.6022479;1.4472215;restaurant;;; ;;;;;end
+31016;Van Gogh;;;43.6018041;1.4480283;restaurant;;; ;;;;;end
+31017;Le Palais du Sourire;;;43.5790724;1.423828;restaurant;chinese;; ;;;;;end
+31018;La Romarine;;;43.5712783;1.4249448;restaurant;pizza;; ;;;;;end
+31019;Le Compans Café;;;43.6099745;1.4343971;restaurant;brasserie;; ;;;;;end
+31020;Café Italien;;;43.5976385;1.4442701;restaurant;italian;;9B Place des Carmes;;;;;end
+31021;Chinese;;;43.6084881;1.4562851;restaurant;;; ;;;;;end
+31022;Texas Café;;;43.6060042;1.4506051;restaurant;;;26 Rue Castellane;;;;;end
+31023;Chez Carmen;;;43.6005058;1.4286303;restaurant;meat;; ;;;;;end
+31024;Cinecita;;;43.604516;1.4487859;restaurant;;; ;;;;;end
+31025;Le Bon Vivre;;;43.6053082;1.4471994;restaurant;regional;; ;;;;;end
+31026;Bistrot de l'Etoile;;;43.6014759;1.4530607;restaurant;;; ;;;;;end
+31027;La Madeleine de Proust;;;43.6013391;1.4540134;restaurant;;; ;;;;;end
+31028;Fun Kebab;;;43.6055475;1.4587673;restaurant;kebab;; ;;;;;end
+31029;Pizza K;;;43.6052935;1.4581853;restaurant;pizza;; ;;;;;end
+31030;Le Phare Felu;;;43.6096838;1.4436461;restaurant;crepe;; ;;;;;end
+31031;Le Bla Bla;;;43.6098111;1.4433758;restaurant;;; ;;;;;end
+31032;Au bon manger;;;43.6031462;1.4563634;restaurant;french;; ;;;;;end
+31033;La Paniolade;;;43.6199311;1.4240702;restaurant;;; ;;;;;end
+31034;Chez Raymond;;;43.5979023;1.4295167;restaurant;;; ;;;;;end
+31035;L'Oncle Pom;;;43.6061963;1.4552164;restaurant;regional;; ;;;;;end
+31036;Atmosphère;;;43.6058813;1.4541352;restaurant;;; ;;;;;end
+31037;Chez Nous les Libanais;;;43.6020076;1.4406582;restaurant;lebanese;; ;;;;;end
+31038;Le Ver Luisant;;;43.6044929;1.4537445;restaurant;;; ;;;;;end
+31039;Mumtaj;;;43.6044608;1.4535158;restaurant;indian;; ;;;;;end
+31040;La Réserve;;;43.6021082;1.4408518;restaurant;;; ;;;;;end
+31041;Aux Délices du Liban;;;43.6062037;1.4541191;restaurant;;; ;;;;;end
+31042;Chez Jules;;;43.6061057;1.453415;restaurant;;; ;;;;;end
+31043;;;;43.6063871;1.455512;restaurant;;; ;;;;;end
+31044;Mille et une pâtes;;;43.5980072;1.429907;restaurant;;; ;;;;;end
+31046;La Pastasciutta;;;43.606307;1.4548914;restaurant;;; ;;;;;end
+31047;L'entre potes;;;43.6022951;1.4382982;restaurant;;; ;;;;;end
+31048;Le Capelou;;;43.6056532;1.4283488;restaurant;;; ;;;;;end
+31049;La Mécanique des Fluides;;;43.60722;1.4537334;restaurant;;; ;;;;;end
+31050;La Bouche Gourmande;;;43.5506323;1.4017498;restaurant;;; ;;;;;end
+31051;L'Emulation Nautique;;;43.5909526;1.4365773;restaurant;;; ;;;;;end
+31052;La Cantina;;;43.5976665;1.4314979;restaurant;;; ;;;;;end
+31053;Caffe Luce;;;43.5988974;1.4327583;restaurant;italian;; ;;;;;end
+31054;Kashmir;;;43.5988952;1.4331487;restaurant;indian;; ;;;;;end
+31055;L'Accessoire;;;43.596443;1.4328376;restaurant;regional;; ;;;;;end
+31056;L'envers du Décor;;;43.6025661;1.4376759;restaurant;;; ;;;;;end
+31057;Olaf;;;43.6023971;1.4380809;restaurant;;; ;;;;;end
+31058;L'assiette Rose;;;43.6023476;1.4381775;restaurant;;; ;;;;;end
+31059;L'Italien;;;43.6020728;1.4385717;restaurant;pizza;; ;;;;;end
+31060;4 Z'arts;;;43.6017756;1.439473;restaurant;french;; ;;;33561239177;http://www.restaurant-4zarts.com/;end
+31061;Fairy Chiks;;;43.6017892;1.4399102;restaurant;pancake;Salon de Thé - Crêperie; ;;;;;end
+31062;Le bistro de la Daurade;;;43.6018241;1.4400097;restaurant;;; ;;;33561136310;http://bistrodeladaurade.com/;end
+31063;Les Fondues de la Daurade;;;43.6018533;1.4400714;restaurant;;Salades Géantes - Grillades - Raclette à Volonté; ;;;33561120404;;end
+31064;Monsieur Tout Le Monde;;;43.6024958;1.4412894;restaurant;;; ;;;33561232011;;end
+31065;La Maison du Nems;;;43.6029079;1.4417926;restaurant;asian;; ;;;;;end
+31066;SushiYaki;;;43.6018041;1.4421762;restaurant;japanese;; ;;;;;end
+31067;Le Taj;;;43.6017352;1.440893;restaurant;indian;; ;;;33561218444;http://www.restaurant-taj.fr/;end
+31068;La Petite Gouaille;;;43.6016063;1.4408263;restaurant;;; ;;;;;end
+31069;Le Poisson Vagabond;;;43.6015494;1.4407998;restaurant;;; ;;;;;end
+31070;Le Solilesse;;;43.6013635;1.4407281;restaurant;french;; ;;;;http://www.solilesse.com;end
+31071;Le Shaman;;;43.6099445;1.4392299;restaurant;indian;; ;;;;;end
+31072;Le Mange-Tout;;;43.6091335;1.4390825;restaurant;regional;; ;;;;;end
+31073;La Gaîté!;;;43.609304;1.4387168;restaurant;french;; ;;;;http://www.la-gaite.com/;end
+31074;Mamie et les Ours;;;43.6091938;1.4389973;restaurant;regional;; ;;;33561215533;;end
+31075;Bois et Charbon;;;43.6047665;1.4547253;restaurant;;; ;;;;;end
+31076;Le Craquelin;;;43.5651774;1.3885337;restaurant;;; ;;;;;end
+31077;Tourneflam;;;43.5731679;1.3828753;restaurant;;; ;;;;;end
+31078;Metrhotel;;;43.5696541;1.389785;restaurant;;; ;;;;;end
+31079;Le Cri de la Truffe;;;43.5984964;1.4438251;restaurant;;; ;;;;;end
+31080;Le 7ième Ciel;;;43.5984924;1.443704;restaurant;;; ;;;;;end
+31081;Sazio;;;43.5984049;1.4429975;restaurant;;; ;;;;;end
+31082;La Maison du Cassoulet;;;43.6059585;1.4480901;restaurant;;; ;;;;;end
+31083;Hippopotamus;;;43.6058692;1.448176;restaurant;;; ;;;;;end
+31084;L'Épicurien;;;43.6006098;1.4514356;restaurant;;Restaurant - Salon de Thé; ;;;;;end
+31085;Epilogue;;;43.6006259;1.4513418;restaurant;french;; ;;;;http://www.epilogue-brasserie.fr/;end
+31086;La Grillée;;;43.6005225;1.4508244;restaurant;;; ;;;;;end
+31087;L'Aubrac;;;43.6044013;1.451322;restaurant;regional;; ;;;;;end
+31088;Le Kyoto;;;43.5702386;1.4553913;restaurant;;; ;;;;;end
+31089;Le Brennus;;;43.5747479;1.4515229;restaurant;french;; ;;;;;end
+31090;;;;43.5798874;1.4494288;restaurant;;; ;;;;;end
+31091;Le beaucoup;;;43.5998884;1.441016;restaurant;;; ;;;;;end
+31092;Brasserie des Beaux-Arts;;;43.5997607;1.4405802;restaurant;french;; ;;;;;end
+31093;Le Genty Magre;;;43.6015089;1.445231;restaurant;;; ;;;33561213860;http://www.legentymagre.com/;end
+31094;Le Fifteen;;;43.6108387;1.374142;restaurant;;; ;;;;;end
+31095;;;;43.5715122;1.3869742;restaurant;;; ;;;;;end
+31096;La Mounède;;;43.5729447;1.3795401;restaurant;;; ;;;;;end
+31097;Chez Fazoul;;;43.5984722;1.4472035;restaurant;regional;; ;;;;;end
+31098;Chez Navarre;;;43.5969182;1.447434;restaurant;regional;; ;;;;;end
+31099;Le Partage;;;43.5969773;1.4500841;restaurant;decoration;; ;;;;;end
+31100;O Saj;;;43.6030745;1.4418833;restaurant;;lebanese; ;;;;;end
+31101;Le Mangevins;;;43.5967134;1.4443878;restaurant;;; ;;;;;end
+31102;La Braisière;;;43.5965905;1.4443862;restaurant;;; ;;;;;end
+31103;Le Nez Rouge;;;43.5978881;1.4421515;restaurant;;; ;;;;;end
+31104;Le Petit Bacchus;;;43.5956092;1.4442186;restaurant;;; ;;;;;end
+31105;Restaurant Zio;;;43.5946975;1.4431769;restaurant;;; ;;;;;end
+31106;Tatie Danielle;;;43.5945342;1.4428044;restaurant;;; ;;;;;end
+31107;Casa Caruzo;;;43.5947728;1.4435862;restaurant;italian;; ;;;;;end
+31108;L'Avant-Scène;;;43.6002964;1.4351828;restaurant;;; ;;;;;end
+31109;Restaurant L'Hémicycle;;;43.6013523;1.4302415;restaurant;;; ;;;;;end
+31110;Le Chog Qing;;;43.605417;1.4539787;restaurant;chinese;; ;;;;;end
+31111;Le Looping;;;43.6053474;1.4555573;restaurant;hallal;; ;;;;;end
+31112;La Bonita;;;43.5902539;1.4456921;restaurant;;; ;;;;;end
+31113;Le Patio de la Table Ronde;;;43.6044193;1.4392158;restaurant;;; ;;;;;end
+31114;Au bon Graillou;;;43.6069329;1.4464512;restaurant;;; ;;;;;end
+31115;Le Louchebem;;;43.606762;1.4464804;restaurant;regional;; ;;;;;end
+31116;Le Magret;;;43.6065872;1.4465126;restaurant;regional;; ;;;;;end
+31117;Chez Attila;;;43.6064007;1.4465502;restaurant;;; ;;;;;end
+31118;L'Impériale;;;43.6061832;1.4466038;restaurant;;; ;;;;;end
+31119;Pizza Pino;;;43.605216;1.4469368;restaurant;pizza;; ;;;;;end
+31120;Brasserie Le Capoul;;;43.6050916;1.4468081;restaurant;;; ;;;;;end
+31121;Cafétéria Casino;;;43.5875374;1.4617408;restaurant;;; ;;;;;end
+31122;Saveur Bio;;;43.6037167;1.4495811;restaurant;;; ;;;;;end
+31123;Pena Tolosa;;;43.5982513;1.4442547;restaurant;regional;; ;;;;;end
+31124;Bat Bat;;;43.5981939;1.4442648;restaurant;asian;; ;;;;;end
+31125;La Mezzee;;;43.5980735;1.4442935;restaurant;turkish;; ;;;;;end
+31126;Bistro des Carmes;;;43.5980191;1.4441672;restaurant;french;; ;;;;;end
+31127;L'Inde;;;43.5983363;1.4442439;restaurant;indian;; ;;;;;end
+31128;;;;43.5659653;1.500208;restaurant;;; ;;;;;end
+31129;King Fat;;;43.5685798;1.4980939;restaurant;asian;; ;;;;;end
+31130;Le Bistrot de Thibaud;;;43.5450688;1.3973361;restaurant;;; ;;;;;end
+31131;Le Cardailhac;;;43.5975645;1.4483384;restaurant;;; ;;;;;end
+31132;Les Mascareignes;;;43.6191789;1.4368828;restaurant;Antillaise;; ;;;33561226012;http://www.lesmascareignes.fr/;end
+31133;L'Astrier;;;43.5694274;1.5034029;restaurant;;; ;;;;;end
+31134;Le 116;;;43.5664643;1.5002649;restaurant;;; ;;;;;end
+31135;Don Pancho;;;43.6133509;1.4380219;restaurant;spanish;;41 Avenue Honoré Serres;31000;;;;end
+31136;Le jardin de Chine;;;43.6132109;1.438061;restaurant;chinese;;39 bis Avenue Honoré Serres;31000;;;;end
+31137;Les Fous de Saint-Georges;;;43.6019798;1.4484439;restaurant;regional;; ;;;33561217870;;end
+31138;Saveurs Gourmandes;;;43.6156427;1.4217842;restaurant;;; ;;;;;end
+31139;Le May;;;43.6020311;1.4427434;restaurant;french;; ;;;33561239876;http://lemay-toulouse.fr/;end
+31140;Pastel et Sarrasin;;;43.6073647;1.4420024;restaurant;crepe;; ;;;33561239398;;end
+31141;Pizza Martine Saint-Exupéry;;;43.5871013;1.4619155;restaurant;pizza;;18;;;;;end
+31142;Le Midi à l'Impasse;;;43.5666828;1.4914391;restaurant;;; ;;;33561548912;;end
+31143;Café à la Une;;;43.6168025;1.4728119;restaurant;;;124 Rue Louis Plana;31500;Toulouse;;http://www.cafe-a-la-une.com/;end
+31144;Brasserie de la Dépêche;;;43.581782;1.3890624;restaurant;;; ;;;;;end
+31145;Addiction Pizza;;;43.6205488;1.4576845;restaurant;pizza;; ;;;;;end
+31146;JEM;;;43.5705002;1.4206254;restaurant;;; ;;;;http://www.jem-goodfood.fr/;end
+31147;Le Barrié;;;43.6081866;1.446374;restaurant;french;; ;;;;;end
+31148;Sodexo;;;43.5636751;1.3846993;restaurant;;; ;;;;;end
+31149;Le Sherpa;;;43.6066829;1.4424699;restaurant;pancake;; ;;;;;end
+31150;La Romantica;;;43.6337413;1.4330233;restaurant;italian;;11 bis Avenue de Fronton;31200;;;;end
+31151;Crêperie De La Colombette;;;43.6045168;1.4525584;restaurant;;;32 Rue de la Colombette;;;;;end
+31152;Pizzeria Vecchio;;;43.605792;1.449395;restaurant;;Pas de toilettes accessibles chaise roulante;22 Allée Jean Jaurès;;;;;end
+31153;Flunch;;;43.606036;1.449755;restaurant;french;; ;;;;;end
+31154;L'atelier 65;;;43.5970811;1.43109;restaurant;;; ;;;;;end
+31155;Le petit gerçois;;;43.5952306;1.4355533;restaurant;regional;; ;;;;;end
+31156;Le salon rouge;;;43.5655811;1.4055936;restaurant;chinese;; ;;;;;end
+31157;Chez Moi;;;43.596404;1.456781;restaurant;vietnamese;;28 rue port saint-sauveur;31000;;;http://www.chezmoi.fr/;end
+31158;L'afro;;;43.5978422;1.4579826;restaurant;international;;2 Ter Avenue Jean rieux;31500;;;;end
+31159;Flower's Café;;;43.6029609;1.4450986;restaurant;sandwich;;6 Place Roger Salengro;31000;;;;end
+31160;Restaurant CNRS;;;43.5566509;1.4634495;restaurant;;; ;;;;;end
+31161;Pat & Pizz;;;43.5966344;1.4732399;restaurant;pizza;; ;;;33561349880;http://www.patetpizz.fr;end
+31162;Le Bouchon Lyonnais ? Laurent Orsi;;;43.6051135;1.4510363;restaurant;french;; rue de l'industrie;;;;http://www.le-bouchon-lyonnais.com/;end
+31163;La Noria;;;43.6322669;1.4518055;restaurant;french;;24-26 Avenue Maurice Bourgès-Maunoury;31200;Toulouse;33951960918;lanoria-toulouse.fr;end
+31164;Oh Fada !;;;43.6157644;1.4740141;restaurant;pizza;; ;;;;http://www.pizzaohfada.fr/;end
+31165;Taverne de Brennus;;;43.6070968;1.4512769;restaurant;;;54 Allées Jean Jaurès;;;+33.5.62.73.16.16;www.tavernedebrennus.com;end
+31166;Michel SARRAN;;;43.607279;1.4346103;restaurant;french;;21 Boulevard Armand Duportal;31000;;;http://www.michel-sarran.com;end
+31167;La Mignardise;;alamignardise@aol.com;43.6203093;1.4360432;restaurant;french;; ;;;33561233147;http://www.restaurant-lamignardise.com;end
+31168;Le Menhir;;;43.6010907;1.4571487;restaurant;;; ;;;;;end
+31169;Le Metropolitan;;;43.5915562;1.4796983;restaurant;;; ;;;;;end
+31170;;;;43.5654948;1.5108699;restaurant;chinese;; ;;;;;end
+31171;Le Mauricia;;;43.5774804;1.4223697;restaurant;;;330 Route de Seysses;;;;;end
+31172;;;;43.5924621;1.4511361;restaurant;sandwich;; ;;;;;end
+31173;L'Entrecôte;;;43.6067064;1.447284;restaurant;french;; ;;;;http://www.entrecote.fr/french/bd-strasbourg-31000-toulouse,15,15,section,modules,contenu-mc.html;end
+31174;Classico Café;;;43.599079;1.4439734;restaurant;regional;; Rue des Filatiers;31000;;;http://www.classico-cafe.com;end
+31175;La Brasserie Chaubet;;;43.606544;1.4827871;restaurant;regional;;161;;;;http://www.brasserie-chaubet.fr/;end
+31176;Pizza Arlequin;;;43.597263;1.4269922;restaurant;pizza;;34;;;;;end
+31177;Soleil d'Angkor;;;43.59704;1.4257746;restaurant;chinese;;48;;;;;end
+31178;Le citron bleu;;;43.598816;1.4427994;restaurant;;; Rue des Paradoux;31000;Toulouse;;;end
+31179;Borriquito Loco;;;43.598816;1.4427383;restaurant;;;25;;;;;end
+31180;;;;43.62024;1.4572713;restaurant;asian;;109;;;;;end
+31181;;;;43.61807;1.4555861;restaurant;pizza;;44;;;;;end
+31182;Côté Garonne;;;43.5930123;1.443127;restaurant;french;; ;;;;;end
+31183;La Tosca;;;43.595293;1.4162535;restaurant;pizza;;74 Avenue de Lombez;;Toulouse;;;end
+31184;Le Fontaine Lestang;;;43.587204;1.4166833;restaurant;;;61;;;;;end
+31185;facefood pizza;;;43.604645;1.4300207;restaurant;pizza;;4 Allée du Niger;;;;www.facefoodpizza.fr;end
+31186;Bharati Palais;;;43.6168324;1.4368235;restaurant;indian;; ;;;;;end
+31187;Le bicoq;;;43.5992231;1.4428241;restaurant;;; ;;;;;end
+31188;;;;43.6407559;1.4629151;restaurant;;; ;;;;;end
+31189;Le fil à la Une;;;43.599521;1.440748;restaurant;french;;6 place du Pont Neuf;31000;;;http://www.filalaune.fr/;end
+31190;La Comida;;;43.6001368;1.4410149;restaurant;;Bar - Tapas; ;;;33534336119;http://www.lacomida.fr/;end
+31191;Le L;;;43.6013014;1.4419958;restaurant;;; ;;;33561216905;http://www.restaurantlel.fr/;end
+31192;La Faim des Haricots;;;43.6018768;1.4439259;restaurant;;; ;;;33561224925;http://www.lafaimdesharicots.fr/;end
+31193;El Chivito;;;43.60443;1.4395021;restaurant;latin_american;; ;;;;;end
+31194;Le Dragon D'Or;;;43.629468;1.4329217;restaurant;chinese;; ;;;;;end
+31195;Auberge du Tranchoir;;;43.6021532;1.4427155;restaurant;french;;1B rue du May;31000;;33561216657;http://www.letranchoir.fr/;end
+31196;Le Vauquelin;;;43.5837674;1.4017996;restaurant;;; Rue Nicolas-Louis Vauquelin;;Toulouse;;;end
+31197;La cuisine de Jean;;;43.5762972;1.4551901;restaurant;french;;18 avenue Albert Bedouce;31400;;;;end
+31198;Séoul;;;43.6044918;1.4387122;restaurant;asian;Restaurant Coréen; ;;;;;end
+31199;Au Coin de la Rue;;;43.6040144;1.4363264;restaurant;;; ;;;;;end
+31200;Cappadoce;;;43.6028259;1.4372653;restaurant;;; ;;;;;end
+31201;Le Bakassi;;;43.5950784;1.4433797;restaurant;afrique;; ;;;;;end
+31202;Les sales gosses;;;43.604773;1.4509467;restaurant;french;;7 Rue de l'Industrie;31000;;;;end
+31203;La Pagode;;;43.601964;1.4483558;restaurant;asian;; ;;;33561210878;;end
+31204;Le Cantou;;;43.6122724;1.3841489;restaurant;;; ;;;;;end
+31205;La Plage;;;43.5884811;1.4464097;restaurant;;; ;;;;;end
+31206;La belle chaurienne;;;43.6077285;1.4269331;restaurant;;; ;;;;;end
+31207;En Marge;;;43.597343;1.4473949;restaurant;french;; ;;;;;end
+31208;Chez Alessandro;;;43.6119171;1.4451825;restaurant;italian;;22 Rue de la Concorde;31000;;;;end
+31209;La Grand' Pizzeria;;;43.6049195;1.4502144;restaurant;italian;;4 rue Castellane;31000;;;;end
+31210;La Grignotière;;;43.5910751;1.4188983;restaurant;french;; ;;;;;end
+31211;Mon canard;;;43.6113364;1.437201;restaurant;regional;; ;;;33561213445;http://www.restaurantmoncanard.com;end
+31212;Cantine;;;43.6182358;1.4684876;restaurant;;; ;;;;;end
+31213;Bistro Crampel;;;43.5841757;1.4516115;restaurant;;; ;;;;;end
+31214;La Nouvelle Belgique;;;43.6015758;1.4576287;restaurant;;;21 Rue du Pont Guilhemery;31500;;;http://www.la-nouvelle-belgique-31.com/;end
+31215;Le King;;;43.5748584;1.4514837;restaurant;vietnamese;; ;;;;;end
+31216;Pizzéria Belfort;;;43.6088773;1.4505584;restaurant;;; ;;;;;end
+31217;L'extrapade;;;43.5988847;1.4329669;restaurant;fish;; ;;;;;end
+31218;Le plaisir à la toque;;;43.6021645;1.4383402;restaurant;;; ;;;;;end
+31219;Sushi Kan;;;43.5824056;1.4489063;restaurant;japanese;; ;;;;;end
+31220;Les Quatre Saisons;;;43.5833149;1.4485576;restaurant;chinese;; ;;;;;end
+31221;Restaurant Universitaire;;;43.6021608;1.4557372;restaurant;;; ;;;;;end
+31222;Toulouse Croisières;;;43.6100962;1.4532694;restaurant;;; ;;;;;end
+31223;L'Accolade;;;43.5952336;1.443282;restaurant;;; ;;;;;end
+31224;Espace Vital;;;43.6124399;1.3781898;restaurant;;; ;;;;;end
+31225;La Mémoire;;;43.6117299;1.437673;restaurant;;; ;;;;;end
+31226;Naraï Thaï;;;43.609215;1.4327914;restaurant;;; ;;;;;end
+31227;Papagayo;;;43.6060266;1.4388987;restaurant;french;;31 Rue Deville;31000;;;;end
+31228;Au Buron;;;43.6078149;1.4385685;restaurant;regional;; ;;;33561221465;;end
+31229;El Fassia;;;43.6061126;1.4415331;restaurant;arab;; ;;;33534449191;http://restaurant-elfassia.com/;end
+31230;Emile's Pizza;;;43.6074938;1.4402962;restaurant;pizza;; ;;;;;end
+31231;Le Galuchat;;;43.6069865;1.4401314;restaurant;pancake;; ;;;;;end
+31232;Midi Minuit;;;43.6075185;1.4397499;restaurant;;; ;;;33561218070;https://fr-fr.facebook.com/midiminuittoulouse;end
+31233;Le Saint-Sauvage;;;43.6079153;1.4387215;restaurant;regional;; ;;;33561235686;;end
+31234;Le Temps des Tartines;;;43.606148;1.4409458;restaurant;french;; ;;;33534259828;;end
+31235;Mak Thaï;;;43.6074982;1.4403639;restaurant;thai;; ;;;;;end
+31236;La coupole;;;43.6002532;1.4539682;restaurant;;;6 Place Dominique Martin Dupuy;31000;;;;end
+31237;Domino's Pizza;;;43.6003366;1.4526862;restaurant;pizza;;37 rue des frères Lion;31000;;;http://www.dominos.fr;end
+31238;Le Goût en Train;;;43.6056709;1.4461106;restaurant;;; ;;;;;end
+31239;L'amour a pizza;;;43.5970433;1.4219923;restaurant;pizza;; ;;;;;end
+31240;La pente douce;;;43.5969441;1.421625;restaurant;regional;; ;;;;;end
+31241;La Tantina de la Playa;;;43.5859323;1.4653291;restaurant;regional;; ;;;;;end
+31242;Le rose bonbon;;;43.6046696;1.4506051;restaurant;french;;6 Bis  Impasse Colombette;31000;;;;end
+31243;Le télégramme;;;43.6056272;1.4496086;restaurant;regional;; ;;;;;end
+31244;Brasserie du Fauboug Saint-Simon;;;43.5628242;1.3720386;restaurant;;; ;;;;;end
+31245;7 Place Saint-Sernin;;;43.6088428;1.4415621;restaurant;regional;; ;;;;http://www.7placesaintsernin.com;end
+31246;Al Paìs;;;43.6088155;1.3796539;restaurant;french;;174;;;;;end
+31247;Le Pyrénéen;;;43.6053092;1.44846;restaurant;;;14 allée du Président Roosevelt;31000;;;www.lepyreneen.com;end
+31248;Eau de Folles;;;43.6053299;1.4484721;restaurant;french;;14 allée du Président Roosevelt;31000;;;;end
+31249;Chez Shun;;;43.6068358;1.4518161;restaurant;japanese;;33;;;33561993920;;end
+31250;Seng Kuon;;;43.5964756;1.4241508;restaurant;chinese;;67 Avenue Etienne Billières;31300;;;;end
+31251;La Grange;;;43.6281601;1.4111864;restaurant;;; ;;;;;end
+31252;Le Bulle;;;43.6055021;1.4463199;restaurant;french;; ;;;;;end
+31253;Le Bistrot des Halles;;;43.5974399;1.430458;restaurant;french;;17 Place Roguet;31300;;;;end
+31254;M03 Restaurant GALAXY;;;43.6104516;1.3666363;restaurant;;; ;;;;;end
+31255;M04 Beluga;;;43.6118788;1.369981;restaurant;;; ;;;;;end
+31256;Non lá;;;43.5776597;1.4507108;restaurant;;; ;;;;;end
+31257;Le Barbu;;;43.6009563;1.4416687;restaurant;french;;9 Rue Clémence Isaure;;;33561219662;http://lebarbu.jimdo.com/;end
+31258;Le Pic;;;43.5718557;1.4238873;restaurant;;; ;;;;;end
+31259;La crèperie;;;43.6019219;1.4444596;restaurant;pancake;; ;;;33561122352;http://www.lacreperietoulouse.com;end
+31260;Aux délices du Cap Vert;;;43.6149939;1.4517779;restaurant; portuguese  african  cap vert;;21 Avenue de Lyon;;;;;end
+31261;Rôtisserie des Carmes;;;43.5978962;1.4439122;restaurant;regional;; ;;;;;end
+31262;Pizzetta di Roma;;;43.6014013;1.4448096;restaurant;pizza;; ;;;33561235865;www.pizzettadiroma.com;end
+31263;Bapz;;;43.6006049;1.4423688;restaurant;coffee_shop;;13 Rue de la Bourse;31000;;;;end
+31264;La Maison de la Pizza;;;43.5812167;1.4493358;restaurant;pizza;; ;;;33561143539;;end
+31265;Les 2 Soeurs Hoang;;;43.590628;1.4451851;restaurant;asian;; ;;;;;end
+31266;Restaurant Bio-Veg;;;43.5911047;1.4449772;restaurant;;; ;;;;;end
+31267;Kilin;;;43.5873309;1.4468694;restaurant;;; ;;;;;end
+31268;La Dolce Vita;;;43.5879759;1.4463329;restaurant;;; ;;;;;end
+31269;Une Belle Aurore;;;43.5886364;1.4460754;restaurant;;; ;;;;;end
+31270;Yaki Zakana;;;43.589126;1.4461613;restaurant;;; ;;;;;end
+31271;Le Sud d'Asie;;;43.5897244;1.4459252;restaurant;;; ;;;;;end
+31272;Pizza l'Alexandra;;;43.589872;1.4458394;restaurant;;; ;;;;;end
+31273;Le Santal;;;43.5914572;1.4448094;restaurant;;; ;;;;;end
+31274;La Pizzathèque;;;43.591667;1.4447236;restaurant;;; ;;;;;end
+31275;Izakaya Sushi;;;43.5929958;1.445775;restaurant;;; ;;;;;end
+31276;Underbar;;;43.6019234;1.4427924;restaurant;;Bar à Tapas & Restaurant; ;;;33534338764;http://underbar.fr/;end
+31277;La Table d'Ariane;;;43.559789;1.4956421;restaurant;;; ;;;;;end
+31278;Burger' N'Co;;;43.6011291;1.4541189;restaurant;burger;; Rue Pierre Paul Riquet;31000;Toulouse;567687406;http://www.burger-toulouse.fr/;end
+31279;Chez Moustache;;;43.6420277;1.4301259;restaurant;french;; ;;;;;end
+31280;L'air de Famille;;;43.6066403;1.4470187;restaurant;french;; ;;;;http://www.lairdefamille-restaurant.com;end
+31281;;;;43.626396;1.433512;restaurant;;; ;;;33561578854;;end
+31282;La Famiglia;;;43.5960221;1.419257;restaurant;pizza;; Barrière de Lombez;;Toulouse;;;end
+31283;Le Petit Creux;;;43.5960058;1.4191623;restaurant;;; Barrière de Lombez;;Toulouse;;;end
+31284;Chez Ferdinand;;;43.6014263;1.4536983;restaurant;;; ;;;;;end
+31285;Les Jardins de l'Olympe;;;43.6258563;1.4025418;restaurant;;; ;;;;;end
+31286;;;;43.6201396;1.4361672;restaurant;;; ;;;;;end
+31287;;;;43.6207647;1.4354054;restaurant;;; ;;;;;end
+31288;au Peilharote;;;43.6024279;1.4377391;restaurant;french;;23 Rue des Blanchers;;;;http://peilharote.fr;end
+31289;La Pergola;;contact@lacompagniedespergos.fr;43.5902811;1.3790474;restaurant;regional;; Avenue de Lardenne;;Toulouse;33561492910;http://lacompagniedespergos.fr/;end
+31290;La Réunion Gourmande;;;43.5896777;1.4200902;restaurant;;; ;;;;;end
+31291;La Roulotte;;;43.6014692;1.4407702;restaurant;french;;40B Rue Peyrolières;31000;;;http://www.laroulotte-toulouse.fr/;end
+31292;La Bascule du Chevillard;;;43.5927705;1.4431787;restaurant;;; ;;;;;end
+31293;Soleil d'Istanbul;;;43.587937;1.4239526;restaurant;;; ;;;;;end
+31294;Le Bistrot Éric;;;43.6009403;1.4568188;restaurant;;; ;;;;;end
+31295;Dolce Vita;;;43.6014038;1.4570522;restaurant;italian;; ;;;;;end
+31296;Pizza Pizza;;;43.6093354;1.4467135;restaurant;pizza;; ;;;;;end
+31297;Le Bistrot de Julie;;;43.5923198;1.4438438;restaurant;;; ;;;;;end
+31298;Gayat Nova;;;43.5785076;1.4503846;restaurant;;; ;;;;;end
+31299;La table de William;;;43.578046;1.4540766;restaurant;french;;14 rue Erasme;31400;;;http://latabledewilliam.over-blog.com/;end
+31300;L'Atelier de l'Écharpe;;;43.6002622;1.441469;restaurant;;; ;;;;;end
+31301;Le Katana;;;43.5989126;1.4415961;restaurant;japanese;; ;;;;;end
+31302;Le Renfort du Palais;;;43.5937185;1.4438224;restaurant;;; ;;;;;end
+31303;Le Rital;;;43.5568761;1.4821175;restaurant;sandwich;; ;;;;;end
+31304;Yard;;;43.6064361;1.4423902;restaurant;burger;; ;;;;https://www.facebook.com/yardlaburgerfactory;end
+31305;Le Gallus;;;43.6060623;1.4424687;restaurant;pancake;; ;;;;;end
+31306;Pizza Angelo;;;43.6058367;1.4425344;restaurant;pizza;; ;;;;;end
+31307;Small Hanoi;;;43.6068275;1.4424033;restaurant;vietnamese;; ;;;;;end
+31308;Van Lôc;;;43.6062773;1.4424215;restaurant;vietnamese;; ;;;;;end
+31309;La Locanda;;;43.6052908;1.44383;restaurant;;; ;;;;;end
+31310;Les Polissons;;;43.6071241;1.4450382;restaurant;;Restaurant  Bar  Brasserie; ;;;;;end
+31311;Pizzeria Bambino;;;43.6073076;1.445076;restaurant;pizza;; ;;;;;end
+31312;La Bohème;;;43.6051187;1.4441016;restaurant;regional;; ;;;33561232418;http://www.la-boheme-toulouse.com/;end
+31313;Le Café Parisien;;;43.6077843;1.446089;restaurant;;; ;;;;;end
+31314;Hinodé;;;43.6064929;1.4473357;restaurant;asian;; ;;;;;end
+31315;Japoyaki;;;43.6061007;1.4473235;restaurant;japanese;; ;;;;;end
+31316;Japoyaki;;;43.6062039;1.4475445;restaurant;japanese;; ;;;;;end
+31317;La Gourmandine;;;43.60586;1.4463023;restaurant;;; ;;;;;end
+31318;La Perdrix;;;43.6072813;1.446677;restaurant;;; ;;;;;end
+31319;La Petite Italie;;;43.6063221;1.4475438;restaurant;italian;; ;;;;;end
+31320;La Villa Tropezienne;;;43.6060985;1.4471341;restaurant;;; ;;;;;end
+31321;Le Carpaccio;;;43.6074748;1.4464932;restaurant;;; ;;;;;end
+31322;Le Cornet à Fondue;;;43.6068553;1.4471458;restaurant;cheese;La Fondue de la Plancha; ;;;;;end
+31323;Pategrain;;;43.6063723;1.447325;restaurant;;; ;;;;;end
+31324;au petit cornet;;;43.6068858;1.4471067;restaurant;pancake;Creperie - Glacier; ;;;;;end
+31325;Asia Village;;;43.6081999;1.4468337;restaurant;asian;; ;;;;http://www.asiavillage.fr;end
+31326;Chez Jeannot;;;43.6082686;1.4464638;restaurant;seafood;; ;;;;http://chezjeannot.fr;end
+31327;La Meunière;;;43.6111842;1.4518064;restaurant;;; ;;;;;end
+31328;La Piazza PaPa;;;43.6076893;1.4469723;restaurant;italian;; ;;;;http://www.lapiazzapapa.fr/;end
+31329;Le Colombier;;;43.6086274;1.4475845;restaurant;;; ;;;;;end
+31330;Le Toulouse;;;43.6110537;1.4515812;restaurant;pizza;; ;;;;;end
+31331;Le Winger;;;43.6108308;1.4515864;restaurant;;Restaurant - Brasserie; ;;;;;end
+31332;Meet The Meat;;;43.6072975;1.4473825;restaurant;french;; ;;;;http://www.meetthemeat.fr/;end
+31333;Pasta Pizza & Compagnie;;;43.6110804;1.4520705;restaurant;;; ;;;;;end
+31334;Petite Marie;;;43.6089603;1.4481635;restaurant;french;; ;;;;;end
+31335;Quand les moules auront des dents;;;43.6069811;1.447693;restaurant;seafood;; ;;;;http://www.quandlesmoulesaurontdesdents.fr/;end
+31336;Sakyraya;;;43.608228;1.4469005;restaurant;japanese;; ;;;;http://www.sakuraya.fr/;end
+31337;Yakiniku;;;43.607056;1.4476319;restaurant;japanese;; ;;;;http://www.yakiniku-toulouse.fr/;end
+31338;Delhi Spicee...;;;43.6043005;1.4376829;restaurant;indian;; ;;;33582758035;;end
+31339;Grain de Sésame;;;43.6043156;1.4382151;restaurant;;; ;;;33561227546;;end
+31340;Solides;;;43.6043962;1.4387149;restaurant;french;; ;;;;http://www.solides.fr/;end
+31341;Ô Vestiaire !;;;43.6038703;1.4363285;restaurant;;; ;;;;;end
+31342;Pizza Marzano;;;43.6041788;1.4427683;restaurant;;; ;;;;http://www.leparadisdufruit.fr/;end
+31343;Le Père Léon;;;43.6005821;1.4438999;restaurant;;; ;;;33561217039;http://pere-leon.com/;end
+31344;Les Arcades;;;43.6045477;1.4426837;restaurant;;Brasserie; ;;;;http://brasserie-arcades.com;end
+31345;Les Ténors;;;43.6040831;1.4427886;restaurant;french;Café - Bar - Brasserie; ;;;;http://www.lestenors.fr;end
+31346;Tandoori House;;;43.6022381;1.4434672;restaurant;;; ;;;33561123376;http://www.tandoorihouse.fr/;end
+31347;Le Rembrandt;;;43.6029188;1.4439728;restaurant;;; ;;;;http://www.lerembrandt-tlse.fr/;end
+31348;L'Astragale;;;43.6009342;1.4406818;restaurant;french;; ;;;33561218557;http://restaurantlastragale.com/;end
+31349;La Cantiqe du Quartier;;;43.5988382;1.4454541;restaurant;;; ;;;;;end
+31350;La Cendrée;;;43.5998656;1.4452018;restaurant;regional;; ;;;;http://www.lacendree.com/;end
+31351;Le Grand Patio;;;43.6036763;1.4426685;restaurant;french;; ;;;;;end
+31352;Le Maharaja;;;43.6016474;1.4408393;restaurant;indian;; ;;;33534305012;http://www.maharajatoulouse.fr/;end
+31353;Le Peyrolières;;;43.6000745;1.4410453;restaurant;regional;; ;;;33561234629;http://www.lepeyrolieres.fr/;end
+31354;Le Picotin;;;43.5951941;1.4443383;restaurant;french;; ;;;33561524454;http://www.lepicotin.fr;end
+31355;Les Frères Fourchettes;;;43.5963363;1.4457291;restaurant;french;; ;;;33581349226;;end
+31356;Les Jardins de l'Opéra;;;43.6034782;1.4442589;restaurant;;; ;;;;http://www.lesjardinsdelopera.fr;end
+31357;Yoshi;;;43.6006276;1.4455006;restaurant;japanese;; ;;;;;end
+31358;La Table à Jules;;;43.6110035;1.438737;restaurant;french;; ;;;33561218738;;end
+31359;Boli Cafe;;;43.6034838;1.4421463;restaurant;korean;Restaurant - Café; ;;;;;end
+31360;Le Semiramis;;;43.6008538;1.4405713;restaurant;lebanese;; ;;;;;end
+31361;Mille et une Pâtes;;;43.6034627;1.4418778;restaurant;pasta;; ;;;;http://www.1001-pates.com/;end
+31362;Raj Mahal;;;43.6003666;1.4407959;restaurant;indian;Curry, tandori et nan; ;;;33561213662;;end
+31363;L'Embarcadère;;;43.6005249;1.4424009;restaurant;pancake;Crêperie - Saladerie; ;;;;;end
+31364;Mare e Monti;;;43.6017871;1.4427918;restaurant;italian;; ;;;33561221616;;end
+31365;Paradise Café;;;43.599633;1.4452403;restaurant;;Lb Brasserie du PARADISE Café - Pizzeria J.C.E.; ;;;;;end
+31366;;;;43.6028811;1.4421133;restaurant;italian;; ;;;;http://restaurantlatraviata-toulouse.com/;end
+31367;Bangkok;;;43.6036113;1.4502836;restaurant;asian;; ;;;;;end
+31368;Byblos;;;43.6043798;1.4470986;restaurant;;Café - Restaurant - Brasserie; ;;;;;end
+31369;La Belle Verte;;;43.6029505;1.453813;restaurant;;Restaurant bio - Salon de thé - Traiteur; ;;;33561627342;http://labellevertebio.com/;end
+31370;Le Saint-Georges;;;43.6036011;1.4518204;restaurant;grill;Grillades; ;;;;;end
+31371;;;;43.6074988;1.4396846;restaurant;asian;; ;;;33561622269;;end
+31372;La Belle Saison;;;43.6018667;1.4440967;restaurant;maroccan;; ;;;33561232687;;end
+31373;Le Petit Rajasthan;;;43.6024307;1.4438798;restaurant;indian;; ;;;33561237734;;end
+31374;Le bruit qui court...;;;43.6021368;1.4405752;restaurant;;; ;;;33561236838;http://www.lebruitquicourt.eu/;end
+31375;Le Coq Hardi;;;43.6022329;1.4442298;restaurant;french;; ;;;33561216101;http://www.lecoqhardi-toulouse.com/;end
+31376;Restaurant Seniors;;;43.6017366;1.4396706;restaurant;;; ;;;;http://www.toulouse.fr/web/social/seniors-a-toulouse/restaurants-seniors-et-foyers-restaurants;end
+31377;Zen-Saï;;;43.6017724;1.4402361;restaurant;japanese;Fusion food; ;;;;;end
+31378;Au Gascon;;;43.6041874;1.4415887;restaurant;french;; ;;;33561216716;http://www.augascon.fr/;end
+31379;Benjamin;;;43.6030066;1.4427844;restaurant;french;; ;;;;;end
+31380;Bombay;;;43.6030981;1.4430604;restaurant;indian;; ;;;;;end
+31381;Café Lily;;;43.6015141;1.4441712;restaurant;regional;Restaurant - Salon de Thé; ;;;;;end
+31382;Caminito;;;43.6031014;1.44233;restaurant;argentinian;Empanadas Argentinas; ;;;;;end
+31383;La Côte de Boeuf;;;43.6029371;1.4427576;restaurant;french;; ;;;;;end
+31384;La Mare Aux Canards;;;43.6029466;1.4429008;restaurant;french;; ;;;33561238158;http://www.mare-aux-canards.com/;end
+31385;La Rajasthani;;;43.6029525;1.4426;restaurant;indian;; ;;;;;end
+31386;Le Rajasthan;;;43.6030583;1.4431696;restaurant;indian;; ;;;;;end
+31387;Les Baguettes;;;43.6027525;1.444105;restaurant;chinese;Cuisine Chinoise et Cambodgienne; ;;;33561236380;;end
+31388;Le Troquet;;;43.6019515;1.4447133;restaurant;;Bar à Viandes; ;;;33561216083;http://le-troquet-toulouse.fr/;end
+31389;Lo Specchio;;;43.6013204;1.4451211;restaurant;italian;; ;;;33561381940;http://www.restaurant-lospecchio-toulouse.fr/;end
+31390;Mon Canard;;;43.604413;1.4367835;restaurant;regional;; ;;;;http://www.restaurantmoncanard.com;end
+31391;The Winter Garden;;;43.6030077;1.4423476;restaurant;french;; ;;;33561214597;http://thewintergarden.fr/;end
+31392;Gusto Café;;;43.601538;1.4429106;restaurant;mediterranean;; ;;;;;end
+31393;Le Monica;;;43.601342;1.441008;restaurant;indian;; ;;;;;end
+31394;Café Koss;;;43.6020633;1.4481199;restaurant;;Restaurant Tapas; ;;;;;end
+31395;Crêperie Saint-Georges;;;43.6019159;1.4473292;restaurant;pancake;; ;;;;;end
+31396;Le Miroir;;;43.6021902;1.4472082;restaurant;;; ;;;;;end
+31397;Monsieur Georges;;;43.6018581;1.4481201;restaurant;french;; ;;;;http://www.monsieurgeorges.fr/;end
+31398;Pizzeria de l'Opéra;;;43.6023816;1.4475065;restaurant;pizza;; ;;;;;end
+31399;L'oignon vert;;;43.6069496;1.4493097;restaurant;;;2 Rue Dalayrac;31000;Toulouse;;;end
+31400;In Bocca Al Lupo;;;43.6097515;1.4466544;restaurant;italian;;2 Rue Matabiau;31000;Toulouse;;;end
+31401;Le Goût des Autres;;;43.6010897;1.4538961;restaurant;regional;; ;;;;;end
+31402;Crêperie Saint-Georges;;;43.6021229;1.4471802;restaurant;pancake;; ;;;;;end
+31403;La Compagnie Française;;;43.6079494;1.4458548;restaurant;italian;; ;;;;https://www.facebook.com/ciefrancaise;end
+31404;Aux Pieds Sous La Table;;;43.6096207;1.4392415;restaurant;french;; ;;;;http://www.aux-pieds-sous-la-table.com/;end
+31405;D'ici et D'Ailleurs;;;43.6100764;1.4392309;restaurant;;; ;;;;https://www.facebook.com/dicietdailleurstoulouse;end
+31406;L'Esquinade;;;43.6092771;1.4392123;restaurant;tapas;; ;;;33561121272;http://www.lesquinade.fr/toulouse-tapas-acces.html;end
+31407;L'Oriental;;;43.6106862;1.4395101;restaurant;moroccan;; ;;;;http://www.lorientalrestaurant.fr/;end
+31408;La Kasbah;;;43.6094022;1.439448;restaurant;couscous;; ;;;;http://www.lakasbah.fr/;end
+31409;Le Marrakech;;;43.6110779;1.4391669;restaurant;moroccan;; ;;;33561238252;http://www.restaurant-toulouse-marrakech.fr/;end
+31410;Le Shahrazade;;;43.6109149;1.4392905;restaurant;moroccan;; ;;;;;end
+31411;Yoko Sushi;;;43.610621;1.4346774;restaurant;japanese;; ;;;;;end
+31412;Chez les filles;;;43.5704284;1.4198655;restaurant;;; ;;;;;end
+31413;Pizz'Art;;;43.6224679;1.4586;restaurant;pizza;; ;;;;http://pizz-art.net/;end
+31414;Pachinee Thaï Street Food;;;43.6081079;1.4490726;restaurant;Asian;;23 Rue Denfert-Rochereau;31000;Toulouse;33781419779;https://www.facebook.com/Pachinee.Thai.Street.Food;end
+31415;LEE IN;;;43.584352;1.3763231;restaurant;Coréen;;4 Allée du Docteur Lejzer Ludwik Zamenhof;31100;Toulouse;;;end
+31416;La Sandia;;;43.6048318;1.4523941;restaurant;mexican;;8 Rue Palaprat;31000;Toulouse;33561631923;;end
+31417;Bistrot Le Grain de Sel;;;43.6180354;1.4368493;restaurant;;;;;;;;end
+31418;El nuevo barrio latino;;;43.5853001;1.4286537;restaurant;;;144 Avenue de Muret;31300;Toulouse;;;end
+31419;Le Bouteillon;;;43.5982394;1.4334897;restaurant;;;;;;;;end
+31420;Italian's Pizza;;;43.5845341;1.3765;restaurant;italian;; Allée du Docteur Ludwik Lejzer Zamenhof;;Toulouse;;;end
+31421;Le Lynga;;;43.5929289;1.4033871;restaurant;chinese;; Avenue de Lardenne;;Toulouse;;;end
+31422;Les 4 petits cochons;;;43.5922292;1.3975685;restaurant;;; Avenue de Lardenne;;Toulouse;;;end
+31423;Aux 3 Elephants;;;43.5904143;1.3807275;restaurant;Chinese;; Avenue de Lardenne;;Toulouse;;;end
+31424;La Pelouse Interdite;;;43.6306461;1.4325008;restaurant;;;;;;;;end
+31425;Restaurant de l'Ayguette;;;43.5865119;1.3946992;restaurant;;; Chemin de la Fronde;;Toulouse;;;end
+31426;Señor Taco;;;43.6062433;1.4508597;restaurant;mexican;;22 Rue des Sept Troubadours;31000;Toulouse;33534438113;www.senor-taco.fr;end
+31427;Les Trois Continents;;;43.6082397;1.4501578;restaurant;international;;24 Rue Héliot;31000;;;www.bar-restaurant-trois-continents.fr;end
+31428;PY-R;;;43.5995125;1.4410721;restaurant;Gastronomique;;19 Descente de la Halle Aux Poissons;31000;Toulouse;;http://www.py-r.com/;end
+31429;Motchiya;;;43.6049421;1.4523572;restaurant;japanese;;10 Rue Palaprat;31000;Toulouse;33954704739;http://motchiya.blogspot.fr/;end
+31430;Les Etoiles d'Asie;;;43.5670485;1.3926469;restaurant;Chinoise;; Avenue du Mirail;;Toulouse;;;end
+31431;Les Jardins de la Cépière;;;43.5920675;1.4046933;restaurant;;; Chemin des Courses;;Toulouse;;;end
+31432;Le Lusse;;;43.5910155;1.4024852;restaurant;;; Chemin des Courses;;Toulouse;;;end
+31433;L'Essentiel;;;43.6090853;1.3806676;restaurant;french;;;;;;;end
+31434;La Vallée du Mékong;;;43.6083294;1.3790654;restaurant;vietnam;;;;;;;end
+31435;Le Progrès;;;43.608455;1.379309;restaurant;french;;;;;33561492275;;end
+31436;;;;43.6081806;1.3824019;restaurant;;;;;;;;end
+31437;;;;43.6082012;1.3833892;restaurant;;;;;;;;end
+31438;Kimato Sushi;;;43.6077285;1.3957192;restaurant;japanese;;;;;;;end
+31439;Le Ksar;;;43.597137;1.4477916;restaurant;mediterranean;;;;;33561537220;;end
+31440;Crêperie Cornouailles;;;43.608867;1.4416748;restaurant;pancake;;;;;;http://cornouailles.free.fr/;end
+31441;La pizzathèque;;;43.596641;1.4223881;restaurant;pizza;;3 Avenue de Grande Bretagne;31300;Toulouse;534504000;http://www.lapizzatheque.fr;end
+31442;Flunch;;;43.6318559;1.4862685;restaurant;french;;;;;;;end
+31443;Café Laurent;;;43.6044557;1.4493364;restaurant;;;;;;;;end
+31444;Chez Elle;;;43.6034966;1.4492129;restaurant;;;;;;;;end
+31445;El Pescador;;;43.6047419;1.4489242;restaurant;;;;;;33562275999;;end
+31446;JEM;;;43.6030423;1.449127;restaurant;;;;;;;http://www.jem-goodfood.fr/;end
+31447;La Marée Gourmande;;;43.6035019;1.449436;restaurant;seafood;;;;;;;end
+31448;Rotisserie Margo;;;43.6034962;1.4490925;restaurant;;;;;;;;end
+31449;10;;;43.6046277;1.4488791;restaurant;;Poissons - Viandes;;;;33562275999;;end
+31450;La Pref;;;43.6002843;1.4495414;restaurant;;;;;;;;end
+31451;;;;43.6022768;1.4508762;restaurant;;;;;;;;end
+31452;Le Café du Soleil;;;43.6089771;1.4456;restaurant;;;;;;;http://www.le-cafe-du-soleil-toulouse.com/;end
+31453;Le Muang Thaï;;;43.5907374;1.4445352;restaurant;thai;;;;;;;end
+31454;La Milonga;;;43.61983;1.4361944;restaurant;argentin;;76 Avenue des Minimes;31200;Toulouse;;;end
+31455;Le Boulis;;;43.6248807;1.4430336;restaurant;;;142 Rue de Négreneys;31200;Toulouse;33561574212;;end
+31456;RU 1;;;43.5622178;1.463217;restaurant;;;;;;;;end
+31457;RU 2;;;43.5609651;1.4719697;restaurant;;;;;;;;end
+31458;RU3;;;43.5632388;1.4592427;restaurant;;;;;;;;end
+31459;Upsidum;;;43.5633415;1.4646406;restaurant;;;;;;;;end
+31460;INSA restaurant universitaire;;;43.570028;1.4688129;restaurant;;;;;;;;end
+31461;Le Cardito;;;43.578881;1.4831875;restaurant;italian;;;;;;;end
+31462;Casino-Théâtre Barrière;;;43.5720157;1.4341855;restaurant;;;18 Chemin de la Loge;31400;Toulouse;;;end
+31463;O Pas Sage;;;43.5794932;1.4813528;restaurant;international;;258 Avenue Saint-Exupéry;31400;;;http://www.opassage.fr;end
+31464;L'herbe tendre;;;43.5995371;1.442446;restaurant;;;;;;;;end
+31465;py-r;;;43.5986535;1.4426241;restaurant;;;;;;;;end
+31466;L'Évidence;;;43.5766976;1.4868321;restaurant;regional;;;;;;;end
+31467;Restaurant Universitaire de l'Arsenal;;;43.6056933;1.4360036;restaurant;;;;;;;;end
+31468;;;;43.5687225;1.4739117;restaurant;;;;;;;;end
+31469;Le Sous-Bock;;;43.5741759;1.4911428;restaurant;french;;;;;;;end
+31470;La Villa Des Oliviers;;;43.5843322;1.4917404;restaurant;italian;;;;;;;end
+31471;Brasserie de l'Ormeau;;;43.5789405;1.4843425;restaurant;french;;;;;;;end
+31472;Les p'tits fayots;;;43.6063454;1.4419112;restaurant;;;;;;;;end
+31473;;;;43.607759;1.4460697;restaurant;;;;;;;;end
+31474;El Rincón Chileno;;;43.5990019;1.4321641;restaurant;chilean;;;;;;;end
+31475;La table d'Émilie;;;43.5987805;1.4322225;restaurant;;;;;;;;end
+31476;Crêperie de l'Écluse;;;43.604426;1.434003;restaurant;;;;;;;;end
+31477;Le Chacha;;;43.5811119;1.4548818;restaurant;traditionnelle;;50 Avenue d'Italie;31400;TOULOUSE;33561538986;http://www.lechacha.fr;end
+31478;La préférence;;;43.6068867;1.4521246;restaurant;;;;;;;;end
+31479;Buffalo Grill;;;43.5695804;1.3901483;restaurant;;;;;;;;end
+31480;Alice Pizza;;;43.5579416;1.3682703;restaurant;pizza;;;;;;;end
+31481;Les Tonnelles;;;43.5625525;1.3718147;restaurant;;;;;;;;end
+31482;Le Valentino;;;43.5464094;1.3984942;restaurant;italian;;;;;;;end
+31483;Bâtiment T;;;43.5447516;1.3921126;restaurant;;;;;;;;end
+31484;Chez Ingalls;;;43.570921;1.4974031;restaurant;;;;;;;;end
+31485;La Villa Toscane;;;43.5685534;1.4988875;restaurant;italian;;;;;;;end
+31486;Didier Daurat;;;43.6081944;1.3633758;restaurant;;;;;;;;end
+31487;Le Bus;;;43.5783193;1.4686306;restaurant;maghreb;;;;;33561539514;;end
+31488;Pasta Pizza Toulouse Arènes;;;43.5891409;1.422039;restaurant;pizza;;;;;;;end
+31489;Okinawa;;;43.6107715;1.4195092;restaurant;japanese;;;;;;;end
+31490;Restaurant Universitaire;;;43.5670102;1.4726108;restaurant;;;;;;;;end
+31491;Au pois gourmand;;;43.6090993;1.4096381;restaurant;;;;;;;;end
+31492;Le Vauquelin;;;43.5838671;1.4015829;restaurant;;; Rue Nicolas-Louis Vauquelin;;Toulouse;;;end

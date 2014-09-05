@@ -48,7 +48,7 @@
 					icon : L.mapbox.marker.icon({
 						'marker-color' : 'ff8888'
 					})
-				}).bindPopup('Your position').addTo(map);
+				}).addTo(map);
 			}
 
 			var fc = fixedMarker.getLatLng();
@@ -57,12 +57,12 @@
 
 			console.log("loadRestos: " + dist + "/"
 					+ map.getBounds().getCenter());
-
-			featureLayer.loadURL(
-					'/restos/' + dist + '/' + latlng.lat + '/' + latlng.lng
-							+ '?format=geojson').addTo(map);
+			uri = '/restos/' + dist + '/' + latlng.lat + '/' + latlng.lng;
+			 
+			fixedMarker.bindPopup("<a class='popup' href='" +uri + "'>PDJ plus proche</a>");
+			
+			featureLayer.loadURL(uri + '?format=geojson').addTo(map);
 			if (circle) {
-				
 				map.removeLayer(circle);
 			}
 			circle = L.circle(latlng, (distance * 0.48).toFixed(0),circle_options).addTo(map);
@@ -88,8 +88,8 @@
 		function showPosition(position) {
 			lat = position.coords.latitude;
 			lon = position.coords.longitude;
-			lat = "44.837944";
-			lon = "-0.5748138";
+	//		lat = "44.837944";
+	//		lon = "-0.5748138";
 			map.setView([ lat, lon ], 16);
 			x.innerHTML = lat + "/" + lon;
 			var point = new L.LatLng(lat, lon);
