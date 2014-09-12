@@ -25,7 +25,8 @@ import com.avaje.ebean.SqlRow;
 public class Oumanger extends Controller {
 
 	public static Result map() {
-		return ok(map.render("PoireauxVinaigrette"));
+
+		return ok(map.render());
 	}
 
 	public static Result list(Integer dist, Double lat, Double lon, String format) {

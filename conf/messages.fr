@@ -1,4 +1,4 @@
-title=PlayStartApp
+title=Poireaux Vinaigrette
 
 # Default messages
 

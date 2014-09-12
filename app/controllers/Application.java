@@ -45,6 +45,22 @@ public class Application extends Controller {
 	 */
 	public static class Login {
 
+		public String getEmail() {
+			return email;
+		}
+
+		public void setEmail(String email) {
+			this.email = email;
+		}
+
+		public String getPassword() {
+			return password;
+		}
+
+		public void setPassword(String password) {
+			this.password = password;
+		}
+
 		@Constraints.Required
 		public String email;
 		@Constraints.Required
@@ -74,6 +90,30 @@ public class Application extends Controller {
 	}
 
 	public static class Register {
+
+		public String getEmail() {
+			return email;
+		}
+
+		public void setEmail(String email) {
+			this.email = email;
+		}
+
+		public String getFullname() {
+			return fullname;
+		}
+
+		public void setFullname(String fullname) {
+			this.fullname = fullname;
+		}
+
+		public String getInputPassword() {
+			return inputPassword;
+		}
+
+		public void setInputPassword(String inputPassword) {
+			this.inputPassword = inputPassword;
+		}
 
 		@Constraints.Required
 		public String email;

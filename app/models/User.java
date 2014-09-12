@@ -93,7 +93,7 @@ public class User extends Model {
         if (user != null) {
             // get the hash password from the salt + clear password
 //            if (Hash.checkPassword(clearPassword, user.passwordHash)) {
-//                return user;
+                return user;
 //            }
        }
         return null;

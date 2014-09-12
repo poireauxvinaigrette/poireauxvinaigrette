@@ -1,8 +1,12 @@
 body { margin:0; padding:0; }
-#map { position:absolute; top:20px; bottom:0; width:100%; }
+#map { position:absolute; top:50px; bottom:0; width:100%; }
 #demo{ margin: 0px;}
 
-
+/*
+.container {
+  margin-left: auto !important;
+}
+*/
 /* General */
 section {
     padding-top: 20px;
