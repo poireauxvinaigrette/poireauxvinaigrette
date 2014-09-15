@@ -6,3 +6,9 @@
 	width: 200px;
     text-align:center;
 }
+.map-container {
+  margin-left: none !important;
+}
+.restos-container {
+  margin-left: auto !important;
+}
