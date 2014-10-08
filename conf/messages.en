@@ -1,4 +1,30 @@
-title=PlayStartApp
+title=Poireaux Vinaigrette
+
+# Default messages
+
+# --- Constraints
+constraint.required=Obligatoire
+constraint.min=Valeur minimum : {0}
+constraint.max=Valeur maximum : {0}
+constraint.minLength=Longueur minimum: {0}
+constraint.maxLength=Longueur maximum: {0}
+constraint.email=Email
+
+# --- Formats
+format.date=Date (''{0}'')
+format.numeric=Numeric
+
+# --- Errors
+error.invalid=Valeur invalide
+error.required=Ce champ est obligatoire
+error.number=Valeur numérique attendue
+error.min=Doit être supérieur ou égal à {0}
+error.max=Doit être inférieur ou égal à {0}
+error.minLength=Longueur minimum autorisée : {0}
+error.maxLength=Longueur maximum autorisée : {0}
+error.email=Email valide obligatoire
+error.pattern=Doit respecter {0}
+
 
 confirm=Confirmation
 email=Email
@@ -48,21 +74,21 @@ resetpassword.new.password=New password :
 
 changemail.mailsent=A mail has been sent, please check your mail.
 
-mail.confirm.subject=Welcome to PlayStartApp - Ask for confirmation
-mail.confirm.message=Welcome to PlayStartApp. <br> Click on this link : {0} to confirm your email.
+mail.confirm.subject=Welcome to PoireauxVinaigrette - Ask for confirmation
+mail.confirm.message=Welcome to PoireauxVinaigrette. <br> Click on this link : {0} to confirm your email.
 
-mail.welcome.subject=Welcome to PlayStartApp
-mail.welcome.message=Welcome to PlayStartApp. <br> Your account is validated. Enjoy !
+mail.welcome.subject=Welcome to PoireauxVinaigrette
+mail.welcome.message=Welcome to PoireauxVinaigrette. <br> Your account is validated. Enjoy !
 
-mail.reset.ask.subject=PlayStartApp - New password
+mail.reset.ask.subject=PoireauxVinaigrette - New password
 # Cannot use You've unescaped here, as the single quote stops the {0}
 mail.reset.ask.message=You asked for your password to be reset.  <br> Click on this link : {0} to change your password.
 
-mail.change.ask.subject=PlayStartApp - Validate email
+mail.change.ask.subject=PoireauxVinaigrette - Validate email
 mail.change.ask.message=You asked for your email to be changed.  <br> Click on this link : {0} to validate your email.
 
 mail.reset.fail.subject=Account Access Attempted
 mail.reset.fail.message=You (or someone else) entered this email address when trying to change the password.  However, this email address is not on our list of registered users, and so the attempted password reset has failed.
 
-mail.reset.confirm.subject=PlayStartApp - New password
+mail.reset.confirm.subject=PoireauxVinaigrette - New password
 mail.reset.confirm.message=Hello, <br><br> Your password has been reset.

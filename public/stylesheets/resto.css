@@ -7,8 +7,21 @@
     text-align:center;
 }
 .map-container {
-  margin-left: none !important;
+ margin-left: none !important;
+ padding-left: none !important;
 }
 .restos-container {
   margin-left: auto !important;
+}
+
+.navbar {
+   background-color: transparent;
+   background: rgba(255, 255, 255, 0.66);;
+}
+
+.navbar li { color: #000 } 
+.navbar-brand {
+
+font-size: 24px;
+
 }

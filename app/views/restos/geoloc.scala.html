@@ -1,0 +1,48 @@
+@main() { 
+
+
+<div id="geo" ></div>
+
+<script>
+	var lat,lon,msg = "";
+	function showError(error) {
+		switch (error.code) {
+		case error.PERMISSION_DENIED:
+			msg = "User denied the request for Geolocation."
+			break;
+		case error.POSITION_UNAVAILABLE:
+			msg = "Location information is unavailable."
+			break;
+		case error.TIMEOUT:
+			msg = "The request to get user location timed out."
+			break;
+		case error.UNKNOWN_ERROR:
+			msg = "An unknown error occurred."
+			break;
+		}
+		console.log("msg:", msg);
+		$('#geo').append('<div class="alert aler+t-warning" role="alert">Impossible de vous géolocaliser.</div>');
+
+	}
+	function showPosition(position) {
+		lat = position.coords.latitude;
+		lon = position.coords.longitude;
+		pos = lat + '/' + lon;
+		shortpos = lat + '/' + lon;
+		console.log(pos);
+		$('#geo').append('<div class="alert alert-success" role="alert"><a href="restos/1000/'+ pos +'" class="alert-link">Accèder aux menus du jour</a> autour de vous ('+ pos +').</div>');
+		
+	}
+
+	$(document).ready(function() {
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition, showError);
+		} else {
+			msg = "Geolocation is not supported by this browser.";
+		}
+	
+	});
+</script>
+
+	
+}

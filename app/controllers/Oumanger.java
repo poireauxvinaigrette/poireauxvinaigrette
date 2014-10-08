@@ -16,23 +16,28 @@ import play.Logger;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-import views.html.restos.indexpv;
+import views.html.restos.geoloc;
 import views.html.restos.map;
+import views.html.restos.restos;
 
 import com.avaje.ebean.Ebean;
 import com.avaje.ebean.SqlRow;
 
 public class Oumanger extends Controller {
 
-	public static Result map() {
+	public static Result index() {
+		
+		return ok(geoloc.render());
+	}
 
+	public static Result map() {
 		return ok(map.render());
 	}
 
 	public static Result list(Integer dist, Double lat, Double lon, String format) {
 		String distance = "(POINT(" + lat + "," + lon + ")<->POINT(latitude, longitude))";
 		Date today = new Date();
-		List<Resto> restos = new ArrayList<Resto>();
+		List<Resto> listResto = new ArrayList<Resto>();
 		String sql = "select "
 				+ distance
 				+ " as distance, r.id , r.raison_sociale, r.raison_sociale, r.categorie, r.telephone, r.mobile, r.adresse"
@@ -73,20 +78,20 @@ public class Oumanger extends Controller {
 				
 				resto.menudujour  = (filteredSms.size() > 0 ? filteredSms.get(0).text : null);
 			}
-			restos.add(resto);
+			listResto.add(resto);
 		}
 
-		Collections.sort(restos);
+		Collections.sort(listResto);
 		//Collections.reverse(restos);
 		
 
 		if (format == null) {
-			return ok(indexpv.render(restos));
+			return ok(restos.render(listResto));
 		} else if (format.equals("geojson")) {
-			GeoRestos georestos = GeoRestos.parse(restos);
+			GeoRestos georestos = GeoRestos.parse(listResto);
 			return ok(Json.toJson(georestos));
 		} else if (format.equals("json")) {
-			return ok(Json.toJson(restos));
+			return ok(Json.toJson(listResto));
 		} else {
 			return notFound();
 		}

@@ -20,30 +20,32 @@
 @scripts
 </head>
 <body>
-	<div ng-controller="MenuCtrl" class="navbar navbar-inverse navbar-default" role="navigation">
-
+	<nav class="navbar navbar-default" role="navigation" style="z-index: 2000;"">
+	  <div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-				<span class="sr-only">Toggle navigation</span> <span class="fa fa-bars fa-lg fa-inverse"></span>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-bar">
+				<span class="sr-only">Toggle navigation</span> 
+				<span class="fa fa-bars fa-lg fa-inverse"></span>
 			</button>
-			<a class="navbar-brand" href="@routes.Application.index()"> <i class="fa fa-rocket"></i>Poireaux Vinaigrette</a>
+			<a class="navbar-brand" href="@routes.Application.index()" style="margin-left:0px;">Poireaux Vinaigrette</a>
+		</div>
+		<div class="collapse navbar-collapse" id="menu-bar">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="@routes.Oumanger.map()">Map</a></li>
-				<li><a href="@routes.Application.index()">PDJ</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="@routes.Oumanger.map()">Cartes des plats du jour</a></li>
+				<li><a href="@routes.Oumanger.index()">Liste des plats du jour</a></li>
+				<li><a href="@routes.Application.index()">S'inscrire</a></li>
+				<li><a href="#contact">Contacts</a></li>
 			</ul>
 		</div>
 		@logged(user)
-	</div>
+	  </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+   </nav>
 	@content
-	<hr>
+
 	<div class="footer text-center">
 		<div>
-			<small> Hello! I'm your friendly footer. If you're actually reading this, I'm impressed.... <a
-				href="https://github.com/yesnault/PlayStartApp">Fork me on Github</a> <i class="fa fa-github fa-1"></i> <a
-				href="https://github.com/yesnault/PlayStartApp">https://github.com/yesnault/PlayStartApp</a>
-			</small>
+			<small>TBD</small>
 		</div>
 	</div>
 
