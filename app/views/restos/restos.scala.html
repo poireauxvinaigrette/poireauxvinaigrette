@@ -11,17 +11,20 @@
 			<thead>
 				<tr>
 					<th>Loin?</th>
-					<th>MenuDuJour?</th>
-					<th>Resto</th>
+					<th style="text-align: right;">MenuDuJour?</th>
+					<th style="text-align: right;">Resto</th>
 				</tr>
 			</thead>
 			<tbody>
 				@for(resto <- restos) {
 				<tr>
 					<td><a href="/carto/@resto.latitude/@resto.longitude">@resto.distance</a></td>
-					<td>@resto.menudujour</td> @if(resto.internet && !resto.internet.isEmpty) {
-					<td><a target="_blank" href="http://@resto.internet">@resto.raisonSociale</a></td> } else {
-					<td>@resto.raisonSociale</td> }
+					<td  style="text-align: right;">@resto.menudujour</td> 
+				@if(resto.internet && !resto.internet.isEmpty) {
+					<td style="text-align: right;"><a target="_blank" href="http://@resto.internet">@resto.raisonSociale</a></td> 
+				} else {
+					<td style="text-align: right;">@resto.raisonSociale</td>
+				}
 	
 				</tr>
 				}
