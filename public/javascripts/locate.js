@@ -170,8 +170,8 @@ L.Control.Locate = L.Control.extend({
         var visualizeLocation = function() {
         	
         	map.fitBounds(self._event.bounds);
-        map.setZoom(16);
-        /*
+        //map.setZoom(16);
+        
             if (self._event.accuracy === undefined)
                 self._event.accuracy = 0;
 
@@ -250,7 +250,7 @@ L.Control.Locate = L.Control.extend({
                 L.DomUtil.addClass(self._container, "active");
                 L.DomUtil.removeClass(self._container, "following");
             }
-*/
+
             
         };
 
