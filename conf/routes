@@ -4,12 +4,13 @@
 
 # Home page
 GET   /carto                        controllers.Oumanger.map()
+GET   /carto/:lat/:lon              controllers.Oumanger.centeredMap(lat:Double,lon:Double)
 GET   /restos/:dist/:lat/:lon       controllers.Oumanger.list(dist:Integer,lat:Double,lon:Double, format:String ?= null)
-GET   /restos				       controllers.Oumanger.index()
+GET   /restos				        controllers.Oumanger.index()
 
 GET     /twilio                     controllers.Twilio.index()
-GET     /nexmoI                      controllers.Nexmo.index()
-GET     /nexmo                 controllers.Nexmo.logSms(msisdn: String, to: String, messageId: String, text: String, type: String)
+GET     /nexmoI                     controllers.Nexmo.index()
+GET     /nexmo                      controllers.Nexmo.logSms(msisdn: String, to: String, messageId: String, text: String, type: String)
 
 
 # Routes

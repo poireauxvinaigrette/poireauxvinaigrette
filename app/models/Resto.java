@@ -1,9 +1,12 @@
 package models;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 
 import org.apache.commons.lang.StringUtils;
@@ -46,6 +49,10 @@ public class Resto extends Model implements Comparable<Resto> {
 	public Integer distance;
 	@Transient
 	public String menudujour;
+	
+	@OneToMany
+    public List<Sms> menus;
+
 
 	public static Finder<Long, Resto> find = new Finder<Long, Resto>(Long.class, Resto.class);
 

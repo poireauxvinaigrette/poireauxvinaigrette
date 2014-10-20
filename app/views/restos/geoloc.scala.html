@@ -38,7 +38,7 @@
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(showPosition, showError);
 		} else {
-			msg = "Geolocation is not supported by this browser.";
+			$('#geo').append('<div class="alert aler+t-warning" role="alert">Impossible de vous géolocaliser.</div>');
 		}
 	
 	});

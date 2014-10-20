@@ -31,19 +31,23 @@ public class Oumanger extends Controller {
 	}
 
 	public static Result map() {
-		return ok(map.render());
+		return ok(map.render(null,null));
 	}
-
+	
+	public static Result centeredMap( Double lat, Double lon) {
+		return ok(map.render(lat,lon));
+	}
+	
 	public static Result list(Integer dist, Double lat, Double lon, String format) {
 		String distance = "(POINT(" + lat + "," + lon + ")<->POINT(latitude, longitude))";
-		Date today = new Date();
+		//Date today = new Date();
 		List<Resto> listResto = new ArrayList<Resto>();
-		String sql = "select "
-				+ distance
-				+ " as distance, r.id , r.raison_sociale, r.raison_sociale, r.categorie, r.telephone, r.mobile, r.adresse"
-				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet" + " from resto r where "
-				+ distance + "*6367445*pi()/180<" + dist + " order by " + distance + " limit 200";
-		// + " from resto r left join sms s on r.mobile = s.resto "
+		String sql = "SELECT " + distance+ " as distance, r.id , r.raison_sociale, r.categorie, r.telephone, r.mobile, r.adresse"
+				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet, s.text , s.reception_date" 
+				+ " FROM resto r LEFT JOIN sms s ON resto=mobile "
+				+ " WHERE (s.reception_date is null OR date(s.reception_date) = current_date)"
+				+ " AND "+ distance + "*6367445*pi()/180<" + dist 
+				+ " ORDER BY s.reception_date, " + distance + " limit 500";
 
 		List<SqlRow> items = Ebean.createSqlQuery(sql).findList();
 		for (SqlRow sqlRow : items) {
@@ -59,11 +63,14 @@ public class Oumanger extends Controller {
 			resto.latitude = sqlRow.getDouble("latitude");
 			resto.longitude = sqlRow.getDouble("longitude");
 			resto.internet = sqlRow.getString("internet");
-
+			resto.menudujour = sqlRow.getString("text");
+			
 			Double tmp = sqlRow.getDouble("distance") * 6367445 * Math.PI / 180;
 			resto.distance = tmp.intValue();
+			
 			if (StringUtils.isNotEmpty(resto.mobile)) {
-				
+				//resto. = sqlRow.getDate("reception_date");
+				/*
 				List<Sms> findList = Sms.find.where().eq("resto.mobile", resto.mobile)
 						.orderBy("creationDate desc").findList();
 				List<Sms> filteredSms = new ArrayList<Sms>();
@@ -77,6 +84,7 @@ public class Oumanger extends Controller {
 // java8	List<Sms> filteredSms = findList.stream().filter(u -> DateUtils.isSameDay(u.receptionDate, today)).collect(Collectors.toList());
 				
 				resto.menudujour  = (filteredSms.size() > 0 ? filteredSms.get(0).text : null);
+				*/
 			}
 			listResto.add(resto);
 		}

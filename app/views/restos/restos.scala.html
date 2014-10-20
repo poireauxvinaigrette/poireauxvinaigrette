@@ -1,32 +1,33 @@
-@(restos: List[Resto]) @main() {
-<div class="container restos-container">
-	<div class="row">
-		<div class="starter-template">
-			<div class="well">
-				<p>beep.</p>
-			</div>
-			<div class="container">
-				<table class="table">
-					<thead>
-						<tr>
-							<th class="resto-col-1">Distance</th>
-							<th>Menu Du Jour</th>
-							<th class="resto-col-2">Resto</th>
-						</tr>
-					</thead>
-					<tbody>
-						@for(resto <- restos) {
-						<tr>
-							<td class="resto-col-1">@resto.distance</td>
-							<td>@resto.menudujour</td> @if(resto.internet && !resto.internet.isEmpty) {
-							<td><a target="_blank" href="http://@resto.internet">@resto.raisonSociale</a></td> } else {
-							<td>@resto.raisonSociale</td> }
+@(restos: List[Resto]) 
 
-						</tr>
-						}
-					</tbody>
-				</table>
-			</div>
-		</div>
+@main() {
+<div class="container restos-container">
+<div class="starter-template">
+	<!-- <div class="well">
+		<p>beep.</p>
+	</div> -->
+	<div class="container" style="padding-left: 0px; padding-right: 0px;">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Loin?</th>
+					<th>MenuDuJour?</th>
+					<th>Resto</th>
+				</tr>
+			</thead>
+			<tbody>
+				@for(resto <- restos) {
+				<tr>
+					<td><a href="/carto/@resto.latitude/@resto.longitude">@resto.distance</a></td>
+					<td>@resto.menudujour</td> @if(resto.internet && !resto.internet.isEmpty) {
+					<td><a target="_blank" href="http://@resto.internet">@resto.raisonSociale</a></td> } else {
+					<td>@resto.raisonSociale</td> }
+	
+				</tr>
+				}
+			</tbody>
+		</table>
 	</div>
+</div>
+</div>
 }

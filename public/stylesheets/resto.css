@@ -1,27 +1,47 @@
+.fa-inverse {
+color: #C9C5C5;
+}
+
 .resto-col-1 {
 	width: 70px;
-    text-align:center;
+	text-align: center;
 }
+
 .resto-col-2 {
 	width: 200px;
-    text-align:center;
+	text-align: center;
 }
+
 .map-container {
- margin-left: none !important;
- padding-left: none !important;
+	margin-left: 0px !important;
+	padding-left: 0px !important;
 }
+
 .restos-container {
-  margin-left: auto !important;
+	margin-left: auto !important;
 }
 
 .navbar {
-   background-color: transparent;
-   background: rgba(255, 255, 255, 0.66);;
+	background-color: transparent;
+	background: rgba(255, 255, 255, 0.66);
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
-.navbar li { color: #000 } 
+.navbar li {
+	color: #000
+}
+
 .navbar-brand {
+	font-size: 24px;
+}
 
-font-size: 24px;
+.nav {
+	margin-left: initial;
+	padding-left: inherit;
+}
 
+#geo {
+	padding-left: 5px;
+	padding-right: 5px;
 }
