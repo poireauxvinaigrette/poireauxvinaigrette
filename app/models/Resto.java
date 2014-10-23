@@ -6,8 +6,10 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Transient;
+import javax.persistence.UniqueConstraint;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -19,13 +21,16 @@ public class Resto extends Model implements Comparable<Resto> {
 	private static final long serialVersionUID = 4842563465068606079L;
 
 	@Id
-	@GeneratedValue
-	public Long id;
+	public String id;
+	
+	@Required
+	public String mobile;
+	
 	@Required
 	public String raisonSociale;
-	@Required
-	@Column(unique=true)
-	public String mobile;
+
+	
+	
 	public String mail;
 	@Required
 	public Double latitude;
@@ -50,8 +55,9 @@ public class Resto extends Model implements Comparable<Resto> {
 	@Transient
 	public String menudujour;
 	
-	@OneToMany
-    public List<Sms> menus;
+	@OneToMany(mappedBy="resto")
+	//@JoinColumn(name="resto", referencedColumnName = "mobile")
+    public List<Menu> menus;
 
 
 	public static Finder<Long, Resto> find = new Finder<Long, Resto>(Long.class, Resto.class);

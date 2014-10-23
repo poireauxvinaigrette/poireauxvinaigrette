@@ -7,7 +7,7 @@ import java.util.List;
 
 import models.GeoRestos;
 import models.Resto;
-import models.Sms;
+import models.Menu;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.time.DateUtils;
@@ -42,7 +42,7 @@ public class Oumanger extends Controller {
 		String distance = "(POINT(" + lat + "," + lon + ")<->POINT(latitude, longitude))";
 		//Date today = new Date();
 		List<Resto> listResto = new ArrayList<Resto>();
-		String sql = "SELECT " + distance+ " as distance, r.id , r.raison_sociale, r.categorie, r.telephone, r.mobile, r.adresse"
+		String sql = "SELECT r.mobile, " + distance+ " as distance, r.raison_sociale, r.categorie, r.telephone, r.adresse"
 				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet, s.text , s.reception_date" 
 				+ " FROM resto r LEFT JOIN sms s ON resto=mobile "
 				+ " WHERE (s.reception_date is null OR date(s.reception_date) = current_date)"
@@ -52,7 +52,7 @@ public class Oumanger extends Controller {
 		List<SqlRow> items = Ebean.createSqlQuery(sql).findList();
 		for (SqlRow sqlRow : items) {
 			Resto resto = new Resto();
-			resto.id = sqlRow.getLong("id");
+			//resto.id = sqlRow.getLong("id");
 			resto.raisonSociale = sqlRow.getString("raison_sociale");
 			resto.categorie = sqlRow.getString("categorie");
 			resto.telephone = sqlRow.getString("telephone");

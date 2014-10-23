@@ -3,10 +3,21 @@
 
 # --- !Ups
 
+create table menu (
+  message_id                varchar(255) not null,
+  creation_date             timestamp,
+  destinataire              varchar(255),
+  text                      varchar(255),
+  type                      varchar(255),
+  reception_date            timestamp,
+  resto                     varchar(255),
+  constraint pk_menu primary key (message_id))
+;
+
 create table resto (
-  id                        bigint not null,
-  raison_sociale            varchar(255),
+  id                        varchar(255) not null,
   mobile                    varchar(255),
+  raison_sociale            varchar(255),
   mail                      varchar(255),
   latitude                  float,
   longitude                 float,
@@ -20,7 +31,6 @@ create table resto (
   classement                varchar(255),
   marque                    varchar(255),
   tourisme                  varchar(255),
-  constraint uq_resto_mobile unique (mobile),
   constraint pk_resto primary key (id))
 ;
 
@@ -58,6 +68,8 @@ create table users (
   constraint pk_users primary key (id))
 ;
 
+create sequence menu_seq;
+
 create sequence resto_seq;
 
 create sequence sms_seq;
@@ -66,12 +78,16 @@ create sequence token_seq;
 
 create sequence users_seq;
 
-alter table sms add constraint fk_sms_resto_1 foreign key (resto) references resto (mobile);
-create index ix_sms_resto_1 on sms (resto);
+alter table menu add constraint fk_menu_resto_1 foreign key (resto) references resto (id);
+create index ix_menu_resto_1 on menu (resto);
+alter table sms add constraint fk_sms_resto_2 foreign key (resto) references resto (mobile);
+create index ix_sms_resto_2 on sms (resto);
 
 
 
 # --- !Downs
+
+drop table if exists menu cascade;
 
 drop table if exists resto cascade;
 
@@ -80,6 +96,8 @@ drop table if exists sms cascade;
 drop table if exists token cascade;
 
 drop table if exists users cascade;
+
+drop sequence if exists menu_seq;
 
 drop sequence if exists resto_seq;
 

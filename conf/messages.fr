@@ -1,4 +1,7 @@
 title=Poireaux Vinaigrette
+resto.inconnu=Restaurant au mobile {0} inconnu.
+
+
 
 # Default messages
 

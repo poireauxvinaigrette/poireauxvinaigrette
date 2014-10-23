@@ -7,13 +7,17 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Transient;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import play.data.format.Formats;
 import play.data.validation.Constraints.Required;
 import play.db.ebean.Model;
 
 @Entity
-public class Sms extends Model {
+public class Menu extends Model {
 
 	private static final long serialVersionUID = -4628913172466111808L;
 	@Id
@@ -25,12 +29,16 @@ public class Sms extends Model {
 	public String type;
 	@Formats.DateTime(pattern = "yyyy-MM-dd")
 	public Date receptionDate;
+	
+	@Transient
+	public String mobile;
 
 	// This means every Sms has exactly one resto associated
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "resto", referencedColumnName = "mobile")
+	@ManyToOne
+	@JoinColumn(name="resto", referencedColumnName="id", insertable=false, updatable=false, unique=true)
+	@JsonIgnore
 	public Resto resto;
 
-	public static Finder<String, Sms> find = new Finder<String, Sms>(String.class, Sms.class);
+	public static Finder<String, Menu> find = new Finder<String, Menu>(String.class, Menu.class);
 
 }

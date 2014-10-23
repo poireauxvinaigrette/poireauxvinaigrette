@@ -6,7 +6,7 @@ import java.util.Date;
 import javax.persistence.PersistenceException;
 
 import models.Resto;
-import models.Sms;
+import models.Menu;
 import play.mvc.Controller;
 import play.mvc.Result;
 
@@ -19,7 +19,7 @@ public class Nexmo extends Controller {
 	}
 
 	public static Result logSms(String msisdn, String to, String messageId, String text, String type) {
-		Sms sms = new Sms();
+		Menu sms = new Menu();
 		try {
 			sms.resto = Resto.find.where().eq("mobile", msisdn).findUnique();
 
