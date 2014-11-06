@@ -43,16 +43,16 @@ public class Oumanger extends Controller {
 		//Date today = new Date();
 		List<Resto> listResto = new ArrayList<Resto>();
 		String sql = "SELECT r.mobile, " + distance+ " as distance, r.raison_sociale, r.categorie, r.telephone, r.adresse"
-				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet, s.text , s.reception_date" 
-				+ " FROM resto r LEFT JOIN sms s ON resto=mobile "
-				+ " WHERE (s.reception_date is null OR date(s.reception_date) = current_date)"
+				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet, m.text , m.reception_date" 
+				+ " FROM resto r LEFT JOIN menu m ON m.resto=r.id "
+				+ " WHERE (m.reception_date is null OR date(m.reception_date) = current_date)"
 				+ " AND "+ distance + "*6367445*pi()/180<" + dist 
-				+ " ORDER BY s.reception_date, " + distance + " limit 500";
+				+ " ORDER BY m.reception_date, " + distance + " limit 500";
 
 		List<SqlRow> items = Ebean.createSqlQuery(sql).findList();
 		for (SqlRow sqlRow : items) {
 			Resto resto = new Resto();
-			//resto.id = sqlRow.getLong("id");
+			resto.id = sqlRow.getInteger("id");
 			resto.raisonSociale = sqlRow.getString("raison_sociale");
 			resto.categorie = sqlRow.getString("categorie");
 			resto.telephone = sqlRow.getString("telephone");
@@ -71,19 +71,19 @@ public class Oumanger extends Controller {
 			if (StringUtils.isNotEmpty(resto.mobile)) {
 				//resto. = sqlRow.getDate("reception_date");
 				/*
-				List<Sms> findList = Sms.find.where().eq("resto.mobile", resto.mobile)
+				List<Menu> findList = Menu.find.where().eq("resto.mobile", resto.mobile)
 						.orderBy("creationDate desc").findList();
-				List<Sms> filteredSms = new ArrayList<Sms>();
-				for (Sms sms : findList) {
-					Logger.debug(today + "check sms :"+ sms.messageId + " " + sms.receptionDate);
-					if ( DateUtils.isSameDay(sms.receptionDate, today)) {
-						Logger.debug("add sms :"+ sms.messageId + " " + sms.text);
-						filteredSms.add(sms);
+				List<Menu> filteredMenu = new ArrayList<Menu>();
+				for (Menu menu : findList) {
+					Logger.debug(today + "check menu :"+ menu.messageId + " " + menu.receptionDate);
+					if ( DateUtils.isSameDay(menu.receptionDate, today)) {
+						Logger.debug("add menu :"+ menu.messageId + " " + menu.text);
+						filteredMenu.add(menu);
 					}
 				}
-// java8	List<Sms> filteredSms = findList.stream().filter(u -> DateUtils.isSameDay(u.receptionDate, today)).collect(Collectors.toList());
+// java8	List<Menu> filteredMenu = findList.stream().filter(u -> DateUtils.isSameDay(u.receptionDate, today)).collect(Collectors.toList());
 				
-				resto.menudujour  = (filteredSms.size() > 0 ? filteredSms.get(0).text : null);
+				resto.menudujour  = (filteredMenu.size() > 0 ? filteredMenu.get(0).text : null);
 				*/
 			}
 			listResto.add(resto);

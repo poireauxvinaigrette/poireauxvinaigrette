@@ -5,8 +5,12 @@ import java.util.Date;
 
 import javax.persistence.PersistenceException;
 
-import models.Resto;
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
+
 import models.Menu;
+import models.Resto;
 import play.i18n.Messages;
 import play.libs.F.Promise;
 import play.libs.Json;
@@ -33,50 +37,53 @@ public class Cuisiner extends Controller {
 
 	@BodyParser.Of(BodyParser.Json.class)
 	public static Result cuisine() {
-		Menu sms = null;
+		Menu menu = null;
+		JsonNode json = null;
 		try {
-			JsonNode json = request().body().asJson();
+			 json = request().body().asJson();
 			JsonParser parser = json.traverse();
 			ObjectMapper mapper = new ObjectMapper();
-			sms = mapper.readValue(parser, Menu.class);
-			Resto restoAttached = Resto.find.where().eq("mobile",sms.mobile).findUnique();
+			menu = mapper.readValue(parser, Menu.class);
+			menu.creationDate = new Date();
+			Resto restoAttached = Resto.find.where().eq("mobile",menu.mobile).findUnique();
 			if (restoAttached == null) {
-				throw new Exception(Messages.get("resto.inconnu", sms.resto.mobile));
+				throw new Exception(Messages.get("resto.inconnu", menu.resto.mobile));
 			} else {
-				sms.resto = restoAttached;
+				menu.resto = restoAttached;
 			}
 			//Ebean.refresh(sms.resto);
-			Ebean.save(sms);
+			Ebean.save(menu);
 			
 		} catch (Exception e) {
-			return badRequest(e.getMessage());
+
+			return badRequest(json);
 		}
 
-		return ok(Json.toJson(sms));
+		return ok(Json.toJson(menu));
 	}
 
-	public static Result setMenu() {
+	public static Promise<Result> setMenu() {
 		// msisdn=06999213270&to=12108054321&messageId=000000FFFB0356D1&text=menu&type=text&message-timestamp=2012-08-19+20%3A38%3A23
 		final String urlMenu = "http://localhost:9000/newMenu";
 		ObjectNode result = Json.newObject();
-		result.put("msisdn", "06999213270");
-		result.put("message-timestamp", "2012-10-23");
-		result.put("type", "text");
-		result.put("text", "menu du jour");
-		result.put("to", "12108054321");
-		result.put("messageId", "000000FFFB0356D1");
 
-//		Promise<WSResponse> promise = WS.url(urlMenu).post(result);
-//		Promise<JsonNode> resultat = promise.map(response -> {
-//			return response.asJson();
-//		});
+		result.put("mobile", "33699213270");
+		result.put("receptionDate", DateTimeFormat.forPattern("yyyy-MM-dd'T'hh:mm:ss").print(new DateTime()));//"2012-10-23");
+		result.put("type", "text");
+		result.put("text", "menu du jour avec combawa");
+		result.put("destinataire", "12108054321");
+		result.put("messageId", "11");
+
+		Promise<WSResponse> promise = WS.url(urlMenu).post(result);
+		return promise.map(response -> ok(" tst : " + response.asJson()));
 		/*
 		 * .map( response -> { response.asJson();} );
 		 */
 		//return ok(resultat.get(1000));
 		// promise.map(response -> ok(" tst : " + response.asJson()));
 		
-		return ok(Json.toJson(result));
+		//return ok(Json.toJson(result));
+		//return ok(Json.toJson(resultat));
 	}
 
 	public static Promise<Result> getRestos() {

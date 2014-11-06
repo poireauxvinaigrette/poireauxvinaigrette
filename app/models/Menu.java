@@ -2,25 +2,27 @@ package models;
 
 import java.util.Date;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Transient;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import play.data.format.Formats;
 import play.data.validation.Constraints.Required;
 import play.db.ebean.Model;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class Menu extends Model {
 
 	private static final long serialVersionUID = -4628913172466111808L;
 	@Id
+	@GeneratedValue
+	public Integer id;
 	public String messageId;
 	public Date creationDate;
 	@Required
@@ -34,8 +36,8 @@ public class Menu extends Model {
 	public String mobile;
 
 	// This means every Sms has exactly one resto associated
-	@ManyToOne
-	@JoinColumn(name="resto", referencedColumnName="id", insertable=false, updatable=false, unique=true)
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="resto", nullable=false)
 	@JsonIgnore
 	public Resto resto;
 

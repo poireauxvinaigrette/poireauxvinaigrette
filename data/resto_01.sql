@@ -1334,13 +1334,13 @@ INSERT INTO resto (id, raison_sociale, mobile, mail, latitude, longitude, type, 
 -- Data for Name: sms; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO sms (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('031300FFFB0356D2', '2014-08-08 10:24:31.381', '12108054321', 'poisson les2', 'text', '2014-08-08 20:38:23', '33600000000');
-INSERT INTO sms (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('001300FFFB0356D2', '2014-08-08 10:24:47.596', '12108054321', 'viande les2', 'text', '2014-08-08 20:38:23', '33600000000');
-INSERT INTO sms (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('001700FFFB0356D2', '2014-08-08 13:00:32.702', '12108054321', 'poisson les2', 'text', '2014-08-08 20:38:23', '33600000000');
-INSERT INTO sms (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('400000FFFB0356D1', '2014-09-03 11:55:36.136', '12108054321', 'This is an inbound message', 'text', '2012-08-19 20:38:23', '33699213270');
-INSERT INTO sms (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('400000FFFB0356D2', '2014-09-03 12:05:58.726', '12108054321', 'ya du rougail man !!!', 'text', '2014-09-03 20:38:23', '33699213270');
-INSERT INTO sms (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('500000FFFB0356D3', '2014-09-04 15:39:50.291', '12108054321', 'rougail saucisse   combava!!', 'text', '2014-09-04 20:38:23', '33699213270');
-INSERT INTO sms (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('400000FFFB0356D3', '2014-09-04 09:57:45.947', '12108054321', 'ya du rougail man !!!', 'text', '2014-09-04 20:38:23', '33699213270');
+INSERT INTO menu (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('031300FFFB0356D2', '2014-08-08 10:24:31.381', '12108054321', 'poisson les2', 'text', '2014-08-08 20:38:23', '33600000000');
+INSERT INTO menu (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('001300FFFB0356D2', '2014-08-08 10:24:47.596', '12108054321', 'viande les2', 'text', '2014-08-08 20:38:23', '33600000000');
+INSERT INTO menu (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('001700FFFB0356D2', '2014-08-08 13:00:32.702', '12108054321', 'poisson les2', 'text', '2014-08-08 20:38:23', '33600000000');
+INSERT INTO menu (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('400000FFFB0356D1', '2014-09-03 11:55:36.136', '12108054321', 'This is an inbound message', 'text', '2012-08-19 20:38:23', '33699213270');
+INSERT INTO menu (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('400000FFFB0356D2', '2014-09-03 12:05:58.726', '12108054321', 'ya du rougail man !!!', 'text', '2014-09-03 20:38:23', '33699213270');
+INSERT INTO menu (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('500000FFFB0356D3', '2014-09-04 15:39:50.291', '12108054321', 'rougail saucisse   combava!!', 'text', '2014-09-04 20:38:23', '33699213270');
+INSERT INTO menu (message_id, creation_date, destinataire, text, type, reception_date, resto) VALUES ('400000FFFB0356D3', '2014-09-04 09:57:45.947', '12108054321', 'ya du rougail man !!!', 'text', '2014-09-04 20:38:23', '33699213270');
 
 
 --

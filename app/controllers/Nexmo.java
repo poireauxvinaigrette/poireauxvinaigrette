@@ -18,24 +18,24 @@ public class Nexmo extends Controller {
 		return ok("Got request " + request() + "!");
 	}
 
-	public static Result logSms(String msisdn, String to, String messageId, String text, String type) {
-		Menu sms = new Menu();
+	public static Result logMenu(String msisdn, String to, String messageId, String text, String type) {
+		Menu menu = new Menu();
 		try {
-			sms.resto = Resto.find.where().eq("mobile", msisdn).findUnique();
+			menu.resto = Resto.find.where().eq("mobile", msisdn).findUnique();
 
-			if (sms.resto == null) {
+			if (menu.resto == null) {
 				return internalServerError(msisdn + " mobile inconnu");
 			}
-			sms.destinataire = to;
-			sms.messageId = messageId;
-			sms.text = text;
-			sms.type = type;
-			sms.creationDate = new Date();
+			menu.destinataire = to;
+			menu.messageId = messageId;
+			menu.text = text;
+			menu.type = type;
+			menu.creationDate = new Date();
 
 			String messagetimestamp = request().getQueryString("message-timestamp");
-			sms.receptionDate = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse(messagetimestamp);
+			menu.receptionDate = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse(messagetimestamp);
 
-			Ebean.save(sms);
+			Ebean.save(menu);
 
 		} catch (Exception e) {
 			String message;
@@ -45,7 +45,7 @@ public class Nexmo extends Controller {
 				message = e.getMessage();
 			return internalServerError("Oops :  " + message);
 		}
-		return ok("Sms received :" + sms.messageId);
+		return ok("Sms received :" + menu.messageId);
 	}
 
 }
