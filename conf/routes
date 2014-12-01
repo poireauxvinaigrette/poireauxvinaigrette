@@ -20,7 +20,7 @@ GET     /client                     controllers.Cuisiner.setMenu()
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET     /                           controllers.Oumanger.map()
 GET     /dashboard                  controllers.Dashboard.index()
 
 POST    /login                      controllers.Application.authenticate()
