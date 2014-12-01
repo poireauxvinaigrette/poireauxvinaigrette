@@ -13,7 +13,7 @@ GET     /twilio                     controllers.Twilio.index()
 GET     /nexmoI                     controllers.Nexmo.index()
 GET     /nexmo                      controllers.Nexmo.logMenu(msisdn: String, to: String, messageId: String, text: String, type: String)
 POST    /newMenu                    controllers.Cuisiner.cuisine()
-GET     /client                     controllers.Cuisiner.setMenu()
+#GET     /client                     controllers.Cuisiner.setMenu()
 
 # Routes
 # This file defines all application routes (Higher priority routes first)
