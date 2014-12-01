@@ -24,6 +24,7 @@ GET     /                           controllers.Oumanger.map()
 GET     /dashboard                  controllers.Dashboard.index()
 
 POST    /login                      controllers.Application.authenticate()
+GET     /login                      controllers.Application.index()
 GET     /logout                     controllers.Application.logout()
 
 GET     /settings                   controllers.account.settings.Index.index()
