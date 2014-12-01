@@ -43,12 +43,16 @@ public class Oumanger extends Controller {
 		//Date today = new Date();
 		List<Resto> listResto = new ArrayList<Resto>();
 		String sql = "SELECT r.mobile, " + distance+ " as distance, r.raison_sociale, r.categorie, r.telephone, r.adresse"
-				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet, m.text , m.reception_date" 
+				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet, m.text , m.creation_date" 
 				+ " FROM resto r LEFT JOIN menu m ON m.resto=r.id "
-				+ " WHERE (m.reception_date is null OR date(m.reception_date) = current_date)"
-				+ " AND "+ distance + "*6367445*pi()/180<" + dist 
-				+ " ORDER BY m.reception_date, " + distance + " limit 500";
-
+		//		+ " WHERE (m.reception_date is null OR date(m.reception_date) = current_date)"
+				+ " WHERE "+ distance + "*6367445*pi()/180<" + dist 
+				+ " ORDER BY " + distance ;
+		if (format == null) {
+			sql += " limit 20";
+		} else {
+			sql += " limit 500";
+		}
 		List<SqlRow> items = Ebean.createSqlQuery(sql).findList();
 		for (SqlRow sqlRow : items) {
 			Resto resto = new Resto();
@@ -64,6 +68,7 @@ public class Oumanger extends Controller {
 			resto.longitude = sqlRow.getDouble("longitude");
 			resto.internet = sqlRow.getString("internet");
 			resto.menudujour = sqlRow.getString("text");
+			resto.datedujour = sqlRow.getDate("creation_date");
 			
 			Double tmp = sqlRow.getDouble("distance") * 6367445 * Math.PI / 180;
 			resto.distance = tmp.intValue();

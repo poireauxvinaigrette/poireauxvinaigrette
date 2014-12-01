@@ -1,6 +1,8 @@
 package models;
 
 import java.util.List;
+import java.util.Date;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -43,6 +45,8 @@ public class Resto extends Model implements Comparable<Resto> {
 	public Integer distance;
 	@Transient
 	public String menudujour;
+	@Transient
+	public Date datedujour;
 
 	@OneToMany(mappedBy = "resto")
 	// @JoinColumn(name="resto", referencedColumnName = "mobile")
