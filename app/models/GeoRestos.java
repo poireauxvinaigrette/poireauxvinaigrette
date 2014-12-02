@@ -68,11 +68,11 @@ public class GeoRestos {
 				if (!StringUtils.isEmpty(resto.adresse))
 					adresse = resto.adresse;
 				if (!StringUtils.isEmpty(resto.codePostale))
-					adresse += "<br/>" + resto.codePostale;
+					adresse += "<br />" + resto.codePostale;
 				if (!StringUtils.isEmpty(resto.commune))
 					adresse += " " + resto.commune;
 				if (!StringUtils.isEmpty(resto.telephone))
-					adresse += "<br/>" + resto.telephone;
+					adresse += "<br />" + resto.telephone;
 
 				geoResto.properties.put("description", "à " + resto.distance + "m : " + rs + "<br/>" + adresse);
 				
