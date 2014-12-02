@@ -77,13 +77,22 @@ public class GeoRestos {
 				geoResto.properties.put("description", "à " + resto.distance + "m : " + rs + "<br/>" + adresse);
 				
 				if (resto.menudujour != null) {
+					if ("foodtruck".equals(resto.type)) {
+						geoResto.properties.put("marker-symbol", "bus");
+					} else {
 					geoResto.properties.put("marker-symbol", "restaurant");
+					}
 					geoResto.properties.put("marker-color", "#f44");
 					geoResto.properties.put("marker-allow-overlap", "false");
 					geoResto.properties.put("marker-size", "large");
 
 				} else {
+					if ("foodtruck".equals(resto.type)) {
+                                                geoResto.properties.put("marker-symbol", "bus");
+                                        } else {
 					geoResto.properties.put("marker-symbol", "bar");
+                                        }
+ 
 					geoResto.properties.put("marker-color", "#fff");
 					geoResto.properties.put("marker-size", "small");
 					geoResto.properties.put("marker-allow-overlap", "true");
