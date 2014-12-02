@@ -51,7 +51,7 @@ public class GeoRestos {
 				//
 				String rs;
 				if (resto.internet != null) {
-					rs = "<a target='_blank' class='popup' href='http://" + resto.internet + "'>" + resto.raisonSociale
+					rs = "<a target='_blank' class='popup' href='" + resto.internet + "'>" + resto.raisonSociale
 							+ "</a>";
 				} else {
 					rs = resto.raisonSociale;
