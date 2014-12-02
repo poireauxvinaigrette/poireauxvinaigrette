@@ -56,7 +56,13 @@ public class GeoRestos {
 				} else {
 					rs = resto.raisonSociale;
 				}
-				geoResto.properties.put("title", StringUtils.defaultString(resto.datedujour + "<br/>" +resto.menudujour));
+				String datedujour = "";
+				if (resto.datedujour!=null)  {
+					datedujour=resto.datedujour + "<br/>";
+				}
+
+				geoResto.properties.put("title", datedujour 
+					+  StringUtils.defaultString(resto.menudujour));
 
 				String adresse = "";
 				if (!StringUtils.isEmpty(resto.adresse))
