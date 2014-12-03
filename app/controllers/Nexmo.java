@@ -9,6 +9,7 @@ import models.Resto;
 import models.Menu;
 import play.mvc.Controller;
 import play.mvc.Result;
+import play.Logger;
 
 import com.avaje.ebean.Ebean;
 
@@ -21,7 +22,11 @@ public class Nexmo extends Controller {
 	public static Result logMenu(String msisdn, String to, String messageId, String text, String type) {
 		Menu menu = new Menu();
 		try {
-			menu.resto = Resto.find.where().eq("mobile", msisdn).findUnique();
+			Resto restaurant = Resto.find.where().eq("mobile", msisdn).findUnique();
+			for (Menu menudujour : restaurant.menus) {
+				Ebean.delete(menudujour); 
+			}
+			menu.resto = restaurant;
 
 			if (menu.resto == null) {
 				return internalServerError(msisdn + " mobile inconnu");

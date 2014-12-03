@@ -42,6 +42,7 @@
 	
 	featureLayer = L.mapbox.featureLayer().addTo(map);
 	L.control.locate().addTo(map);
+
 	function loadRestos(latlng) {
 
 		if (fixedMarker) {
@@ -66,7 +67,7 @@
 		distN = fc.distanceTo(point2);
 		distance = (Math.min(distW,distN));
 		dist = distance.toFixed(0);
-		console.log("loadRestos: " + dist + "/" + map.getBounds().getCenter());
+		//console.log("loadRestos: " + dist + "/" + map.getBounds().getCenter());
 		uri = '/restos/' + dist + '/' + latlng.lat + '/' + latlng.lng;
 		 
 		fixedMarker.bindPopup("<a class='popup' href='" +uri + "'>PDJ plus proche</a>");
@@ -103,14 +104,14 @@
 		showMap(lat,lon);			
 	}
 	function requestUpdatedPoints(bounds) {
-		console.log("moveend:", bounds.getCenter());
+//		console.log("moveend:", bounds.getCenter());
 		loadRestos(bounds.getCenter());
 	}
 	function showMap(latitude, longitude) {
 		map.setView([ latitude, longitude ], 16);
 		//x.innerHTML = lat + "/" + lon;
 		var point = new L.LatLng(latitude, longitude);
-		console.log(point.toString());
+		//console.log(point.toString());
 		loadRestos(point);
 	}
 

@@ -51,36 +51,60 @@ public class GeoRestos {
 				//
 				String rs;
 				if (resto.internet != null) {
-					rs = "<a target='_blank' class='popup' href='http://" + resto.internet + "'>" + resto.raisonSociale
+					rs = "<a target='_blank' class='popup' href='" + resto.internet + "'>" + resto.raisonSociale
 							+ "</a>";
+					geoResto.properties.put("url", "resto.internet");
 				} else {
 					rs = resto.raisonSociale;
 				}
-				geoResto.properties.put("title", StringUtils.defaultString(resto.menudujour));
+				String datedujour = "";
+				if (resto.datedujour != null) {
+					datedujour = resto.datedujour + "<br/> ";
+				}
+
+				geoResto.properties.put("title", datedujour + StringUtils.defaultString(resto.menudujour));
 
 				String adresse = "";
 				if (!StringUtils.isEmpty(resto.adresse))
 					adresse = resto.adresse;
 				if (!StringUtils.isEmpty(resto.codePostale))
-					adresse += "<br/>" + resto.codePostale;
+					adresse += "<br />" + resto.codePostale;
 				if (!StringUtils.isEmpty(resto.commune))
 					adresse += " " + resto.commune;
 				if (!StringUtils.isEmpty(resto.telephone))
-					adresse += "<br/>" + resto.telephone;
+					adresse += "<br />" + resto.telephone;
 
 				geoResto.properties.put("description", "à " + resto.distance + "m : " + rs + "<br/>" + adresse);
-				
-				if (resto.menudujour != null) {
-					geoResto.properties.put("marker-symbol", "restaurant");
-					geoResto.properties.put("marker-color", "#f44");
-					geoResto.properties.put("marker-allow-overlap", "false");
-					geoResto.properties.put("marker-size", "large");
 
+				if (resto.menudujour != null || resto.mobile != null) {
+					if ("foodtruck".equals(resto.type)) {
+						geoResto.properties.put("marker-symbol", "bus");
+					} else {
+						geoResto.properties.put("marker-symbol", "restaurant");
+					}
+					if (resto.menudujour != null) {
+						geoResto.properties.put("marker-color", "#009933");
+						geoResto.properties.put("marker-fill", "#03300");
+						geoResto.properties.put("marker-allow-overlap", "true");
+						geoResto.properties.put("marker-size", "large");
+					} else {
+						geoResto.properties.put("marker-color", "#99FF99");
+						geoResto.properties.put("marker-allow-overlap", "false");
+						geoResto.properties.put("marker-size", "medium");
+					}
+					
+					
+					
 				} else {
-					geoResto.properties.put("marker-symbol", "bar");
+					if ("foodtruck".equals(resto.type)) {
+						geoResto.properties.put("marker-symbol", "bus");
+					} else {
+						geoResto.properties.put("marker-symbol", "bar");
+					}
+
 					geoResto.properties.put("marker-color", "#fff");
 					geoResto.properties.put("marker-size", "small");
-					geoResto.properties.put("marker-allow-overlap", "true");
+					geoResto.properties.put("marker-allow-overlap", "false");
 				}
 				geoResto.geometry = geoResto.new GeoPoint(resto.latitude, resto.longitude);
 				georestos.features.add(geoResto);
