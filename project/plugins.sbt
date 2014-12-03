@@ -4,6 +4,8 @@ logLevel := Level.Warn
 // The Typesafe repository
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
+resolvers += "Typesafe repository snapsshot" at "http://repo.typesafe.com/typesafe/snapshot/"
+
 resolvers += "Maven repository" at "http://mvnrepository.com/artifact/org.postgresql/"
 
 resolvers += "Maven repository 2" at "http://repo1.maven.org/maven2/"

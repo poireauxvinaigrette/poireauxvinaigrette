@@ -15,4 +15,5 @@ libraryDependencies ++= Seq(
   ,"org.webjars" % "bootstrap" % "3.0.2"
   ,"com.twilio.sdk" % "twilio-java-sdk" % "3.4.5"
   ,"org.mindrot" % "jbcrypt" % "0.3m"
+  ,"ws.securesocial" % "securesocial_2.11" % "3.0-M1"
 )
