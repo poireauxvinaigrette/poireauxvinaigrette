@@ -10,8 +10,8 @@ GET   /restos				        controllers.Oumanger.index()
 
 GET     /twilio                     controllers.Twilio.index()
 
-GET     /nexmoI                     controllers.Nexmo.index()
-GET     /nexmo                      controllers.Nexmo.logMenu(msisdn: String, to: String, messageId: String, text: String, type: String)
+GET     /nexmo                     controllers.Nexmo.index()
+GET     /nexmoI                      controllers.Nexmo.logMenu(msisdn: String, to: String, messageId: String, text: String, type: String)
 POST    /newMenu                    controllers.Cuisiner.cuisine()
 GET     /client                     controllers.Cuisiner.setMenu()
 
