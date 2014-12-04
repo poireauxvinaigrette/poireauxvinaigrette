@@ -1,7 +1,7 @@
 id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_postale;commune;telephone;internet;classement;marque;tourisme;;
 1;Le Cap;;;44.641613;-1.2031785;Restaurant;Cuisine traditionnelle;1  avenue Notre Dame des Passes;33120;ARCACHON;+33 5 56 54 53 93;;;;;1; avenue Notre Dame des Passes
 2;Le Chipiron;;;44.656445;-1.147182;Restaurant;Cuisine traditionnelle;11  rue de la Pècherie;33120;ARCACHON;+33 5 57 52 06 33;www.lechipiron.com;;;;11; rue de la Pècherie
-3;Le Grand Bleu;;;44.65762;-1.1495486;Restaurant;Cuisine traditionnelle;30  boulevard de la Plage;33120;ARCACHON;+33 5 56 54 92 92;http://restaurant-le-grand-bleu.com;;;;30; boulevard de la Plage
+3;Le Grand Bleu;;;44.65762;-1.1495486;Restaurant;Cuisine traditionnelle;30  boulevard de la Plage;33120;ARCACHON;+33 5 56 54 92 92;restaurant-le-grand-bleu.com;;;;30; boulevard de la Plage
 4;Le Thiers;;;44.66328;-1.166554;Restaurant;Cuisine traditionnelle;9  boulevard Veyrier Montagnères;33120;ARCACHON;+33 5 56 83 33 17;www.lethiers.com;;;;9; boulevard Veyrier Montagnères
 5;Le Cabestan;;;44.662136;-1.1644613;Restaurant;Cuisine traditionnelle;6 bis  avenue du Général de Gaulle;33120;ARCACHON;+33 5 56 83 18 62;www.everyoneweb.com/restaurantlecabestan;;;;6 bis; avenue du Général de Gaulle
 6;La Table du Boucher;;;44.662052;-1.1723828;Restaurant;Cuisine traditionnelle;16  rue du Mal de Lattre de Tassigny;33120;ARCACHON;+33 5 56 54 06 28;;;;;16; rue du Mal de Lattre de Tassigny
@@ -23,7 +23,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 22;Phénix d'Or;;;44.66134;-1.1675295;Restaurant;Restauration à  thème;30  avenue Lamartine;33120;ARCACHON;+33 5 57 52 25 49;;;;;30; avenue Lamartine
 23;Al Mounia;;;44.660698;-1.1654523;Restaurant;Restauration à  thème;43  cours Hericart de Thury;33120;ARCACHON;+33 5 56 83 76 03;www.almounia-arcachon.com;;;;43; cours Hericart de Thury
 24;Le Jardin;;;44.64134;-1.20037;Restaurant;Restauration à  thème;23 rue Notre Dame des Passes Le Moulleau;33120;ARCACHON;+33 6 82 44 14 55;www.restaurantlejardin.com;;;;23 rue Notre Dame des Passes;Le Moulleau
-25;L'Aurès;;;44.657017;-1.1478593;Restaurant;Restauration à  thème;5  rue du port;33120;ARCACHON;+33 5 56 83 97 16;http://arcachon.lamaisondutouriste.com/restaurant-aures/index.html;;;;5; rue du port
+25;L'Aurès;;;44.657017;-1.1478593;Restaurant;Restauration à  thème;5  rue du port;33120;ARCACHON;+33 5 56 83 97 16;arcachon.lamaisondutouriste.com/restaurant-aures/index.html;;;;5; rue du port
 26;L'Atlantide;;;44.656277;-1.1472498;Restaurant;Restauration à  thème;52 boulevard Mestrézat ;33120;ARCACHON;+33 5 56 83 03 36;;;;;52 boulevard Mestrézat;
 27;Au pique assiette;;;44.660213;-1.1542583;Restaurant;Restauration à  thème;84 bis boulevard de la Plage ;33120;ARCACHON;+33 5 56 83 78 33;www.aupiqueassiette.com;;;;84 bis boulevard de la Plage;
 28;Le Beacher Restaurant;;;44.65832;-1.1933358;Restaurant;Restauration à  thèmeCuisine traditionnelle;1  avenue du Parc Péreire;33120;ARCACHON;+33 5 56 83 24 01;www.restaurantcappereire.com;;;;1; avenue du Parc Péreire
@@ -38,7 +38,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 37;Chez Charlot;;;44.662548;-1.1658277;Restaurant;Restauration rapide;212  boulevard de la plage;33120;ARCACHON;+33 5 56 54 85 55;;;;;212; boulevard de la plage
 38;Majlis;;;44.662613;-1.1710131;Restaurant;Restauration rapide;211  boulevard de la Plage;33120;ARCACHON;+33 5 56 54 51 64;;;;;211; boulevard de la Plage
 39;Le Saint Eloi;;;44.758133;-1.1332011;Hôtel restaurant;Cuisine traditionnelle;11 boulevard de l'Aérium ;33740;ARES;+33 5 56 60 20 46;www.le-saint-eloi.com/;;;;11 boulevard de l'Aérium;
-40;TanyaÂ¿s Tearooms;;;44.766273;-1.139574;Restaurant;BrasserieRestauration à  thème;3 rue Paul Wallerstein ;33740;ARES;+33 5 56 03 25 21;http://tanyas.fr/;;;;3 rue Paul Wallerstein;
+40;TanyaÂ¿s Tearooms;;;44.766273;-1.139574;Restaurant;BrasserieRestauration à  thème;3 rue Paul Wallerstein ;33740;ARES;+33 5 56 03 25 21;tanyas.fr/;;;;3 rue Paul Wallerstein;
 41;Sucré-salé;;;44.767662;-1.1394801;Restaurant;Crèperie;20 place de l'Eglise ;33740;ARES;+33 5 56 60 23 97;;;;;20 place de l'Eglise;
 42;Le Pitey;;;44.760326;-1.1254549;Restaurant;Cuisine traditionnelle;79 avenue de la Libération ;33740;ARES;+33 5 56 82 16 80;www.lepitey.com/;;;;79 avenue de la Libération;
 43;L'Olivier;;;44.76138;-1.1385065;Restaurant;Cuisine traditionnelle;30 rue du 14 Juillet ;33740;ARES;+33 5 56 60 00 97;www.bassindarcachon.com/pro/olivier/;;Famille Plus;;30 rue du 14 Juillet;
@@ -221,10 +221,10 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 220;Les Platanes;;;45.222176;-0.5724911;Hôtel restaurant;Cuisine traditionnelle;4  route de Saint-Savin;33820;ETAULIERS;+33 5 57 64 70 42;www.logis-gironde.fr/detail_gite.php?gite=HOTAQU03301V3EXEÂ ;2 cheminées2 cocottes;;;4; route de Saint-Savin
 221;Le New Booster - Chez Bill et Véro;;;45.187904;-0.6023597;Restaurant;Cuisine traditionnelle;Le Pontet Sud Est RD 137;33390;EYRANS;+33 5 57 64 55 80;;;;;Le Pontet Sud Est;RD 137
 222;Cercle de l'Union;;;44.53712;-0.2980199;Restaurant;Cuisine traditionnelle;2  Route du Stade;33210;FARGUES;+33 5 56 76 28 94;;;;;2; Route du Stade
-223;Le Jep's;;;44.824238;-0.4469819;Restaurant;Brasserie;53 avenue de l'Entre-deux-Mers ;33370;FARGUES-SAINT-HILAIRE;+33 5 56 21 21 24;http://jeps-restaurant.com;;;;53 avenue de l'Entre-deux-Mers;
+223;Le Jep's;;;44.824238;-0.4469819;Restaurant;Brasserie;53 avenue de l'Entre-deux-Mers ;33370;FARGUES-SAINT-HILAIRE;+33 5 56 21 21 24;jeps-restaurant.com;;;;53 avenue de l'Entre-deux-Mers;
 224;La Casa Italienne;;;44.823742;-0.4454981;Restaurant;Cuisine traditionnelle;68 avenue de l'Entre-deux-Mers ;33360;FARGUES-SAINT-HILAIRE;+33 5 56 78 49 01;www.casaitalienne.com;;;;68 avenue de l'Entre-deux-Mers;
 225;Cèpe & Sarment;;;44.806053;0.0157539;Restaurant;Bistrot / bar à  vinCuisine traditionnelleBrasserie;le Bourg ;33350;FLAUJAGUES;+33 5 57 40 29 94;;;;;le Bourg;
-226;La Ferme de Serres;;;44.439945;-0.1188164;Restaurant;Cuisine traditionnelle;1  Serres;33430;GAJAC;+33 5 56 25 19 32;http://lafermedeserres.blogspot.com;;Assiette de Pays;;1; Serres
+226;La Ferme de Serres;;;44.439945;-0.1188164;Restaurant;Cuisine traditionnelle;1  Serres;33430;GAJAC;+33 5 56 25 19 32;lafermedeserres.blogspot.com;;Assiette de Pays;;1; Serres
 227;La Saye;;;44.995777;-0.2749586;Restaurant;Cuisine traditionnelle;1 impasse du Plantis ;33133;GALGON;+33 5 57 74 32 35;;;;;1 impasse du Plantis;
 228;La Filadière;;;45.06273;-0.6235599;Restaurant;Cuisine traditionnelle;11  Corniche de la Gironde;33710;GAURIAC;+33 5 57 64 94 05;www.lafiladiere.com;;;;11; Corniche de la Gironde
 229;Le Bistrot de Gauriac;;;45.06813;-0.61331;Restaurant;Restauration rapide;48t Franciscot Nord ;33710;GAURIAC;+33 9 81 45 93 25;;;;;48t Franciscot Nord;
@@ -251,7 +251,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 250;Le Tie Break;;;44.62512;-1.1079239;Restaurant;Cuisine traditionnelle;Tennis club de Gujan-Mestras 121 route des Lacs;33470;GUJAN-MESTRAS;+33 5 57 15 78 20;www.tennis-gujanmestras.fr;;;;Tennis club de Gujan-Mestras;121 route des Lacs
 251;L'Endroit;;;44.636154;-1.0942554;Restaurant;Cuisine traditionnelle;184 avenue de Lattre de Tassigny ;33470;GUJAN-MESTRAS;+33 5 56 83 27 41;;;;;184 avenue de Lattre de Tassigny;
 252;Restaurant du Golf de Gujan;;;44.6037;-1.0902214;Restaurant;Cuisine traditionnelle;route de Sanguinet ;33470;GUJAN-MESTRAS;+33 5 57 52 73 76;www.bluegreen.com;;;;route de Sanguinet;
-253;Restaurant Le Khélus;;;44.619617;-1.1123657;Restaurant;Cuisine traditionnelle;Village Khélus La Hume;33470;GUJAN-MESTRAS;+33 5 56 83 92 59;www.location-salle-arcachon.comhttp://myspace.com/lekhelus;;;;Village Khélus;La Hume
+253;Restaurant Le Khélus;;;44.619617;-1.1123657;Restaurant;Cuisine traditionnelle;Village Khélus La Hume;33470;GUJAN-MESTRAS;+33 5 56 83 92 59;www.location-salle-arcachon.commyspace.com/lekhelus;;;;Village Khélus;La Hume
 254;Chez Patoune - Restaurant du Canal;;;44.641857;-1.0655682;Restaurant;Cuisine traditionnelle;3 rue des Frères Larroque ;33470;GUJAN-MESTRAS;+33 5 56 83 69 97;;;;;3 rue des Frères Larroque;
 255;La Marinière;;;44.64334;-1.1141628;Restaurant;Cuisine traditionnelle;50 avenue de la Plage ;33470;GUJAN-MESTRAS;+33 5 40 70 27 48;;;;;50 avenue de la Plage;
 256;Les Pavois;;;44.641502;-1.0727548;Restaurant;Cuisine traditionnelle;113 Port de Larros ;33470;GUJAN-MESTRAS;+33 5 56 66 38 71;www.restaurant-lespavois.com;;;;113 Port de Larros;
@@ -352,13 +352,13 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 351;Crèperie Les Coquelicots;;;44.742416;0.1587596;Restaurant;Crèperie;38  route des Terroirs;33790;LANDERROUAT;+33 5 56 71 26 82;;;;;38; route des Terroirs
 352;Le Saint Martin;;;44.708595;-0.40082;Restaurant;Brasserie;5  place Aimé Gouzy;33550;LANGOIRAN;+33 5 56 32 70 31;;;;;5; place Aimé Gouzy
 353;Claude Darroze;;;44.552937;-0.2466122;Hôtel restaurant;Cuisine traditionnelle;95  cours du Général Leclerc;33210;LANGON;+33 5 56 63 00 48;www.darroze.com;;Tables et Auberges de France;;95; cours du Général Leclerc
-354;Le Tire Bouchon;;;44.545364;-0.2638848;Hôtel restaurant;Cuisine traditionnelle;6 rue des Bruyères ;33210;LANGON;+33 5 57 98 21 65;http://hotel-atlantis.fr;;;;6 rue des Bruyères;
+354;Le Tire Bouchon;;;44.545364;-0.2638848;Hôtel restaurant;Cuisine traditionnelle;6 rue des Bruyères ;33210;LANGON;+33 5 57 98 21 65;hotel-atlantis.fr;;;;6 rue des Bruyères;
 355;Horus - Les Bruyères;;;44.545372;-0.263909;Hôtel restaurant;Cuisine traditionnelle;2  rue des Bruyères;33210;LANGON;+33 5 56 62 36 37;www.hotel-restaurant-horus-langon.com;3 cheminées2 cocottes;Qualité Tourisme;;2; rue des Bruyères
 356;Au Langonnais;;;44.550358;-0.2447842;Restaurant;Cuisine traditionnelle;78  cours du Mal de Lattre de Tassigny;33210;LANGON;+33 5 56 76 27 75;;;;;78; cours du Mal de Lattre de Tassigny
 357;Le Destiné;;;44.556446;-0.2511766;Restaurant;Cuisine traditionnelle;38 cours Sadi Carnot ;33210;LANGON;+33 5 56 63 51 83;;;;;38 cours Sadi Carnot;
 358;La Table Bio;;;44.55493;-0.2471663;Restaurant;Cuisine traditionnelle;62  cours des Fossés;33210;LANGON;+33 5 56 76 25 66;;;;;62; cours des Fossés
 359;La Madrague;;;44.55132;-0.2450735;Restaurant;PizzeriaCuisine traditionnelle;42  cours du Mal de Lattre de Tassigny;33210;LANGON;+33 5 56 62 26 73;;;;;42; cours du Mal de Lattre de Tassigny
-360;Les Places;;;45.061375;-0.542945;Restaurant;Cuisine traditionnelle;5  rue les Places;33710;LANSAC;+33 5 57 68 24 26;http://restaurantlesplaces.monsite.orange.fr/index.jhtml;;;;5; rue les Places
+360;Les Places;;;45.061375;-0.542945;Restaurant;Cuisine traditionnelle;5  rue les Places;33710;LANSAC;+33 5 57 68 24 26;restaurantlesplaces.monsite.orange.fr/index.jhtml;;;;5; rue les Places
 361;L'Océana;;;44.71957;-1.0710647;Hôtel restaurant;Cuisine traditionnelle;7  avenue Guy Célérier;33138;LANTON;+33 5 56 82 06 20;www.oceana-hotel.fr;2 cocottes2 cheminées;;;7; avenue Guy Célérier
 362;Café Le Baryton;;;44.703526;-1.0388922;Restaurant;Bistrot / bar à  vin;8 avenue Paul Gauguin ;33138;LANTON;+33 5 56 82 31 83;;;;;8 avenue Paul Gauguin;
 363;Moules & Co;;;44.718582;-1.0696961;Restaurant;BrasserieCuisine traditionnelle;1  place de Courcy;33138;LANTON;+33 5 56 26 47 36;;;;;1; place de Courcy
@@ -490,12 +490,12 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 489;Bistrot de L'Entre-deux-Mers;;;44.83316;-0.3632109;Restaurant;Cuisine traditionnelle;15  route de Bergerac;33750;CAMARSAC;+33 5 56 30 18 90;;;;;15; route de Bergerac
 490;L'As de Carreau;;;44.732494;-0.462423;Restaurant;Brasserie;21 place Sadi Carnot ;33360;CAMBES;+33 5 56 78 73 76;;;;;21 place Sadi Carnot;
 491;La Maison du Fleuve;;;44.7676;-0.50607;Restaurant;Cuisine traditionnelle;20  chemin Seguin;33360;CAMBLANES-ET-MEYNAC;+33 5 56 20 06 40;www.maison-du-fleuve.com;;;;20; chemin Seguin
-492;La ferme nature de Marahans;;;44.29836;-0.2614402;Restaurant;Cuisine traditionnelle;lieu dit Marahans ;33138;CAPTIEUX;+33 9 82 25 72 85;http://ferme-nature-marahans.com;;;;lieu dit Marahans;
+492;La ferme nature de Marahans;;;44.29836;-0.2614402;Restaurant;Cuisine traditionnelle;lieu dit Marahans ;33138;CAPTIEUX;+33 9 82 25 72 85;ferme-nature-marahans.com;;;;lieu dit Marahans;
 493;Les Mouettes;;;45.082935;-1.1875697;Restaurant;PizzeriaCuisine traditionnelle;4 place Marcel Prévot ;33121;CARCANS;+33 5 56 03 32 50;;;;;4 place Marcel Prévot;
 494;Snack de la Plage;;;45.088604;-1.0428554;Restaurant;Restauration rapide;Domaine de Bombannes ;33121;CARCANS;+33 5 57 70 12 23;;;Famille Plus;;Domaine de Bombannes;
 495;Le Mini Golf de Maubuisson;;;45.06677;-1.139027;Restaurant;Cuisine traditionnelleBrasserieRestauration rapide;83  avenue de Maubuisson;33121;CARCANS-MAUBUISSON;+33 5 56 03 04 29;;;Famille Plus;;83; avenue de Maubuisson
 496;Chez Heidi;;;45.081924;-1.1894524;Restaurant;Restauration à  thème;avenue des Dunes ;33121;CARCANS-OCEAN;+33 5 56 03 42 92;;;;;avenue des Dunes;
-497;Pizza Milano;;;44.81092;-0.4774402;Restaurant;Pizzeria;18  rue Lartigotte;33360;CARIGNAN-DE-BORDEAUX;+33 5 56 21 12 88;http://pizzamilano.wifeo.com;;;;18; rue Lartigotte
+497;Pizza Milano;;;44.81092;-0.4774402;Restaurant;Pizzeria;18  rue Lartigotte;33360;CARIGNAN-DE-BORDEAUX;+33 5 56 21 12 88;pizzamilano.wifeo.com;;;;18; rue Lartigotte
 498;L'Escale Chez Olga;;;45.200184;-0.5903434;Hôtel restaurant;Cuisine traditionnelle;15 route de Saintes ;33138;CARTELEGUE;+33 5 57 64 71 18;www.chez-olga.com;;;;15 route de Saintes;
 499;Le Phénix;;;44.85383;-0.042633;Hôtel restaurant;Cuisine traditionnelle;24  place Pierre Orus;33350;CASTILLON-LA-BATAILLE;+33 5 57 40 00 14;www.hotel-restaurant-lephenix.frcaroleportier@orange.fr;;;;24; place Pierre Orus
 500;La Fontaine de Manon;;;44.85438;-0.0457421;Restaurant;Cuisine traditionnelle;57  rue Victor Hugo;33350;CASTILLON-LA-BATAILLE;+33 5 57 40 24 48;;;;;57; rue Victor Hugo
@@ -556,7 +556,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 555;Côte Ouest;;;44.650093;-1.2449312;Restaurant;BrasserieCuisine traditionnelle;67  boulevard de la Plage;33970;LEGE-CAP FERRET;+33 5 56 60 66 23;;;;;67; boulevard de la Plage
 556;Le Pit;;;44.748867;-1.1806011;Restaurant;BrasseriePizzeria;2  avenue du Général de Gaulle;33950;LEGE-CAP FERRET;+33 5 56 60 70 39;;;;;2; avenue du Général de Gaulle
 557;Crèperie du Port;;;44.74527;-1.1745929;Restaurant;Crèperie;Port de Claouey Claouey;33950;LEGE-CAP FERRET;+33 5 56 60 73 52;;;;;Port de Claouey;Claouey
-558;Eden Gourmands Chez Pat-A-Chou;;;44.720608;-1.2096118;Restaurant;Crèperie;64  avenue de Bordeaux;33950;LEGE-CAP FERRET;+33 5 56 60 51 38;http://edengourmands-chez-patachou.com;;;;64; avenue de Bordeaux
+558;Eden Gourmands Chez Pat-A-Chou;;;44.720608;-1.2096118;Restaurant;Crèperie;64  avenue de Bordeaux;33950;LEGE-CAP FERRET;+33 5 56 60 51 38;edengourmands-chez-patachou.com;;;;64; avenue de Bordeaux
 559;Frédélian;;;44.652657;-1.2426567;Restaurant;CrèperieBrasserie;33  boulevard de la Plage;33970;LEGE-CAP FERRET;+33 5 56 60 60 59;www.fredelian-capferret.com;;;;33; boulevard de la Plage
 560;Le Buffet de la Gare;;;44.656628;-1.2398886;Restaurant;CrèperieRestauration rapide;allée Bélisaire Cap Ferret;33950;LEGE-CAP FERRET;+33 5 56 03 75 84;;;;;allée Bélisaire;Cap Ferret
 561;Chacouette;;;44.650856;-1.2438154;Restaurant;Cuisine traditionnelle;50  boulevard de la Plage;33970;LEGE-CAP FERRET;+33 5 57 70 35 07;;;;;50; boulevard de la Plage
@@ -597,7 +597,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 596;Les Ailes;;;44.70012;-0.600171;Restaurant;Cuisine traditionnelle;aérodrome de Léognan Saucats ;33240;LEOGNAN;+33 5 56 64 75 57;;;;;aérodrome de Léognan Saucats;
 597;La Forge;;;44.738525;-0.6759166;Restaurant;Cuisine traditionnelleBrasserie;67  avenue du Maréchal Leclerc;33850;LEOGNAN;+33 5 56 64 11 58;;;;;67; avenue du Maréchal Leclerc
 598;L'Eau Berge Bleue;;;44.724064;-0.6211303;Restaurant;Cuisine traditionnelleRestauration rapide;chemin des Terres Rousses ;33240;LEOGNAN;+33 5 56 64 84 45;;;;;chemin des Terres Rousses;
-599;L'Assiette de l'Epicerie;;;44.72431;-0.5935084;Restaurant;Restauration rapide;58 chemin de Branon ;33660;LEOGNAN;+33 5 56 85 83 38;http://lassiettedelepicerie.blogspot.com;;;;58 chemin de Branon;
+599;L'Assiette de l'Epicerie;;;44.72431;-0.5935084;Restaurant;Restauration rapide;58 chemin de Branon ;33660;LEOGNAN;+33 5 56 85 83 38;lassiettedelepicerie.blogspot.com;;;;58 chemin de Branon;
 600;L'Olivier;;;44.614727;-1.2012004;Restaurant;Cuisine traditionnellePizzeria;257  boulevard de l'Océan;33115;PYLA-SUR-MER;+33 5 56 22 13 34;www.restaurant-pyla-sur-mer-l-olivier.com;;;;257; boulevard de l'Océan
 601;Le Panorama;;;44.556595;-1.2387084;Restaurant;Cuisine traditionnellePizzeria;Camping Panorama route de Biscarrosse;33820;PYLA-SUR-MER;+33 5 56 54 40 06;;;;;Camping Panorama;route de Biscarrosse
 602;Restaurant du Camping la Forèt;;;44.585823;-1.2078094;Restaurant;Cuisine traditionnellePizzeriaRestauration rapide;route de Biscarrosse ;33820;PYLA-SUR-MER;+33 5 56 66 36 94;www.village-center.com;;;;route de Biscarrosse;
@@ -647,7 +647,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 646;La Guinguette - La Lampe à  Pétrole;;;45.285366;-0.6988334;Restaurant;BrasserieCuisine traditionnelle;Port des Callonges quai d'Orio; avenue Charles de Gaulle;SAINT-CIERS-SUR-GIRONDE;+33 5 57 43 22 30;;;;;Port des Callonges;quai d'Orio
 647;Chez Lisou;;;45.29098;-0.6121873;Restaurant;Cuisine traditionnelle;92 avenue de la République ;33340;SAINT-CIERS-SUR-GIRONDE;+33 5 57 32 60 27;;;;;92 avenue de la République;
 648;L'Escale;;;45.289986;-0.610857;Restaurant;Cuisine traditionnelleBrasserie;avenue de la République ;33240;SAINT-CIERS-SUR-GIRONDE;+33 5 57 32 60 23;;;;;avenue de la République;
-649;Le Drop;;;44.424156;-0.1804161;Restaurant;Cuisine traditionnelleGrill;6  le Grand;33430;SAINT-COME;+33 5 56 25 99 34;http://ledrop.free.fr;;;;6; le Grand
+649;Le Drop;;;44.424156;-0.1804161;Restaurant;Cuisine traditionnelleGrill;6  le Grand;33430;SAINT-COME;+33 5 56 25 99 34;ledrop.free.fr;;;;6; le Grand
 650;Le Haut Mexant;;;44.997963;-0.2004361;Restaurant;Cuisine traditionnelle;4 route de Guîtres ;;SAINT-DENIS-DE-PILE;+33 5 57 25 60 13;;;;;4 route de Guîtres;
 651;Pizzeria Mamio;;;44.994087;-0.2042555;Restaurant;Pizzeria;10  route de Paris;33910;SAINT-DENIS-DE-PILE;+33 5 57 84 26 16;;;;;10; route de Paris
 652;Le Montécrucien;;;44.592953;-0.2803663;Restaurant;BrasserieRestauration rapide;22 le Bourg Est ;;SAINTE-CROIX-DU-MONT;+33 5 56 62 09 60;;;;;22 le Bourg Est;
@@ -689,7 +689,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 688;Pizzeria de l'Horloge;;;44.565178;-0.2269014;Restaurant;Pizzeria;4  place du Général de Gaulle;33490;SAINT-MACAIRE;+33 5 56 63 03 39;;;;;4; place du Général de Gaulle
 689;La Perle de l'Atlas;;;44.565105;-0.2271222;Restaurant;Restauration à  thème;4  rue du Canton;33490;SAINT-MACAIRE;+33 5 56 76 83 79;;;;;4; rue du Canton
 690;L'Olifant;;;45.129955;-0.6443309;Hôtel restaurant;Cuisine traditionnelle;Avenue de Mercure ;;SAINT-MARTIN-LACAUSSADE;+33 5 57 42 22 96;www.hotel-blaye-lolifant.com;;;;Avenue de Mercure;
-691;Le Saint-Clément;;;45.015038;-0.0488778;Hôtel restaurant;Cuisine traditionnelle;5  rue de la République;33230;SAINT-MEDARD-DE-GUIZIERES;+33 5 57 69 60 14;http://hotel-restaurant-st-clement.comÂ ;1 cheminée2 cocottes;;;5; rue de la République
+691;Le Saint-Clément;;;45.015038;-0.0488778;Hôtel restaurant;Cuisine traditionnelle;5  rue de la République;33230;SAINT-MEDARD-DE-GUIZIERES;+33 5 57 69 60 14;hotel-restaurant-st-clement.comÂ ;1 cheminée2 cocottes;;;5; rue de la République
 692;Les Délices de la Fontaine;;;45.015038;-0.0534867;Restaurant;Bistrot / bar à  vinCuisine traditionnelle;40 rue de la République ;33340;SAINT-MEDARD-DE-GUIZIERES;+33 5 57 47 11 24;;;;;40 rue de la République;
 693;L'Antre deux;;;45.014954;-0.0537297;Restaurant;Cuisine traditionnelle;134  rue de la République;33230;SAINT-MEDARD-DE-GUIZIERES;+33 5 57 74 99 98;;;;;134; rue de la République
 694;El Christobal;;;45.01562;-0.0581344;Restaurant;PizzeriaCuisine traditionnelle;95  rue de la République;33230;SAINT-MEDARD-DE-GUIZIERES;+33 5 57 41 21 54;;;;;95; rue de la République
@@ -703,7 +703,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 702;Château Isabeau de Naujan;;;44.79761;-0.11244;Hôtel restaurant;Cuisine traditionnelle; ;;SAINT-VINCENT-DE-PERTIGNAS;+33 5 57 55 14 30;www.domaine-de-naujan.com;;;;;
 703;L'Auberge de la Forèt;;;44.837246;-0.386585;Restaurant;Cuisine traditionnelle;22  route de la Forèt;33370;SALLEBOEUF;+33 5 56 21 25 49;www.auberge-laforet.com;;;;22; route de la Forèt
 704;Domaine du Pont de l'Eyre;;;44.5459;-0.87432;Hôtel restaurant;Cuisine traditionnelle;2  route de Minoy;33770;SALLES;+33 5 56 88 35 00;www.domainedupontdeleyre.eu;2 cheminées2 cocottes;Qualité Tourisme;;2; route de Minoy
-705;Le Saprien;;;44.5331;-0.343035;Restaurant;Cuisine traditionnelle;14  rue Principale;33210;SAUTERNES;+33 5 56 76 60 87;http://saprien.free.fr;;;;14; rue Principale
+705;Le Saprien;;;44.5331;-0.343035;Restaurant;Cuisine traditionnelle;14  rue Principale;33210;SAUTERNES;+33 5 56 76 60 87;saprien.free.fr;;;;14; rue Principale
 706;Le Guyenne;;;44.69477;-0.0886631;Hôtel restaurant;Cuisine traditionnelle;route de Libourne ;;SAUVETERRE-DE-GUYENNE;+33 5 56 71 54 92;;;;;route de Libourne;
 707;Restaurant des Arcades;;;44.692955;-0.085957;Restaurant;Cuisine traditionnelleBrasserie;23  place de la République;33540;SAUVETERRE-DE-GUYENNE;+33 5 56 71 50 21;;;;;23; place de la République
 708;La Tosca;;;44.692955;-0.085957;Restaurant;PizzeriaCuisine traditionnelle;14  place de la République;33540;SAUVETERRE-DE-GUYENNE;+33 5 56 71 69 34;;;;;14; place de la République
@@ -733,7 +733,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 732;Le Mascaret Chez Rossi;;;44.897877;-0.241729;Restaurant;Restauration rapide;La Palus de Condat ;;LIBOURNE;+33 5 57 84 79 10;;;;;La Palus de Condat;
 733;Le Bistrot de la Pimpine;;;44.7986;-0.415939;Restaurant;Brasserie;1  chemin du Bon Coin;33360;LIGNAN-DE-BORDEAUX;+33 5 56 78 38 81;;;;;1; chemin du Bon Coin
 734;La Bonne Auberge;;;44.481464;-0.882236;Hôtel restaurant;Cuisine traditionnelle;1  rue Champs de Seuze;33830;LUGOS;+33 5 57 71 95 28;www.labonneauberge-lugos.com;1 cheminée3 cocottes;;;1; rue Champs de Seuze
-735;Le Moulin de Charlot;;;45.06361;-0.3293752;Restaurant;Crèperie;12  Charlot Sud;33620;MARCENAIS;+33 5 57 69 04 10;http://moulin-de-charlot.jimdo.com/;;;;12; Charlot Sud
+735;Le Moulin de Charlot;;;45.06361;-0.3293752;Restaurant;Crèperie;12  Charlot Sud;33620;MARCENAIS;+33 5 57 69 04 10;moulin-de-charlot.jimdo.com/;;;;12; Charlot Sud
 736;La Brasserie du Lac;;;45.05422;-0.6583213;Hôtel restaurant;Brasserie;Le Relais de Margaux 5;33460;MARGAUX;+33 5 57 88 87 60;www.relais-margaux.fr;;;;Le Relais de Margaux;5
 737;Le Clarexis;;;45.07093;-0.3785347;Restaurant;Cuisine traditionnelle;2  chemin Terrier;33620;MARSAS;+33 5 57 68 08 04;www.clarexis.fr;;;;2; chemin Terrier
 738;Tendance 64;;;44.711956;-0.5438262;Restaurant;Brasserie;avenue Charles de Gaulle ;33600;MARTILLAC;+33 5 56 72 07 65;;;;;avenue Charles de Gaulle;
@@ -745,7 +745,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 744;La Fleur de Sel;;;44.823982;-0.6720208;Hôtel restaurant;Cuisine traditionnelle;Hôtel l'Etoile Bleue 51 route Jean Briaud;33640;MERIGNAC;+33 5 56 15 30 62;www.lecocq-traiteur.fr;;Maître Restaurateur;;Hôtel l'Etoile Bleue;51 route Jean Briaud
 745;L'Iguane;;;44.835533;-0.6820558;Restaurant;Cuisine traditionnelle;83  avenue J.F. Kennedy;33700;MERIGNAC;+33 5 56 34 07 39;www.liguane.fr;;;;83; avenue J.F. Kennedy
 746;L'Eveil;;;44.8274;-0.6643141;Restaurant;Cuisine traditionnelle;15 avenue de l'Alouette ;33730;MERIGNAC;+33 5 56 34 27 71;www.resto-eveil.fr;;;;15 avenue de l'Alouette;
-747;Amarine;;;44.833748;-0.6673876;Restaurant;Restauration à  thèmeCuisine traditionnelle;37 avenue J.F. Kennedy ;;MERIGNAC;+33 5 56 34 23 24;http://www.amarine.fr/amarine_restaurant.asp?idRestaurant=307&isPlan=1;;Maître Restaurateur;;37 avenue J.F. Kennedy;
+747;Amarine;;;44.833748;-0.6673876;Restaurant;Restauration à  thèmeCuisine traditionnelle;37 avenue J.F. Kennedy ;;MERIGNAC;+33 5 56 34 23 24;www.amarine.fr/amarine_restaurant.asp?idRestaurant=307&isPlan=1;;Maître Restaurateur;;37 avenue J.F. Kennedy;
 748;KesKis'Mijotte;;;44.567192;0.032722;Restaurant;Cuisine traditionnelle;20 bourg Sud ;33710;MONGAUZY;+33 5 56 61 02 87;;;;;20 bourg Sud;
 749;Le Grand Cep;;;44.650116;0.0808097;Restaurant;Cuisine traditionnelleBistrot / bar à  vin;26 place Robert Darniche ;33710;MONSEGUR;+33 5 56 61 60 28;www.le-grand-cep.fr;;;;26 place Robert Darniche;
 750;Les Colonnes;;;44.650497;0.08067011;Restaurant;PizzeriaCuisine traditionnelle;36 bis  place Robert Darniche;33580;MONSEGUR;+33 5 56 71 41 17;www.restaurant-lescolonnes.com;;;;36 bis; place Robert Darniche
@@ -773,7 +773,7 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;adresse;code_pos
 772;L'Auberge du Saint Christophe;;;45.324512;-0.5773399;Restaurant;Cuisine traditionnelle;1 Bel Air RD 137;33930;PLEINE-SELVE;+33 5 57 64 50 85;;;;;1 Bel Air;RD 137
 773;Le Rapin;;;44.68878;-0.418269;Hôtel restaurant;Cuisine traditionnelle;35 route des Graves ;;PORTETS;+33 5 56 67 51 31;www.hotelrapin.fr;;;;35 route des Graves;
 774;Restaurant Chez Pitras;;;44.400494;-0.3535697;Restaurant;Cuisine traditionnelle;11 rue de l'Egalité ;;PRECHAC;+33 5 56 65 20 70;;;;;11 rue de l'Egalité;
-775;Restaurant La Bastide;;;44.392;-0.4212733;Restaurant;Restauration à  thème;1 Moureson ;33180;PRECHAC;+33 5 56 65 21 17;http://labastide.info;;;;1 Moureson;
+775;Restaurant La Bastide;;;44.392;-0.4212733;Restaurant;Restauration à  thème;1 Moureson ;33180;PRECHAC;+33 5 56 65 21 17;labastide.info;;;;1 Moureson;
 776;Le Lorelei;;;45.0898;-0.5194365;Restaurant;Cuisine traditionnelle;1  rue Fassier;;PUGNAC;+33 5 57 68 89 50;;;;;1; rue Fassier
 777;La Popote de l'Antiquaire;;;45.082687;-0.4958224;Restaurant;Cuisine traditionnelleRestauration à  thème;5 rue des Anciens Combattants ;;PUGNAC;33622907461;;;;;5 rue des Anciens Combattants;
 778;La Trattoria Lesca'l;;;45.074326;-0.4959082;Restaurant;Restauration à  thème;Parc de Bellevue ;;PUGNAC;+33 5 57 42 31 52;;;;;Parc de Bellevue;
