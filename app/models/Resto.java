@@ -38,9 +38,7 @@ public class Resto extends Model implements Comparable<Resto> {
 	public String commune;
 	public String telephone;
 	public String internet;
-	public String classement;
 	public String twitter;
-	public String tourisme;
 	@Transient
 	public Integer distance;
 	@Transient

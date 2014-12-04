@@ -19,14 +19,14 @@ CREATE TABLE resto_tmp
   internet character varying(255),
   classement character varying(255),
   marque character varying(255),
-  tourisme character varying(255),
+  twitter character varying(255),
   adresse_1 character varying(255),
   adresse_2 character varying(255)
 );
-\COPY resto_tmp(id,raison_sociale,mobile,mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,internet,classement,marque,twitter,adresse_1,adresse_2)
-FROM 'C:\perso\data\resto_33.csv' WITH  CSV DELIMITER ';'  HEADER ENCODING 'LATIN1';
-INSERT INTO resto SELECT id,raison_sociale,mobile, 
-mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,internet,classement,marque,tourisme,twitter FROM resto_tmp;
+\COPY resto_tmp(id,raison_sociale,mobile,mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,internet,classement,marque,twitter,adresse_1,adresse_2) FROM 'resto_33.csv' WITH  CSV DELIMITER ';'  HEADER ENCODING 'LATIN1';
+
+--INSERT INTO resto SELECT id,raison_sociale,mobile,mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,internet,classement,tourisme,twitter FROM resto_tmp;
+ 
 DROP TABLE resto_tmp;
 END;
 --COPY resto TO 'C:\perso\data\resto_33_out.csv' WITH  CSV DELIMITER ';'  HEADER;
@@ -45,7 +45,7 @@ CREATE TABLE resto_tmp
   longitude double precision,
   type character varying(255),
   categorie character varying(255),
-  specialite character varying(255),
+  divers character varying(255),
   adresse character varying(255),
   code_postale character varying(255),
   commune character varying(255),
@@ -54,7 +54,7 @@ CREATE TABLE resto_tmp
   tourisme character varying(255),
   twitter character varying(255)
 );
-COPY resto_tmp FROM 'C:\perso\data\resto_tlse.csv' CSV DELIMITER ';'  HEADER ENCODING 'LATIN1';
-INSERT INTO resto SELECT id,raison_sociale,mobile,mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,internet,tourisme, twitter FROM resto_tmp;
+\COPY resto_tmp FROM 'resto_tlse.csv' CSV DELIMITER ';'  HEADER ENCODING 'LATIN1';
+INSERT INTO resto SELECT id,mobile,raison_sociale,mail,latitude,longitude,type,categorie,adresse,code_postale,commune,telephone,internet, twitter FROM resto_tmp;
 DROP TABLE resto_tmp;
 END;

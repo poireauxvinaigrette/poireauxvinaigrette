@@ -29,9 +29,7 @@ create table resto (
   commune                   varchar(255),
   telephone                 varchar(255),
   internet                  varchar(255),
-  classement                varchar(255),
-  marque                    varchar(255),
-  tourisme                  varchar(255),
+  twitter                   varchar(255),
   constraint pk_resto primary key (id))
 ;
 

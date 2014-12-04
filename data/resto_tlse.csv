@@ -1,5 +1,5 @@
-id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;twitter;adresse;code_postale;commune;telephone;internet;tourisme;marque
-31045;Chez Zoreille;;;43.5980208;1.4299942;restaurant;Réunionais;;5 Place Jean Diébold;31300;Toulouse;5;;;
+id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;divers;adresse;code_postale;commune;telephone;internet;tourisme;twitter
+31045;Chez Zoreille;;;43.5980208;1.4299942;restaurant;Réunionais;;5 Place Jean Diébold;31300;Toulouse;05050505;www.zoreilles.com;;zoreille
 31001;Le Chai Saint-Sauveur;;;43.5975482;1.4579757;restaurant;;; ;;;;;;
 31002;Les Folles Saisons;;;43.5784981;1.3910333;restaurant;;; ;;;;;;
 31003;La Flambée;;;43.6089866;1.379883;restaurant;;; ;;;;;;
@@ -491,4 +491,4 @@ id;raison_sociale;mobile;mail;latitude;longitude;type;categorie;twitter;adresse;
 31490;Restaurant Universitaire;;;43.5670102;1.4726108;restaurant;;;;;;;;;
 31491;Au pois gourmand;;;43.6090993;1.4096381;restaurant;;;;;;;;;
 31492;Le Vauquelin;;;43.5838671;1.4015829;restaurant;;; Rue Nicolas-Louis Vauquelin;;Toulouse;;;;
-31193;Saint-Lundi;33622260446;dom.bordier@gmail.com;43.593931;1.421441;foodtruck;;saintlundi;27bis Allée Maurice Sarraut;31300;Toulouse;;www.saintlundi.com;;
+31493;Saint-Lundi;33622260446;dom.bordier@gmail.com;43.593931;1.421441;foodtruck;;;27bis Allée Maurice Sarraut;31300;Toulouse;;www.saintlundi.com;;saintlundi
