@@ -1,4 +1,4 @@
-@(user: User = null, scripts: Html = Html(""))(content: Html)
+@(scripts: Html = Html(""))(content: Html)
 
 <!DOCTYPE html>
 
@@ -36,7 +36,7 @@
 				<li><a href="@routes.Oumanger.index()">Liste des plats du jour</a></li>
 			</ul>
 		</div>
-		@user
+		
 	  </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
    </nav>

@@ -13,7 +13,7 @@ GET     /twilio                     controllers.Twilio.index()
 GET     /nexmoI                     controllers.Nexmo.index()
 GET     /nexmo                      controllers.Nexmo.logMenu(msisdn: String, to: String, messageId: String, text: String, type: String)
 POST    /newMenu                    controllers.Cuisiner.cuisine()
-#GET     /client                     controllers.Cuisiner.setMenu()
+GET     /client                     controllers.Cuisiner.setMenu()
 
 # Routes
 # This file defines all application routes (Higher priority routes first)
@@ -22,13 +22,6 @@ POST    /newMenu                    controllers.Cuisiner.cuisine()
 # Home page
 GET     /                           controllers.Oumanger.map()
 
-# Home page
-GET        /              @controllers.ss.SecuredAplli.index
-GET        /userAware           @controllers.ss.SecuredAplli.userAware
-GET        /only-twitter        @controllers.ss.SecuredAplli.onlyTwitter
-GET        /link-result         @controllers.ss.SecuredAplli.linkResult
-GET        /current-user        @controllers.ss.SecuredAplli.currentUser
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
-->     /auth                securesocial.Routes
+GET     /assets/*file           controllers.Assets.at(path="/public", file)

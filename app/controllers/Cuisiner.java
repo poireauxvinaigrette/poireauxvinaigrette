@@ -61,7 +61,7 @@ public class Cuisiner extends Controller {
 
 		return ok(Json.toJson(menu));
 	}
-/*
+
 	public static Promise<Result> setMenu() {
 		// msisdn=06999213270&to=12108054321&messageId=000000FFFB0356D1&text=menu&type=text&message-timestamp=2012-08-19+20%3A38%3A23
 		final String urlMenu = "http://localhost:9000/newMenu";
@@ -87,7 +87,7 @@ public class Cuisiner extends Controller {
 		Promise<WSResponse> promise = WS.url(feedUrl2).get();
 		return promise.map(response -> ok(" tst : " + response.asJson()));
 	}
-*/
+
 	public static Result cuisine(String msisdn, String to, String messageId, String text, String type) {
 		Menu sms = new Menu();
 		try {
