@@ -1,22 +1,20 @@
-import play.*;
-import play.libs.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import java.util.*;
-
-import com.avaje.ebean.*;
-
-import models.*;
-
+import models.Resto;
+import play.Application;
 import play.GlobalSettings;
 import play.Logger;
+import play.libs.Yaml;
 import securesocial.core.RuntimeEnvironment;
-import service.MyEnvironment;
+import service.DemoUser;
 
-import java.util.HashMap;
+import com.avaje.ebean.Ebean;
 
 public class Global extends GlobalSettings {
-	private RuntimeEnvironment env = new MyEnvironment();
-	private HashMap<String, Object> instances = new HashMap<String, Object>();
+	private RuntimeEnvironment env = new MyEnvironment<DemoUser>();
+	private HashMap<String, Object> instances = new HashMap<>();
 
 	@Override
 	public <A> A getControllerInstance(Class<A> controllerClass) throws Exception {
