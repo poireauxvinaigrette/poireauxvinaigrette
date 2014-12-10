@@ -1,6 +1,7 @@
 package controllers;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
@@ -27,32 +28,37 @@ import com.avaje.ebean.SqlRow;
 public class Oumanger extends Controller {
 
 	public static Result index() {
-		
+
 		return ok(geoloc.render());
 	}
 
 	public static Result map() {
-		return ok(map.render(null,null));
+		return ok(map.render(null, null));
 	}
-	
+
 	public static Result get(Long id) {
 		Resto restaurant = Resto.find.byId(id);
 		return ok(resto.render(restaurant));
-	}	
-	public static Result centeredMap( Double lat, Double lon) {
-		return ok(map.render(lat,lon));
 	}
-	
+
+	public static Result centeredMap(Double lat, Double lon) {
+		return ok(map.render(lat, lon));
+	}
+
 	public static Result list(Integer dist, Double lat, Double lon, String format) {
+		Calendar c = Calendar.getInstance();
+		Date today = c.getTime();
+
 		String distance = "(POINT(" + lat + "," + lon + ")<->POINT(latitude, longitude))";
-		//Date today = new Date();
+		// Date today = new Date();
 		List<Resto> listResto = new ArrayList<Resto>();
-		String sql = "SELECT r.id, r.mobile, " + distance+ " as distance, r.raison_sociale, r.type, r.categorie, r.telephone, r.adresse"
-				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet, m.text , m.creation_date" 
+		String sql = "SELECT r.id, r.mobile, " + distance
+				+ " as distance, r.raison_sociale, r.type, r.categorie, r.telephone, r.adresse"
+				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet, m.text , m.creation_date"
 				+ " FROM resto r LEFT JOIN menu m ON m.resto=r.id "
-		//		+ " WHERE (m.reception_date is null OR date(m.reception_date) = current_date)"
-				+ " WHERE "+ distance + "*6367445*pi()/180<" + dist 
-				+ " ORDER BY " + distance ;
+				// +
+				// " WHERE (m.reception_date is null OR date(m.reception_date) = current_date)"
+				+ " WHERE " + distance + "*6367445*pi()/180<" + dist + " ORDER BY m.creation_date," + distance + "";
 		if (format == null) {
 			sql += " limit 20";
 		} else {
@@ -75,34 +81,39 @@ public class Oumanger extends Controller {
 			resto.internet = sqlRow.getString("internet");
 			resto.menudujour = sqlRow.getString("text");
 			resto.datedujour = sqlRow.getDate("creation_date");
-			
+
 			Double tmp = sqlRow.getDouble("distance") * 6367445 * Math.PI / 180;
 			resto.distance = tmp.intValue();
-			
+			if (resto.datedujour != null) {
+				resto.menuOfDay = DateUtils.isSameDay(resto.datedujour, today) && resto.datedujour.before(today);
+			} else {
+				resto.menuOfDay = false;
+			}
+
 			if (StringUtils.isNotEmpty(resto.mobile)) {
-				//resto. = sqlRow.getDate("reception_date");
+				// resto. = sqlRow.getDate("reception_date");
 				/*
-				List<Menu> findList = Menu.find.where().eq("resto.mobile", resto.mobile)
-						.orderBy("creationDate desc").findList();
-				List<Menu> filteredMenu = new ArrayList<Menu>();
-				for (Menu menu : findList) {
-					Logger.debug(today + "check menu :"+ menu.messageId + " " + menu.receptionDate);
-					if ( DateUtils.isSameDay(menu.receptionDate, today)) {
-						Logger.debug("add menu :"+ menu.messageId + " " + menu.text);
-						filteredMenu.add(menu);
-					}
-				}
-// java8	List<Menu> filteredMenu = findList.stream().filter(u -> DateUtils.isSameDay(u.receptionDate, today)).collect(Collectors.toList());
-				
-				resto.menudujour  = (filteredMenu.size() > 0 ? filteredMenu.get(0).text : null);
-				*/
+				 * List<Menu> findList = Menu.find.where().eq("resto.mobile",
+				 * resto.mobile) .orderBy("creationDate desc").findList();
+				 * List<Menu> filteredMenu = new ArrayList<Menu>(); for (Menu
+				 * menu : findList) { Logger.debug(today + "check menu :"+
+				 * menu.messageId + " " + menu.receptionDate); if (
+				 * DateUtils.isSameDay(menu.receptionDate, today)) {
+				 * Logger.debug("add menu :"+ menu.messageId + " " + menu.text);
+				 * filteredMenu.add(menu); } } // java8 List<Menu> filteredMenu
+				 * = findList.stream().filter(u ->
+				 * DateUtils.isSameDay(u.receptionDate,
+				 * today)).collect(Collectors.toList());
+				 * 
+				 * resto.menudujour = (filteredMenu.size() > 0 ?
+				 * filteredMenu.get(0).text : null);
+				 */
 			}
 			listResto.add(resto);
 		}
 
 		Collections.sort(listResto);
-		//Collections.reverse(restos);
-		
+		// Collections.reverse(restos);
 
 		if (format == null) {
 			return ok(restos.render(listResto));

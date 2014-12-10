@@ -16,18 +16,26 @@
 				</tr>
 			</thead>
 			<tbody>
-				@for(resto <- restos) {
+			@for(resto <- restos) {
+				@if(resto.menuOfDay) {
+				<tr style="background-color: rgb(112, 202, 127);">
+				} else {
 				<tr>
+				}
 					<td><a href="/carto/@resto.latitude/@resto.longitude">@resto.distance</a></td>
 					<td  style="text-align: right;">@resto.menudujour</td> 
-				@if(resto.internet && !resto.internet.isEmpty) {
-					<td style="text-align: right;"><a target="_blank" href="@resto.internet">@resto.raisonSociale</a></td> 
+				@if(resto.menudujour) {
+					<td style="text-align: right;"><a href="/resto/@resto.id">@resto.raisonSociale</a></td> 
 				} else {
-					<td style="text-align: right;">@resto.raisonSociale</td>
-				}
-	
+					@if(resto.internet && !resto.internet.isEmpty) {
+						<td style="text-align: right;"><a target="_blank" href="@resto.internet">@resto.raisonSociale</a></td> 
+					} else {
+						<td style="text-align: right;">@resto.raisonSociale</td>
+					}
+				}	
 				</tr>
-				}
+			}
+			
 			</tbody>
 		</table>
 	</div>
