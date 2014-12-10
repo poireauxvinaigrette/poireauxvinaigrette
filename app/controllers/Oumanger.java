@@ -47,6 +47,8 @@ public class Oumanger extends Controller {
 
 	public static Result list(Integer dist, Double lat, Double lon, String format) {
 		Calendar c = Calendar.getInstance();
+		c.set(Calendar.HOUR_OF_DAY, 14);
+		c.set(Calendar.MINUTE, 00);
 		Date today = c.getTime();
 
 		String distance = "(POINT(" + lat + "," + lon + ")<->POINT(latitude, longitude))";
@@ -70,7 +72,7 @@ public class Oumanger extends Controller {
 			resto.id = sqlRow.getInteger("id");
 			resto.raisonSociale = sqlRow.getString("raison_sociale");
 			resto.categorie = sqlRow.getString("categorie");
-			resto.type = sqlRow.getString("type");
+			resto.typeDeResto = sqlRow.getString("type");
 			resto.telephone = sqlRow.getString("telephone");
 			resto.mobile = sqlRow.getString("mobile");
 			resto.adresse = sqlRow.getString("adresse");
@@ -84,10 +86,8 @@ public class Oumanger extends Controller {
 
 			Double tmp = sqlRow.getDouble("distance") * 6367445 * Math.PI / 180;
 			resto.distance = tmp.intValue();
-			if (resto.datedujour != null) {
-				resto.menuOfDay = DateUtils.isSameDay(resto.datedujour, today) && resto.datedujour.before(today);
-			} else {
-				resto.menuOfDay = false;
+			if (resto.datedujour != null && DateUtils.isSameDay(resto.datedujour, today)) {
+				resto.beforeMidi = Boolean.valueOf(resto.datedujour.before(today));
 			}
 
 			if (StringUtils.isNotEmpty(resto.mobile)) {

@@ -99,7 +99,7 @@ public class Cuisiner extends Controller {
 			sms.destinataire = to;
 			sms.messageId = messageId;
 			sms.text = text;
-			sms.type = type;
+			sms.typeMsg = type;
 			sms.creationDate = new Date();
 
 			String messagetimestamp = request().getQueryString("message-timestamp");

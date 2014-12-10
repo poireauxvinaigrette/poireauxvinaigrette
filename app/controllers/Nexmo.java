@@ -34,7 +34,7 @@ public class Nexmo extends Controller {
 			menu.destinataire = to;
 			menu.messageId = messageId;
 			menu.text = text;
-			menu.type = type;
+			menu.typeMsg = type;
 			menu.creationDate = new Date();
 
 			String messagetimestamp = request().getQueryString("message-timestamp");

@@ -12,15 +12,13 @@
 				<tr>
 					<th>Quand?</th>
 					<th style="text-align: right;">MenuDuJour?</th>
-					<th style="text-align: right;">Type</th>
 				</tr>
 			</thead>
 			<tbody>
-			@for(resto <- resto.menus) {
+			@for(menu <- resto.menus) {
 				<tr>
-					<td>@resto.creationDate</td>
-					<td  style="text-align: right;">@resto.text</td> 
-					<td  style="text-align: right;">@resto.mobile</td> 
+					<td>@menu.creationDate</td>
+					<td  style="text-align: right;">@menu.text</td> 
 				</tr>
 			}
 			</tbody>

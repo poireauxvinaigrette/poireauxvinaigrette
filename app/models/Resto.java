@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Date;
 
 
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -31,7 +33,8 @@ public class Resto extends Model implements Comparable<Resto> {
 	public Double latitude;
 	@Required
 	public Double longitude;
-	public String type;
+	@Column(name="type")
+	public String typeDeResto;
 	public String categorie;
 	public String adresse;
 	public String codePostale;
@@ -46,7 +49,8 @@ public class Resto extends Model implements Comparable<Resto> {
 	@Transient
 	public Date datedujour;
 	@Transient
-	public Boolean menuOfDay;
+	public Boolean beforeMidi;
+
 
 	@OneToMany(mappedBy = "resto")
 	// @JoinColumn(name="resto", referencedColumnName = "mobile")

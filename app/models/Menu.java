@@ -2,6 +2,7 @@ package models;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -28,7 +29,8 @@ public class Menu extends Model {
 	@Required
 	public String destinataire;
 	public String text;
-	public String type;
+	@Column(name="type")
+	public String typeMsg;
 	@Formats.DateTime(pattern = "yyyy-MM-dd")
 	public Date receptionDate;
 	
