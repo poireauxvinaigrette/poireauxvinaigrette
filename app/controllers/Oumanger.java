@@ -18,6 +18,7 @@ import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.restos.geoloc;
 import views.html.restos.map;
+import views.html.restos.resto;
 import views.html.restos.restos;
 
 import com.avaje.ebean.Ebean;
@@ -34,6 +35,10 @@ public class Oumanger extends Controller {
 		return ok(map.render(null,null));
 	}
 	
+	public static Result get(Long id) {
+		Resto restaurant = Resto.find.byId(id);
+		return ok(resto.render(restaurant));
+	}	
 	public static Result centeredMap( Double lat, Double lon) {
 		return ok(map.render(lat,lon));
 	}
@@ -42,7 +47,7 @@ public class Oumanger extends Controller {
 		String distance = "(POINT(" + lat + "," + lon + ")<->POINT(latitude, longitude))";
 		//Date today = new Date();
 		List<Resto> listResto = new ArrayList<Resto>();
-		String sql = "SELECT r.mobile, " + distance+ " as distance, r.raison_sociale, r.type, r.categorie, r.telephone, r.adresse"
+		String sql = "SELECT r.id, r.mobile, " + distance+ " as distance, r.raison_sociale, r.type, r.categorie, r.telephone, r.adresse"
 				+ ", r.code_postale, r.commune, r.latitude, r.longitude, r.internet, m.text , m.creation_date" 
 				+ " FROM resto r LEFT JOIN menu m ON m.resto=r.id "
 		//		+ " WHERE (m.reception_date is null OR date(m.reception_date) = current_date)"

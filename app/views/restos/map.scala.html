@@ -22,7 +22,7 @@
 }
 	
 	var msg = "";
-	var geoloc, fixedMarker, featureLayer;
+	var geoloc, fixedMarker, restoLayer;
 	var circle;
 	var circle_options = {
 			    color: '#fff',      // Stroke color
@@ -40,8 +40,33 @@
 	);
 	
 	
-	featureLayer = L.mapbox.featureLayer().addTo(map);
+	//featureLayer = L.mapbox.featureLayer().addTo(map);
 	L.control.locate().addTo(map);
+	var restoLayer = L.mapbox.featureLayer().addTo(map);
+	
+	// Add custom popups to each using our custom feature properties
+	restoLayer.on('layeradd', function(e) {
+	    var marker = e.layer,
+	        feature = marker.feature;
+
+	    // Create custom popup content
+	    var popupContent =  '<a class="popup" href="' + feature.properties.uri + '">' 
+	                        + feature.properties.raisonSociale + '</a>'
+	                        + ' ' + feature.properties.distance;
+	    if (feature.properties.dujour) {
+	         popupContent += '<br />' + feature.properties.dujour;
+	    }
+         if (feature.properties.menudujour) {
+        	 popupContent += '<br /><b>' + feature.properties.menudujour + '</b>';
+         }
+	    
+
+	    // http://leafletjs.com/reference.html#popup
+	    marker.bindPopup(popupContent,{
+	        closeButton: false
+	       // , minWidth: 320
+	    });
+	});
 
 	function loadRestos(latlng) {
 
@@ -72,7 +97,10 @@
 		 
 		fixedMarker.bindPopup("<a class='popup' href='" +uri + "'>PDJ plus proche</a>");
 		
-		featureLayer.loadURL(uri + '?format=geojson').addTo(map);
+		
+		// Add features to the map
+		//restoLayer.setGeoJSON(restoLayer.loadURL(uri + '?format=geojson'));
+		restoLayer.loadURL(uri + '?format=geojson');
 		if (circle) {
 			map.removeLayer(circle);
 		}
@@ -113,6 +141,12 @@
 		var point = new L.LatLng(latitude, longitude);
 		//console.log(point.toString());
 		loadRestos(point);
+		
+			map.on('zoomend', function(e) {
+				console.log("zoomend:", e.target.getBounds().getCenter());
+				requestUpdatedPoints(e.target.getBounds())
+			});
+ 
 	}
 
 	$(document).ready(
@@ -128,9 +162,7 @@
 				showMap(lat,lon);
 			}
 			map.on('dragend', function(e) {
-				requestUpdatedPoints(e.target.getBounds())
-			});
-			map.on('zoomend', function(e) {
+				console.log("dragend:", e.target.getBounds().getCenter());
 				requestUpdatedPoints(e.target.getBounds())
 			});
 

@@ -1,11 +1,16 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.time.DateFormatUtils;
+import org.apache.commons.lang3.time.DateUtils;
+import org.joda.time.LocalDate;
 
 public class GeoRestos {
 
@@ -37,44 +42,36 @@ public class GeoRestos {
 	static public GeoRestos parse(List<Resto> restos) {
 		GeoRestos georestos = new GeoRestos();
 		try {
+			Calendar c = Calendar.getInstance();
+			c.set(Calendar.HOUR_OF_DAY, 14);
+			c.set(Calendar.MINUTE, 0);
+			Date today = c.getTime();
+			Date yesterday = DateUtils.addDays(today, -1);
 
 			for (Resto resto : restos) {
 				GeoResto geoResto = georestos.new GeoResto();
 				geoResto.properties = new HashMap<String, String>();
+				geoResto.properties.put("uri", "/resto/" + resto.id);
+				geoResto.properties.put("raisonSociale", resto.raisonSociale);
+				geoResto.properties.put("distance", resto.distance + "m");
 
-				// Field[] champs = Resto.class.getFields();
-				// for (Field field : champs) {
-				// String name = field.getName();
-				// if (field.get(resto) != null)
-				// geoResto.properties.put(name, field.get(resto).toString());
-				// }
-				//
-				String rs;
-				if (resto.internet != null) {
-					rs = "<a target='_blank' class='popup' href='" + resto.internet + "'>" + resto.raisonSociale
-							+ "</a>";
-					geoResto.properties.put("url", "resto.internet");
-				} else {
-					rs = resto.raisonSociale;
-				}
-				String datedujour = "";
 				if (resto.datedujour != null) {
-					datedujour = resto.datedujour + "<br/> ";
+					if (DateUtils.isSameDay(resto.datedujour, today)) {
+						if (resto.datedujour.before(today)) {
+							geoResto.properties.put("dujour", " Menu du jour");
+						} else {
+							geoResto.properties.put("dujour", " Menu du soir");
+						}
+					} else  if (DateUtils.isSameDay(resto.datedujour,yesterday)) {			
+						geoResto.properties.put("dujour", " Menu d'hier");
+					} else {
+						geoResto.properties.put("dujour",
+								"Menu du " + DateFormatUtils.format(resto.datedujour, "yyyy-MM-dd"));
+					}
+					geoResto.properties.put("menudujour", StringUtils.defaultString(resto.menudujour));
+				} else if (resto.mobile != null) {
+					geoResto.properties.put("dujour", " Aucun menu.");
 				}
-
-				geoResto.properties.put("title", datedujour + StringUtils.defaultString(resto.menudujour));
-
-				String adresse = "";
-				if (!StringUtils.isEmpty(resto.adresse))
-					adresse = resto.adresse;
-				if (!StringUtils.isEmpty(resto.codePostale))
-					adresse += "<br />" + resto.codePostale;
-				if (!StringUtils.isEmpty(resto.commune))
-					adresse += " " + resto.commune;
-				if (!StringUtils.isEmpty(resto.telephone))
-					adresse += "<br />" + resto.telephone;
-
-				geoResto.properties.put("description", "à " + resto.distance + "m : " + rs + "<br/>" + adresse);
 
 				if (resto.menudujour != null || resto.mobile != null) {
 					if ("foodtruck".equals(resto.type)) {
@@ -92,16 +89,12 @@ public class GeoRestos {
 						geoResto.properties.put("marker-allow-overlap", "false");
 						geoResto.properties.put("marker-size", "medium");
 					}
-					
-					
-					
 				} else {
 					if ("foodtruck".equals(resto.type)) {
 						geoResto.properties.put("marker-symbol", "bus");
 					} else {
 						geoResto.properties.put("marker-symbol", "bar");
 					}
-
 					geoResto.properties.put("marker-color", "#fff");
 					geoResto.properties.put("marker-size", "small");
 					geoResto.properties.put("marker-allow-overlap", "false");

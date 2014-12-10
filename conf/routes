@@ -7,6 +7,7 @@ GET   /carto                        controllers.Oumanger.map()
 GET   /carto/:lat/:lon              controllers.Oumanger.centeredMap(lat:Double,lon:Double)
 GET   /restos/:dist/:lat/:lon       controllers.Oumanger.list(dist:Integer,lat:Double,lon:Double, format:String ?= null)
 GET   /restos				        controllers.Oumanger.index()
+GET   /resto/:id			        controllers.Oumanger.get(id: Long)
 
 GET     /twilio                     controllers.Twilio.index()
 
