@@ -45,6 +45,8 @@ public class Resto extends Model implements Comparable<Resto> {
 	public String menudujour;
 	@Transient
 	public Date datedujour;
+	@Transient
+	public Boolean menuOfDay;
 
 	@OneToMany(mappedBy = "resto")
 	// @JoinColumn(name="resto", referencedColumnName = "mobile")
