@@ -59,24 +59,27 @@ public class GeoRestos {
 						geoResto.properties.put("menudujour", StringUtils.defaultString(resto.menudujour));
 					}
 
-					if (resto.menuOfDay) {
-						geoResto.properties.put("dujour", " Menu du jour");
+					if (resto.beforeMidi != null) {				
 						geoResto.properties.put("marker-size", "large");
 						geoResto.properties.put("marker-color", "#009933");
+						if (resto.beforeMidi.equals(Boolean.TRUE)) {
+							geoResto.properties.put("dujour", " Menu du midi");
+						} else {
+							geoResto.properties.put("dujour", " Menu du soir");
+						}
 					} else if (resto.datedujour != null) {
 						geoResto.properties.put("marker-color", "#99FF99");
 						if (DateUtils.isSameDay(resto.datedujour, yesterday)) {
 							geoResto.properties.put("dujour", " Menu d'hier");
 						} else {
-							geoResto.properties.put("dujour",
-									"Menu du " + DateFormatUtils.format(resto.datedujour, "yyyy-MM-dd"));
+							geoResto.properties.put("dujour", "Menu du " + DateFormatUtils.format(resto.datedujour, "yyyy-MM-dd"));
 						}
 					} else if (resto.mobile != null) {
 						geoResto.properties.put("dujour", " Aucun menu.");
 						geoResto.properties.put("marker-color", "#99FF99");
 					}
 
-					if ("foodtruck".equals(resto.type)) {
+					if ("foodtruck".equals(resto.typeDeResto)) {
 						geoResto.properties.put("marker-symbol", "bus");
 					} else {
 						geoResto.properties.put("marker-symbol", "restaurant");
@@ -91,7 +94,7 @@ public class GeoRestos {
 						geoResto.properties.put("marker-size", "medium");
 					}
 				} else {
-					if ("foodtruck".equals(resto.type)) {
+					if ("foodtruck".equals(resto.typeDeResto)) {
 						geoResto.properties.put("marker-symbol", "bus");
 					} else {
 						geoResto.properties.put("marker-symbol", "bar");
